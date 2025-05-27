@@ -1,0 +1,26 @@
+{
+  "minestuck_plus.item_group.main" : "Minestuck+",
+
+  "item.minestuck_plus.shadow_crystal" : "Shadow Crystal",
+  "item.minestuck_plus.shadow_sword" : "Shadow Sword",
+  "item.minestuck_plus.rude_axe" : "Rude Axe",
+
+  "item.minestuck_plus.beaglepuss" : "Beaglepuss",
+  "item.minestuck_plus.disguise" : "Trickster's Disguise",
+  "item.minestuck_plus.disguise.tooltip" : "A master japer wouldn't leave home without one!",
+  "item.minestuck_plus.beaglepiss" : "Beagle§opiss§r",
+  "item.minestuck_plus.beaglepiss.tooltip": "...surely you aren't *actually* going to wear this, are you?",
+  "item.minestuck_plus.testifipuss" : "Testifipuss",
+  "item.minestuck_plus.testifipuss.tooltip": "Is this cultural appropriation?",
+
+  "item.minestuck_plus.catch_ball" : "Catch-Ball",
+  "item.minestuck_plus.catch_ball.tooltip" : "Its a (legally distinct) catching ball!",
+  "item.minestuck_plus.catch_ball_modus_card" : "Catch-Ball Modus",
+  "item.minestuck_plus.roulette_modus_card" : "Roulette Modus",
+  "item.minestuck_plus.chat_modus_card" : "Chat Modus",
+  "item.minestuck_plus.cinderblock" : "Cinderblock",
+  "item.minestuck_plus.acabrick" : "ACAB-rick",
+  "item.minestuck_plus.acabrick.tooltip" : "Remember, cops aren't your friends!",
+
+  "effect.minestuck_plus.creative_inspiration" : "Creative Inspiration"
+}
