@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minestuck_plus:block/plush_turtle",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "minestuck_plus:block/plush_turtle"
+    },
+    "facing=south": {
+      "model": "minestuck_plus:block/plush_turtle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minestuck_plus:block/plush_turtle",
+      "y": 270
+    }
+  }
+}

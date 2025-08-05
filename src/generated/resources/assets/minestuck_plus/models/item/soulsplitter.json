@@ -1,0 +1,6 @@
+{
+  "parent": "minestuck_plus:item/large_weapon",
+  "textures": {
+    "layer0": "minestuck_plus:item/soulsplitter"
+  }
+}

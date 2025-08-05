@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_plus:beaglepuss"
+  },
+  "input2": {
+    "item": "minecraft:emerald_block"
+  },
+  "mode": "and",
+  "output": "minestuck_plus:testifipuss"
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "uranium",
+  "description": {
+    "color": "#77FF77",
+    "translate": "trim_material.minestuck_plus.uranium"
+  },
+  "ingredient": "minestuck:raw_uranium",
+  "item_model_index": 0.71
+}

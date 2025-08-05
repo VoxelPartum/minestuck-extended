@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 25,
+    "minestuck:mercury": 100,
+    "minestuck:shale": 128,
+    "minestuck:uranium": 50
+  },
+  "ingredient": {
+    "item": "minecraft:heavy_core"
+  }
+}

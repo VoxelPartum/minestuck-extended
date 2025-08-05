@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:diamond": 4,
+    "minestuck:garnet": 32,
+    "minestuck:marble": 1,
+    "minestuck:rust": 9
+  },
+  "ingredient": {
+    "item": "create:electron_tube"
+  }
+}

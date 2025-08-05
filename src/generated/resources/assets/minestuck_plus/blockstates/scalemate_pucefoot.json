@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minestuck_plus:block/scalemate_pucefoot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "minestuck_plus:block/scalemate_pucefoot"
+    },
+    "facing=south": {
+      "model": "minestuck_plus:block/scalemate_pucefoot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minestuck_plus:block/scalemate_pucefoot",
+      "y": 270
+    }
+  }
+}

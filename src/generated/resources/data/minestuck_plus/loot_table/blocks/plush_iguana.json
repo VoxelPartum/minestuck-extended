@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minestuck_plus:plush_iguana"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minestuck_plus:blocks/plush_iguana"
+}

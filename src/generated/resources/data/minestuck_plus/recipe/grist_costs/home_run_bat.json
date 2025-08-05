@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 3799,
+    "minestuck:build": 7213,
+    "minestuck:garnet": 50
+  },
+  "ingredient": {
+    "item": "minestuck_plus:home_run_bat"
+  }
+}

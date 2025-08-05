@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 8,
+    "minestuck:shale": 9
+  },
+  "ingredient": {
+    "item": "create:copper_casing"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minestuck:end_trapdoor"
+    },
+    "_": {
+      "item": "minestuck:end_planks_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "# #",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:end_cabinet"
+  }
+}

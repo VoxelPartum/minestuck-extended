@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minecraft:heavy_core"
+  },
+  "input2": {
+    "item": "minestuck:silver_spoon"
+  },
+  "mode": "and",
+  "output": "minestuck_plus:market_gardener"
+}

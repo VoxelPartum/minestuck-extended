@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:tar": 413
+  },
+  "ingredient": {
+    "item": "minestuck_plus:space_armor_trim_smithing_template"
+  }
+}

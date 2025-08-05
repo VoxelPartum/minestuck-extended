@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minestuck_plus:scalemate_lemonsnout"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck:scalemate_lemonsnout"
+  }
+}

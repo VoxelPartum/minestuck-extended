@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 250,
+    "minestuck:tar": 25
+  },
+  "ingredient": {
+    "item": "minestuck_plus:shadow_sword"
+  }
+}

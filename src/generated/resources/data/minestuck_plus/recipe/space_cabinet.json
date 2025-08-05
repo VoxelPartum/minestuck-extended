@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minestuck:space_aspect_trapdoor"
+    },
+    "_": {
+      "item": "minestuck:space_aspect_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "# #",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:space_cabinet"
+  }
+}

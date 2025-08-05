@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:chalk": 32,
+    "minestuck:tar": 32
+  },
+  "ingredient": {
+    "item": "minestuck_plus:chess_tile"
+  }
+}

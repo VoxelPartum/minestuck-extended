@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "minestuck:bugs"
+    },
+    {
+      "tag": "minestuck:bugs"
+    },
+    {
+      "tag": "minestuck:bugs"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "minestuck:jar_of_bugs"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:garnet": 413
+  },
+  "ingredient": {
+    "item": "minestuck_plus:heart_armor_trim_smithing_template"
+  }
+}

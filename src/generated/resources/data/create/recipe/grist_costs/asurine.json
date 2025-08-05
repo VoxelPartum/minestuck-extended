@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 8,
+    "minestuck:rust": 4,
+    "minestuck:shale": 1
+  },
+  "ingredient": {
+    "item": "create:asurine"
+  }
+}

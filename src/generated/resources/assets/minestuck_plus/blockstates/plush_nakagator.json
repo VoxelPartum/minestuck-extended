@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minestuck_plus:block/plush_nakagator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "minestuck_plus:block/plush_nakagator"
+    },
+    "facing=south": {
+      "model": "minestuck_plus:block/plush_nakagator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minestuck_plus:block/plush_nakagator",
+      "y": 270
+    }
+  }
+}

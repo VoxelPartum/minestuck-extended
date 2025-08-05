@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minestuck:doom_aspect_trapdoor"
+    },
+    "_": {
+      "item": "minestuck:doom_aspect_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "# #",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:doom_cabinet"
+  }
+}

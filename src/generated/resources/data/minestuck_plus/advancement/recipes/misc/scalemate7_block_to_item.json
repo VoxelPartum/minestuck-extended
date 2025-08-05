@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scalemate7_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck_plus:scalemate_pucefoot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_plus:scalemate7_block_to_item"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scalemate7_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_plus:scalemate7_block_to_item"
+    ]
+  }
+}

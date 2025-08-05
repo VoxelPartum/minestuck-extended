@@ -1,0 +1,15 @@
+{
+  "parent": "minestuck_plus:item/base_shield",
+  "overrides": [
+    {
+      "model": "minestuck_plus:item/pogo_shield_blocking",
+      "predicate": {
+        "minecraft:blocking": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "0": "minestuck_plus:item/pogo_shield",
+    "particle": "minestuck_plus:item/pogo_shield"
+  }
+}

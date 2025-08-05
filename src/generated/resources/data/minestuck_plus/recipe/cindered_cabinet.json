@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minestuck:cindered_trapdoor"
+    },
+    "_": {
+      "item": "minestuck:cindered_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "# #",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:cindered_cabinet"
+  }
+}

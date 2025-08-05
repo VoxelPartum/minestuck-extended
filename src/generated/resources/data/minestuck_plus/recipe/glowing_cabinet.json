@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minestuck:glowing_trapdoor"
+    },
+    "_": {
+      "item": "minestuck:glowing_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "# #",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:glowing_cabinet"
+  }
+}

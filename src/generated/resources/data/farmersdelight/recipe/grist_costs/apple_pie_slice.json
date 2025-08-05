@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 3,
+    "minestuck:iodine": 4,
+    "minestuck:shale": 1
+  },
+  "ingredient": {
+    "item": "farmersdelight:apple_pie_slice"
+  }
+}

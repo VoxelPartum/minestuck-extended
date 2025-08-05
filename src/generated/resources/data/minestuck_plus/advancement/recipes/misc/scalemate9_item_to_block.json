@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scalemate9_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck:scalemate_pyralspite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_plus:scalemate9_item_to_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scalemate9_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_plus:scalemate9_item_to_block"
+    ]
+  }
+}

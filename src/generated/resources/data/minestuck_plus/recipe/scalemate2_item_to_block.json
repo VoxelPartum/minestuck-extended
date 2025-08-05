@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minestuck:scalemate_berrybreath"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:scalemate_berrybreath"
+  }
+}

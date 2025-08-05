@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:gold": 413
+  },
+  "ingredient": {
+    "item": "minestuck_plus:hope_armor_trim_smithing_template"
+  }
+}

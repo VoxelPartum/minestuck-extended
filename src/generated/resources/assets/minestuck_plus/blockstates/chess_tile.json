@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "minestuck_plus:block/chess_tile"
+    }
+  }
+}

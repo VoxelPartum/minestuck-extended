@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:diamond": 1
+  },
+  "ingredient": {
+    "item": "minestuck_plus:diamond_lichen"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 4,
+    "minestuck:iodine": 4,
+    "minestuck:uranium": 256
+  },
+  "ingredient": {
+    "item": "minestuck_plus:normal_brownie"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 2,
+    "minestuck:cobalt": 11,
+    "minestuck:iodine": 5,
+    "minestuck:rust": 27
+  },
+  "ingredient": {
+    "item": "minecraft:tadpole_bucket"
+  }
+}

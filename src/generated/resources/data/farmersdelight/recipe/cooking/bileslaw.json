@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:crops/cabbage"
+    },
+    {
+      "tag": "c:crops/cabbage"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "minestuck:bugs"
+    },
+    {
+      "item": "minestuck:grub_sauce"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "minestuck_plus:bileslaw"
+  }
+}

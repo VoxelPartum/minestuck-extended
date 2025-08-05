@@ -1,0 +1,14 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 87,
+    "minestuck:caulk": 8,
+    "minestuck:gold": 9,
+    "minestuck:marble": 18,
+    "minestuck:rust": 27,
+    "minestuck:shale": 30
+  },
+  "ingredient": {
+    "item": "minestuck_plus:mechanical_chainsaw"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_plus:item/base_shield_blocking",
+  "textures": {
+    "0": "minestuck_plus:item/magnet_shield",
+    "particle": "minestuck_plus:item/magnet_shield"
+  }
+}
