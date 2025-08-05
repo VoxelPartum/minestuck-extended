@@ -13,7 +13,4 @@ public final class MSPModi {
     public static final DeferredRegister<ModusType<?>> REGISTER = DeferredRegister.create(ResourceLocation.fromNamespaceAndPath(Minestuck.MOD_ID, "modus_type"), Minestuck.MOD_ID);
 
     public static final Supplier<ModusType<RouletteModus>> ROULETTE = REGISTER.register("roulette", ()-> new ModusType<>(RouletteModus::new, MSPItems.ROULETTE_CARD));
-    public static final Supplier<ModusType<ChatModus>> CHAT = REGISTER.register("chat", ()-> new ModusType<>(ChatModus::new, MSPItems.CHAT_CARD));
-    public static final Supplier<ModusType<CatchBallModus>> CATCHBALL = REGISTER.register("catchball", ()-> new ModusType<>(CatchBallModus::new, MSPItems.CATCHBALL_CARD));
-
 }

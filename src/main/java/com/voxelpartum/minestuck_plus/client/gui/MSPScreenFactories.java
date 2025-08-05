@@ -5,8 +5,6 @@ import com.mraof.minestuck.client.gui.captchalouge.SylladexScreen;
 import com.mraof.minestuck.inventory.captchalogue.Modus;
 import com.mraof.minestuck.inventory.captchalogue.ModusType;
 import com.voxelpartum.minestuck_plus.MinestuckPlus;
-import com.voxelpartum.minestuck_plus.client.gui.captchalouge.ChatSylladexScreen;
-import com.voxelpartum.minestuck_plus.client.gui.captchalouge.CatchBallSylladexScreen;
 import com.voxelpartum.minestuck_plus.client.gui.captchalouge.RouletteSylladexScreen;
 import com.voxelpartum.minestuck_plus.inventory.captchalogue.MSPModi;
 import net.neoforged.api.distmarker.Dist;
@@ -27,8 +25,6 @@ public class MSPScreenFactories {
     @SubscribeEvent
     public static void registerScreenFactories(RegisterMenuScreensEvent event){
         registerSylladexFactory(MSPModi.ROULETTE, RouletteSylladexScreen::new);
-        registerSylladexFactory(MSPModi.CHAT, ChatSylladexScreen::new);
-        registerSylladexFactory(MSPModi.CATCHBALL, CatchBallSylladexScreen::new);
     }
 
 }

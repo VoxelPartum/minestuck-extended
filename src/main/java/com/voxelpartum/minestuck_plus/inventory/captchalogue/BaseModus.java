@@ -32,7 +32,6 @@ public class BaseModus extends Modus {
     public void initModus(ItemStack modusItem, ServerPlayer player, NonNullList<ItemStack> prev, int size) {
         this.size = size;
         list = NonNullList.create();
-
         if(side == LogicalSide.CLIENT) {
             items = NonNullList.create();
             changed = true;

@@ -25,7 +25,7 @@ public class MSPConsumableProjectile extends ConsumableProjectileWeaponItem {
     public InteractionResultHolder<ItemStack> use(Level level, Player playerIn, InteractionHand handIn){
         ItemStack item = playerIn.getItemInHand(handIn);
 
-        level.playSound(null, playerIn.getX(), playerIn.getY(), playerIn.getZ(), this.sound, SoundSource.PLAYERS, 0.8F, 1.5F);
+        level.playSound(playerIn, playerIn.getX(), playerIn.getY(), playerIn.getZ(), this.sound, SoundSource.PLAYERS, 0.65F, 1.0F);
 
         if(!level.isClientSide)
         {

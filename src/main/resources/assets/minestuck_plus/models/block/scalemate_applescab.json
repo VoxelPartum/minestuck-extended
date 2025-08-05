@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_plus:block/scalemate_plush",
+  "textures": {
+    "particle": "minestuck_plus:block/scalemate_applescab",
+    "0": "minestuck_plus:block/scalemate_applescab"
+  }
+}
