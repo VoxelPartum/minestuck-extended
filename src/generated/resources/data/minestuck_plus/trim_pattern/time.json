@@ -1,8 +1,0 @@
-{
-  "asset_id": "minestuck_plus:time",
-  "decal": false,
-  "description": {
-    "translate": "trim_pattern.minestuck_plus.time"
-  },
-  "template_item": "minestuck_plus:time_armor_trim_smithing_template"
-}

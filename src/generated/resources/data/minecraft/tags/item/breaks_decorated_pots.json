@@ -1,12 +1,12 @@
 {
   "values": [
-    "minestuck_plus:whifflebat",
-    "minestuck_plus:metal_pan",
-    "minestuck_plus:home_run_bat",
-    "minestuck_plus:club_spiked",
-    "minestuck_plus:spring_mace",
-    "minestuck_plus:lancer",
-    "minestuck_plus:devilsknife",
-    "minestuck_plus:princess_wand"
+    "minestuck_extended:whifflebat",
+    "minestuck_extended:metal_pan",
+    "minestuck_extended:home_run_bat",
+    "minestuck_extended:club_spiked",
+    "minestuck_extended:spring_mace",
+    "minestuck_extended:lancer",
+    "minestuck_extended:devilsknife",
+    "minestuck_extended:princess_wand"
   ]
 }

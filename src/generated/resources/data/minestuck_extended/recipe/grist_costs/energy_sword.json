@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 2250,
+    "minestuck:chalk": 250,
+    "minestuck:uranium": 450
+  },
+  "ingredient": {
+    "item": "minestuck_extended:energy_sword"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:wooden_lance"
+  },
+  "input2": {
+    "item": "minestuck:ace_of_spades"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:lancer"
+}

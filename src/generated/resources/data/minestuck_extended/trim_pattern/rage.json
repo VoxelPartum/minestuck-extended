@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:rage",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.rage"
+  },
+  "template_item": "minestuck_extended:rage_armor_trim_smithing_template"
+}

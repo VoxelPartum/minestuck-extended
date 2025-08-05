@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 126,
+    "minestuck:chalk": 77,
+    "minestuck:cobalt": 413
+  },
+  "ingredient": {
+    "item": "minestuck_extended:lancer"
+  }
+}

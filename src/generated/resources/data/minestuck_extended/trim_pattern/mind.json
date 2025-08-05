@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:mind",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.mind"
+  },
+  "template_item": "minestuck_extended:mind_armor_trim_smithing_template"
+}

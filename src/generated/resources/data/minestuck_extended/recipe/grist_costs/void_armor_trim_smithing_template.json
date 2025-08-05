@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:cobalt": 413
+  },
+  "ingredient": {
+    "item": "minestuck_extended:void_armor_trim_smithing_template"
+  }
+}

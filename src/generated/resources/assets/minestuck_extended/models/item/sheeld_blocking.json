@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_extended:item/base_shield_blocking",
+  "textures": {
+    "0": "minestuck_extended:item/sheeld",
+    "particle": "minestuck_extended:item/sheeld"
+  }
+}

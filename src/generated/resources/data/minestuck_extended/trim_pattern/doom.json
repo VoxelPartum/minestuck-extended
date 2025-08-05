@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:doom",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.doom"
+  },
+  "template_item": "minestuck_extended:doom_armor_trim_smithing_template"
+}

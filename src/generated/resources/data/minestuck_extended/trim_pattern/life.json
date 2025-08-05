@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:life",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.life"
+  },
+  "template_item": "minestuck_extended:life_armor_trim_smithing_template"
+}

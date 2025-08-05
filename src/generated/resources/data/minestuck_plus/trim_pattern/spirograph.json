@@ -1,8 +1,0 @@
-{
-  "asset_id": "minestuck_plus:spirograph",
-  "decal": false,
-  "description": {
-    "translate": "trim_pattern.minestuck_plus.spirograph"
-  },
-  "template_item": "minestuck_plus:spirograph_armor_trim_smithing_template"
-}

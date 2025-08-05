@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scalemate8_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck:scalemate_pumpkinsnuffle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_extended:scalemate8_item_to_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scalemate8_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_extended:scalemate8_item_to_block"
+    ]
+  }
+}

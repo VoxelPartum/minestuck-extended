@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 5,
+    "minestuck:build": 20,
+    "minestuck:chalk": 20,
+    "minestuck:iodine": 5
+  },
+  "ingredient": {
+    "item": "minestuck_extended:disguise"
+  }
+}

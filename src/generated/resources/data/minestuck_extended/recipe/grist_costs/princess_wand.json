@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 100,
+    "minestuck:amethyst": 631,
+    "minestuck:shale": 126
+  },
+  "ingredient": {
+    "item": "minestuck_extended:princess_wand"
+  }
+}

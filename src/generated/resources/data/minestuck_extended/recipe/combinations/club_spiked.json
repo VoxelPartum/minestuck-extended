@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:metal_bat"
+  },
+  "input2": {
+    "tag": "minecraft:planks"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:club_spiked"
+}

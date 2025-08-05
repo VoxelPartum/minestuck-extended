@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 300,
+    "minestuck:cobalt": 25
+  },
+  "ingredient": {
+    "item": "minestuck_extended:roulette_modus_card"
+  }
+}

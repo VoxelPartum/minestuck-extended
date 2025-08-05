@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 662,
+    "minestuck:rust": 631
+  },
+  "ingredient": {
+    "item": "minestuck_extended:metal_pan"
+  }
+}

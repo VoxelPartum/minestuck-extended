@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:breath",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.breath"
+  },
+  "template_item": "minestuck_extended:breath_armor_trim_smithing_template"
+}

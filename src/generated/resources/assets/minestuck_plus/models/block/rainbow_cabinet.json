@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "minestuck_plus:block/rainbow_cabinet_front",
-    "side": "minestuck_plus:block/rainbow_cabinet_side",
-    "top": "minestuck_plus:block/rainbow_cabinet_top"
-  }
-}

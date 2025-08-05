@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 2065,
+    "minestuck:chalk": 729,
+    "minestuck:diamond": 500,
+    "minestuck:tar": 1430
+  },
+  "ingredient": {
+    "item": "minestuck_extended:soulsplitter"
+  }
+}

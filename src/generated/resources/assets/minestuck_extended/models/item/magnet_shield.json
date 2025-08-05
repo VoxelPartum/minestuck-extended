@@ -1,0 +1,15 @@
+{
+  "parent": "minestuck_extended:item/base_shield",
+  "overrides": [
+    {
+      "model": "minestuck_extended:item/magnet_shield_blocking",
+      "predicate": {
+        "minecraft:blocking": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "0": "minestuck_extended:item/magnet_shield",
+    "particle": "minestuck_extended:item/magnet_shield"
+  }
+}

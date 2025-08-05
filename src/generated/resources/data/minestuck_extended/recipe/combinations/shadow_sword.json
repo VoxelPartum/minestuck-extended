@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:shadow_crystal"
+  },
+  "input2": {
+    "item": "minecraft:iron_sword"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:shadow_sword"
+}

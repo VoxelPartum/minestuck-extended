@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:void",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.void"
+  },
+  "template_item": "minestuck_extended:void_armor_trim_smithing_template"
+}

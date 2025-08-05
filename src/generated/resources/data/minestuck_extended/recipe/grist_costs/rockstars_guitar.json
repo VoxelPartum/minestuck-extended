@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 50,
+    "minestuck:build": 580,
+    "minestuck:chalk": 100,
+    "minestuck:garnet": 57
+  },
+  "ingredient": {
+    "item": "minestuck_extended:rockstars_guitar"
+  }
+}

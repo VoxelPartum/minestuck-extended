@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:space",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.space"
+  },
+  "template_item": "minestuck_extended:space_armor_trim_smithing_template"
+}

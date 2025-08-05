@@ -1,8 +1,0 @@
-{
-  "asset_id": "minestuck_plus:light",
-  "decal": false,
-  "description": {
-    "translate": "trim_pattern.minestuck_plus.light"
-  },
-  "template_item": "minestuck_plus:light_armor_trim_smithing_template"
-}

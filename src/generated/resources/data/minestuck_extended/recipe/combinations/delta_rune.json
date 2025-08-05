@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minecraft:enchanting_table"
+  },
+  "input2": {
+    "item": "minecraft:stone"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:delta_rune"
+}

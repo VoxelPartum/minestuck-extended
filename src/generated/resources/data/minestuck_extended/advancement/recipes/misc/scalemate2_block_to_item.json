@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scalemate2_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck_extended:scalemate_berrybreath"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_extended:scalemate2_block_to_item"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scalemate2_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_extended:scalemate2_block_to_item"
+    ]
+  }
+}

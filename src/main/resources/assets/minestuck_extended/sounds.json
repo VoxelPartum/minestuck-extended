@@ -1,0 +1,17 @@
+{
+  "entity.pan": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.pan",
+    "sounds": [
+      "minestuck_extended:item/pan_hit"
+    ]
+  },
+
+  "entity.bat": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.bat",
+    "sounds": [
+      "minestuck_extended:item/bat_hit"
+    ]
+  }
+}

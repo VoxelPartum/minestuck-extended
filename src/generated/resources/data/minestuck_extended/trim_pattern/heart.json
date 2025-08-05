@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:heart",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.heart"
+  },
+  "template_item": "minestuck_extended:heart_armor_trim_smithing_template"
+}

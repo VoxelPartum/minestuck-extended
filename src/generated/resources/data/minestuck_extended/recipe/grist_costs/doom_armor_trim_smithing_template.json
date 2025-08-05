@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:mercury": 413
+  },
+  "ingredient": {
+    "item": "minestuck_extended:doom_armor_trim_smithing_template"
+  }
+}

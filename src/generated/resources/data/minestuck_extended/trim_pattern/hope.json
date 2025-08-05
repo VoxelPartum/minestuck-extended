@@ -1,0 +1,8 @@
+{
+  "asset_id": "minestuck_extended:hope",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minestuck_extended.hope"
+  },
+  "template_item": "minestuck_extended:hope_armor_trim_smithing_template"
+}

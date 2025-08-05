@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 4740,
+    "minestuck:rust": 4897,
+    "minestuck:shale": 647
+  },
+  "ingredient": {
+    "item": "minestuck_extended:spring_mace"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "asset_name": "bi_dye",
-  "description": {
-    "color": "#B00B69",
-    "translate": "trim_material.minestuck_plus.bi_dye"
-  },
-  "ingredient": "minestuck:bi_dye",
-  "item_model_index": 0.91
-}

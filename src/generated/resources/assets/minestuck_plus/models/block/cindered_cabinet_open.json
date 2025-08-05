@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "minestuck_plus:block/cindered_cabinet_front_open",
-    "side": "minestuck_plus:block/cindered_cabinet_side",
-    "top": "minestuck_plus:block/cindered_cabinet_top"
-  }
-}

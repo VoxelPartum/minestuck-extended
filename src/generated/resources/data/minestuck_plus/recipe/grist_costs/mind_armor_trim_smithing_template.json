@@ -1,9 +1,0 @@
-{
-  "type": "minestuck:grist_cost",
-  "grist_cost": {
-    "minestuck:diamond": 413
-  },
-  "ingredient": {
-    "item": "minestuck_plus:mind_armor_trim_smithing_template"
-  }
-}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minestuck_extended:scalemate_pumpkinsnuffle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck:scalemate_pumpkinsnuffle"
+  }
+}

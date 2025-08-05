@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 1500,
+    "minestuck:cobalt": 413,
+    "minestuck:diamond": 50,
+    "minestuck:gold": 126
+  },
+  "ingredient": {
+    "item": "minestuck_extended:shovel_blade"
+  }
+}

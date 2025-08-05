@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "minestuck_extended:block/scalemate_pinesnort",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "minestuck_extended:block/scalemate_pinesnort"
+    },
+    "facing=south": {
+      "model": "minestuck_extended:block/scalemate_pinesnort",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minestuck_extended:block/scalemate_pinesnort",
+      "y": 270
+    }
+  }
+}

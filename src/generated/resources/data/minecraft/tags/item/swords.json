@@ -1,7 +1,7 @@
 {
   "values": [
-    "minestuck_plus:shadow_sword",
-    "minestuck_plus:shovel_blade",
-    "minestuck_plus:energy_sword"
+    "minestuck_extended:shadow_sword",
+    "minestuck_extended:shovel_blade",
+    "minestuck_extended:energy_sword"
   ]
 }

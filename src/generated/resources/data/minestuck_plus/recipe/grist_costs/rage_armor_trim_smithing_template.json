@@ -1,9 +1,0 @@
-{
-  "type": "minestuck:grist_cost",
-  "grist_cost": {
-    "minestuck:marble": 413
-  },
-  "ingredient": {
-    "item": "minestuck_plus:rage_armor_trim_smithing_template"
-  }
-}

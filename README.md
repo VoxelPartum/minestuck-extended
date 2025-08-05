@@ -1,7 +1,7 @@
-Minestuck+
+Minestuck Expanded
 =======
 
-Minestuck+ is an addon mod for [Minestuck](https://www.curseforge.com/minecraft/mc-mods/minestuck), which intends to be a source of additional, non-serious content.
+Minestuck Expanded is an addon mod for [Minestuck](https://www.curseforge.com/minecraft/mc-mods/minestuck), which intends to be a source of additional, non-serious content.
 Such content currently is several "disguises," weapons, and a (very impractical) modus.
 
 Features:

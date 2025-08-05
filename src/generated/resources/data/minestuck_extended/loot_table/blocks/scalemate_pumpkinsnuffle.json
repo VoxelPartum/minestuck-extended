@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minestuck_extended:scalemate_pumpkinsnuffle"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minestuck_extended:blocks/scalemate_pumpkinsnuffle"
+}
