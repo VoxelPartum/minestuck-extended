@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "minestuck_plus:block/plush_iguana"
+		"1": "minestuck_extended:block/plush_iguana"
 	},
 	"elements": [
 		{

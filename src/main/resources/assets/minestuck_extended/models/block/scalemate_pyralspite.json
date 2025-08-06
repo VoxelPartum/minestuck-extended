@@ -1,7 +1,7 @@
 {
-  "parent": "minestuck_plus:block/scalemate_plush",
+  "parent": "minestuck_extended:block/scalemate_plush",
   "textures": {
-    "particle": "minestuck_plus:block/scalemate_pyralspite",
-    "0": "minestuck_plus:block/scalemate_pyralspite"
+    "particle": "minestuck_extended:block/scalemate_pyralspite",
+    "0": "minestuck_extended:block/scalemate_pyralspite"
   }
 }

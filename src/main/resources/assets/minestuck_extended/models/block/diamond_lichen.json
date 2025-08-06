@@ -2,8 +2,8 @@
 	"ambientocclusion": false,
 	"render_type": "cutout",
 	"textures": {
-		"particle": "minestuck_plus:block/diamond_lichen",
-		"0": "minestuck_plus:block/diamond_lichen"
+		"particle": "minestuck_extended:block/diamond_lichen",
+		"0": "minestuck_extended:block/diamond_lichen"
 	},
 	"elements": [
 		{   "from": [ 0, 0, 0.1 ],

@@ -26,7 +26,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.ROULETTE_CARD).input(MSTags.Items.MODUS_CARD).and().input(MSItems.DICE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPUSS).input(Items.GLASS).and().input(Items.BROWN_WOOL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.TESTIFIPUSS).input(MSEItems.BEAGLEPUSS).and().input(Items.EMERALD_BLOCK).build(consumer);
-        CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(Items.YELLOW_DYE).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(MSItems.APPLE_JUICE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.DISGUISE).input(MSEItems.BEAGLEPUSS).and().input(MSItems.CRUMPLY_HAT).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.CINDERBLOCK).input(Tags.Items.CONCRETES).and().input(Items.BRICK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ACABRICK).input(MSEItems.CINDERBLOCK).and().input(MSItems.BI_DYE).build(consumer);

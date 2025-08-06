@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-05T05:11:51.7690436	Recipes
+// 1.21.1	2025-08-06T02:11:02.4081611	Recipes
 99beed13c7fde7fb35b3743219c23bf682fc5990 data/create/recipe/combinations/dough.json
 8bc3f7a5c869b34916951bf47f0800d750647a2f data/create/recipe/combinations/honeyed_apple.json
 d0978f571a0026dfd66473bbc140e8f2c1db6cd7 data/create/recipe/combinations/pulp.json
@@ -154,7 +154,7 @@ ae2de4b3f2f1da9d620c9ea379598bc195478263 data/minestuck_extended/recipe/breath_c
 067caa845b6506c2674f1a8b2d009b2cd9070836 data/minestuck_extended/recipe/carved_cabinet.json
 5919ccd48e3040e5934cf4e36172125ade1d65da data/minestuck_extended/recipe/cindered_cabinet.json
 8d3e53efcde34fc27fbfe1158b8ec35fe1280e13 data/minestuck_extended/recipe/combinations/acabrick.json
-2d36abc140baf50fd77fa3ec4fba27620e08b069 data/minestuck_extended/recipe/combinations/beaglepiss.json
+e4f3e8e4deaaa55a9070ef9a7d4a1fab9cdd9dbd data/minestuck_extended/recipe/combinations/beaglepiss.json
 7fbbb7ca0c33075f9bfcff2b9199a200e3898031 data/minestuck_extended/recipe/combinations/beaglepuss.json
 aa82fd2fccaaa0fc632ed38a9b8660bff259a54a data/minestuck_extended/recipe/combinations/blood_armor_trim_smithing_template.json
 f32a1dde71fb7e167caec6ff4e611145ddfd541d data/minestuck_extended/recipe/combinations/breath_armor_trim_smithing_template.json

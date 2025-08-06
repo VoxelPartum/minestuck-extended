@@ -4,7 +4,7 @@
     "item": "minestuck_extended:beaglepuss"
   },
   "input2": {
-    "item": "minecraft:yellow_dye"
+    "item": "minestuck:apple_juice"
   },
   "mode": "and",
   "output": "minestuck_extended:beaglepiss"

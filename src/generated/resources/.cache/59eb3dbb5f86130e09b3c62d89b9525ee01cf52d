@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-05T05:11:51.7680417	Loot Tables
+// 1.21.1	2025-08-06T02:11:02.4061608	Loot Tables
 d6f21e85a9cf110d8fb6e49460d41eb01fb74461 data/minestuck_extended/loot_table/blocks/blood_cabinet.json
 26801487df0b81dc59a81358eb64696fe113bd0b data/minestuck_extended/loot_table/blocks/breath_cabinet.json
 7c8de1421776b1933c41702e56bcad1dbab24890 data/minestuck_extended/loot_table/blocks/carved_cabinet.json
@@ -39,3 +39,4 @@ c09f6165c4d996c769027a994daba417d2163441 data/minestuck_extended/loot_table/bloc
 8dd80dc4bbf64a2fc56ee82440f775a899156f9d data/minestuck_extended/loot_table/blocks/time_cabinet.json
 e021d6149cea8b8d3b9348b6e6fcf4f4dbd91eec data/minestuck_extended/loot_table/blocks/treated_cabinet.json
 e6d282258c3383ca6d206bf03d2e13bcd1ee360f data/minestuck_extended/loot_table/blocks/void_cabinet.json
+4ac78adc571c9cb944d90ba1ba36f883ef10d2a9 data/minestuck_extended/loot_table/chests/injections/everlasting_beef_inject.json

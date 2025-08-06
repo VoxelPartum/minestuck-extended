@@ -4,8 +4,8 @@
 	"render_type": "cutout",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "minestuck_plus:block/plush_vriska",
-		"particle": "minestuck_plus:block/plush_vriska"
+		"0": "minestuck_extended:block/plush_vriska",
+		"particle": "minestuck_extended:block/plush_vriska"
 	},
 	"elements": [
 		{
