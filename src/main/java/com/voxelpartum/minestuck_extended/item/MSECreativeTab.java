@@ -16,12 +16,10 @@ import java.util.function.Supplier;
 
 public class MSECreativeTab {
 
-    public static final String PLUS_KEY = "minestuck_plus.item_group.main";
-
     public static final DeferredRegister<CreativeModeTab> REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinestuckExtended.MOD_ID);
 
     public static final Supplier<CreativeModeTab> MAIN = REGISTER.register("main",()-> CreativeModeTab.builder()
-            .title(Component.translatable(PLUS_KEY)).icon(()->new ItemStack(MSEItems.ROULETTE_CARD.get())).displayItems(MSECreativeTab::buildMain).build());
+            .title(Component.translatable("minestuck_extended.item_group.main")).icon(()->new ItemStack(MSEItems.ROULETTE_CARD.get())).displayItems(MSECreativeTab::buildMain).build());
 
 
     private static void buildMain(CreativeModeTab.ItemDisplayParameters parameters, CreativeModeTab.Output output){

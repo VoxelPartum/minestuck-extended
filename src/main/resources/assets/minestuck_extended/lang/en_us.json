@@ -5,6 +5,8 @@
   "subtitles.minestuck_extended.pan": "Player bludgeons",
   "subtitles.minestuck_extended.bat": "Player steps up to bat",
 
+  "block.minestuck_extended.chess_tile" : "Chess Tile",
+
   "block.minestuck_extended.diamond_lichen" : "Diamond Lichen",
   "block.minestuck_extended.plush_vriska" : "Vriska Plush",
   "block.minestuck_extended.plush_vriska.tooltip" : "There she is, the main character of homestuck.",
