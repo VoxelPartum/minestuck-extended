@@ -46,7 +46,7 @@ public class MSELootEvents {
     private static final Set<ResourceLocation> MISC_ITEM_WOOD_INJECT = Sets.newHashSet(resourceKey(land_dir +"wood").location());
 
     //Titles:
-    private static final Set<ResourceLocation> MISC_ITEM_BUCKET_INJECT = Sets.newHashSet(resourceKey(title_dir +"bucket").location());
+    private static final Set<ResourceLocation> MISC_ITEM_BUCKET_INJECT = Sets.newHashSet(resourceKey(title_dir +"buckets").location());
     private static final Set<ResourceLocation> MISC_ITEM_CAKE_INJECT = Sets.newHashSet(resourceKey(title_dir +"cake").location());
     private static final Set<ResourceLocation> MISC_ITEM_CLOCKWORK_INJECT = Sets.newHashSet(resourceKey(title_dir +"clockwork").location());
     private static final Set<ResourceLocation> MISC_ITEM_FROGS_INJECT = Sets.newHashSet(resourceKey(title_dir +"frogs").location());
