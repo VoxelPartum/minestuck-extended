@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:umbrella",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:flippers",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:aqua_dashers",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:feral_claws",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:onion_ring",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:helium_flamingo",
+          "quality": 1
+        }
+      ],
+      "name": "minestuck_extended",
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ],
+  "random_sequence": "minestuck_extended:chests/injections/thunder_title_inject"
+}

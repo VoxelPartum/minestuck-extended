@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:charm_of_shrinking",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:onion_ring",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:cross_necklace",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:cloud_in_a_bottle",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:antidote_vessel",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:scarf_of_invisibility",
+          "quality": 1
+        }
+      ],
+      "name": "minestuck_extended",
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ],
+  "random_sequence": "minestuck_extended:chests/injections/light_title_inject"
+}

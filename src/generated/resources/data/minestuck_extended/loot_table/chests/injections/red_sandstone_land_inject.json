@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:power_glove",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:cowboy_hat",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:digging_claws",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:superstitious_hat",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:fire_gauntlet",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:crystal_heart",
+          "quality": 1
+        }
+      ],
+      "name": "minestuck_extended",
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ],
+  "random_sequence": "minestuck_extended:chests/injections/red_sandstone_land_inject"
+}

@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:plastic_drinking_hat",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:novelty_drinking_hat",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:everlasting_beef",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:onion_ring",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:feral_claws",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:digging_claws",
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:steadfast_spikes",
+          "quality": 1
+        }
+      ],
+      "name": "minestuck_extended",
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ],
+  "random_sequence": "minestuck_extended:chests/injections/cake_title_inject"
+}
