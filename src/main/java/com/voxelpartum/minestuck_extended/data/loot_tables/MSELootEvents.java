@@ -2,7 +2,6 @@ package com.voxelpartum.minestuck_extended.data.loot_tables;
 
 import com.google.common.collect.Sets;
 import com.mraof.minestuck.Minestuck;
-import com.mraof.minestuck.item.loot.MSLootTables;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import com.voxelpartum.minestuck_extended.item.loot.MSELootTables;
 import net.minecraft.core.registries.Registries;
@@ -20,10 +19,10 @@ import java.util.Set;
 @EventBusSubscriber(modid = MinestuckExtended.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public class MSELootEvents {
 
-    private static final String land_dir = "chests/misc_item/terrain/minestuck/";
-    private static final String title_dir = "chests/misc_item/title/minestuck/";
+    private static final String land_dir = "chests/weapon_item/terrain/minestuck/";
+    private static final String title_dir = "chests/weapon_item/title/minestuck/";
 
-    private static final Set<ResourceLocation> BASIC_INJECT = Sets.newHashSet(MSLootTables.BASIC_MEDIUM_CHEST.location());
+    private static final Set<ResourceLocation> RARE_INJECT = Sets.newHashSet(resourceKey("chests/rare_item").location());
 
     //Lands:
     private static final Set<ResourceLocation> MISC_ITEM_END_INJECT = Sets.newHashSet(resourceKey(land_dir +"end").location());
@@ -79,7 +78,7 @@ public class MSELootEvents {
         inject(event, MISC_ITEM_UNDEAD_INJECT, MSELootTables.UNDEAD_INJECT, "undead_inject");
         inject(event, MISC_ITEM_WIND_INJECT, MSELootTables.WIND_INJECT, "wind_inject");
 
-        inject(event, BASIC_INJECT, MSELootTables.WHOOPEE_CUSHION_INJECT, "medium_inject");
+        inject(event, RARE_INJECT, MSELootTables.WHOOPEE_CUSHION_INJECT, "medium_inject");
         inject(event, MISC_ITEM_END_INJECT, MSELootTables.END_INJECT, "end_land_inject");
         inject(event, MISC_ITEM_FLORA_INJECT, MSELootTables.FLORA_INJECT, "flora_land_inject");
         inject(event, MISC_ITEM_FOREST_INJECT, MSELootTables.FOREST_INJECT, "forest_land_inject");

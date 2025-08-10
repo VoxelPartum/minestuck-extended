@@ -39,8 +39,10 @@ public class MSEItemProvider extends ItemModelProvider{
         handheldItem(MSEItems.CLUB_SPIKED.get());
         handheldItem(MSEItems.SPRING_MACE.get());
         handheldItem(MSEItems.MARKET_GARDENER.get());
+        handheldItem(MSEItems.BIT_MUNCHER.get());
         largeLongWeapon(MSEItems.LANCER);
         largeWeapon(MSEItems.DEVILS_KNIFE);
+        largeWeapon(MSEItems.SEAGRIFT_SCYTHE);
         handheldItem(MSEItems.PRINCESS_WAND.get());
 
         shieldModel(MSEItems.SHEELD, "base_shield");
@@ -54,6 +56,7 @@ public class MSEItemProvider extends ItemModelProvider{
         basicItem(MSEItems.DISGUISE.get());
         basicItem(MSEItems.BEAGLEPISS.get());
         basicItem(MSEItems.TESTIFIPUSS.get());
+        basicItem(MSEItems.SCARLET_SUNGLASSES.get());
         basicItem(MSEItems.SHADOW_CRYSTAL.get());
         basicItem(MSEItems.DELTA_RUNE.get());
         basicItem(MSEItems.ORANGE_CREAMSICLE.get());
@@ -101,6 +104,7 @@ public class MSEItemProvider extends ItemModelProvider{
         handheldItem(CreateCompat.MECHANICAL_CHAINSAW_LIPSTICK.get());
 
         basicItem(FDCompatItems.BILESLAW.get());
+        basicItem(FDCompatItems.GRASSHOPPER_SALSA.get());
         basicItem(FDCompatItems.STRAWBERRY_MILKSHAKE.get());
         simpleBlockItem(FDCompatBlocks.BREATH_CABINET.get());
         simpleBlockItem(FDCompatBlocks.LIFE_CABINET.get());

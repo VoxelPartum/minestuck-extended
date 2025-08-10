@@ -32,36 +32,40 @@ public class MSEItems {
 
     public static final DeferredItem<Item> ROULETTE_CARD = REGISTER.register("roulette_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
 
+    //Do something with the books.
+
     //Weapons
 
     //Bladekind
-    public static final DeferredItem<Item> SHADOW_SWORD = REGISTER.register("shadow_sword", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.8f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
+    public static final DeferredItem<Item> SHADOW_SWORD = REGISTER.register("shadow_sword", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
     public static final DeferredItem<Item> SHOVEL_BLADE = REGISTER.register("shovel_blade", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 3, -3f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL, MSItemTypes.SHOVEL_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
-    public static final DeferredItem<Item> ENERGY_SWORD = REGISTER.register("energy_sword", () -> new WeaponItem(new WeaponItem.Builder(MSItemTypes.URANIUM_TIER, 3, -2.5f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
+    public static final DeferredItem<Item> ENERGY_SWORD = REGISTER.register("energy_sword", () -> new WeaponItem(new WeaponItem.Builder(MSItemTypes.URANIUM_TIER, 4, -2.8f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
 
     //Axekind
-    public static final DeferredItem<Item> RUDE_AXE = REGISTER.register("rude_axe", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
-    public static final DeferredItem<Item> ROCKSTARS_GUITAR = REGISTER.register("rockstars_guitar", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
-    public static final DeferredItem<Item> SOULSPLITTER = REGISTER.register("soulsplitter", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> RUDE_AXE = REGISTER.register("rude_axe", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -3f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> ROCKSTARS_GUITAR = REGISTER.register("rockstars_guitar", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.IRON, 4, -3.2f).efficiency(4.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> SOULSPLITTER = REGISTER.register("soulsplitter", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 6, -3.2f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
 
     //Clubkind
     public static final DeferredItem<Item> WHIFFLEBAT = REGISTER.register("whifflebat", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.WOOD, 2, -2.5f).efficiency(1.5f).set(MSItemTypes.CLUB_TOOL), new Item.Properties()));
     public static final DeferredItem<Item> METAL_PAN = REGISTER.register("metal_pan", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.IRON, 5, -2.8f).efficiency(2f).set(MSItemTypes.CLUB_TOOL).add(OnHitEffect.playSound(MSESoundEvents.PAN_HIT)), new Item.Properties()));
     public static final DeferredItem<Item> HOMERUN_BAT = REGISTER.register("home_run_bat", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.IRON, 1, -3.5f).efficiency(2f).set(MSItemTypes.CLUB_TOOL).add(OnHitEffect.playSound(MSESoundEvents.BAT_HIT), OnHitEffect.enemyKnockback(8f)), new Item.Properties()));
-    public static final DeferredItem<Item> CLUB_SPIKED = REGISTER.register("club_spiked", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.WOOD, 2, -2f).efficiency(2f).set(MSItemTypes.CLUB_TOOL), new Item.Properties()));
-    public static final DeferredItem<Item> SPRING_MACE = REGISTER.register("spring_mace", ()-> new MaceWeaponItem(new WeaponItem.Builder(MSItemTypes.POGO_TIER, 5, -3.4f).efficiency(2f).set(MSItemTypes.CLUB_TOOL).set(PogoEffect.EFFECT_07), new Item.Properties()));
+    public static final DeferredItem<Item> CLUB_SPIKED = REGISTER.register("club_spiked", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.WOOD, 2, -2.4f).efficiency(2f).set(MSItemTypes.CLUB_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> SPRING_MACE = REGISTER.register("spring_mace", ()-> new MaceWeaponItem(new WeaponItem.Builder(MSItemTypes.POGO_TIER, 3, -3.4f).efficiency(2f).set(MSItemTypes.CLUB_TOOL).set(PogoEffect.EFFECT_07), new Item.Properties()));
 
     //Spoonkind
-    public static final DeferredItem<Item> MARKET_GARDENER = REGISTER.register("market_gardener", ()-> new MaceWeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(2f).set(MSItemTypes.SPOON_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> MARKET_GARDENER = REGISTER.register("market_gardener", ()-> new MaceWeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.4f).efficiency(1f).set(MSItemTypes.SPOON_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> BIT_MUNCHER = REGISTER.register("bit_muncher", ()-> new WeaponItem(new WeaponItem.Builder(MSItemTypes.PRISMARINE_TIER, 3, -2.8f).efficiency(2f).set(MSItemTypes.SPOON_TOOL), new Item.Properties()));
 
     //Lancekind
-    public static final DeferredItem<Item> LANCER = REGISTER.register("lancer", ()-> new WeaponItem(new WeaponItem.Builder(MSItemTypes.PRISMARINE_TIER, 2, -2f).efficiency(2f).set(MSItemTypes.LANCE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> LANCER = REGISTER.register("lancer", ()-> new WeaponItem(new WeaponItem.Builder(MSItemTypes.PRISMARINE_TIER, 3, -2.8f).efficiency(2f).set(MSItemTypes.LANCE_TOOL), new Item.Properties()));
 
     //Scythekind
-    public static final DeferredItem<Item> DEVILS_KNIFE = REGISTER.register("devilsknife", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(2f).set(MSItemTypes.SCYTHE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> DEVILS_KNIFE = REGISTER.register("devilsknife", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 4, -2.6f).efficiency(1.5f).set(MSItemTypes.SCYTHE_TOOL), new Item.Properties()));
+    public static final DeferredItem<Item> SEAGRIFT_SCYTHE = REGISTER.register("seagrift_scythe", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 4, -2.6f).efficiency(1.5f).set(MSItemTypes.SCYTHE_TOOL), new Item.Properties()));
 
     //Wandkind
-    public static final DeferredItem<Item> PRINCESS_WAND = REGISTER.register("princess_wand", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2f).efficiency(2f).set(MSItemTypes.WAND_TOOL).set(MagicRangedRightClickEffect.STANDARD_MAGIC), new Item.Properties()));
+    public static final DeferredItem<Item> PRINCESS_WAND = REGISTER.register("princess_wand", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 0, -1f).efficiency(1f).set(MSItemTypes.WAND_TOOL).set(MagicRangedRightClickEffect.STANDARD_MAGIC), new Item.Properties()));
 
     //Misc
     public static final DeferredItem<Item> SHEELD = REGISTER.registerItem("sheeld", p -> new MSEShieldItem(p.durability(59)));
@@ -73,6 +77,7 @@ public class MSEItems {
     public static final DeferredItem<MSArmorItem> DISGUISE = REGISTER.register("disguise", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<MSArmorItem> TESTIFIPUSS = REGISTER.register("testifipuss", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<MSArmorItem> BEAGLEPISS = REGISTER.register("beaglepiss", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<MSArmorItem> SCARLET_SUNGLASSES = REGISTER.register("scarlet_sunglasses", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
 
     //Armor Trims
     public static final DeferredItem<Item> SPIROGRAPH_ARMOR_TRIM = armorTrim("spirograph");
@@ -98,7 +103,6 @@ public class MSEItems {
     public static final DeferredItem<Item> DELTA_RUNE = REGISTER.register("delta_rune", ()->new Item(new Item.Properties()));
     public static final DeferredItem<Item> NORMAL_BROWNIE = REGISTER.register("normal_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 1200,0), 1f).build())));
     public static final DeferredItem<Item> NORMALER_BROWNIE = REGISTER.register("normaler_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 3600,0), 1f).build())));
-
 
     //BlockItems
 

@@ -5,6 +5,7 @@ import com.mraof.minestuck.item.weapon.MSToolType;
 import com.mraof.minestuck.item.weapon.MagicRangedRightClickEffect;
 import com.mraof.minestuck.item.weapon.WeaponItem;
 import com.mraof.minestuck.item.weapon.projectiles.ConsumableProjectileWeaponItem;
+import com.simibubi.create.AllTags;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatItems;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
@@ -95,6 +96,22 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
                     .add(MSItems.TOOTHRIPPER.get())
                     .add(MSItems.SHADOWRAZOR.get())
                     .add(MSItems.PRINCESS_PERIL.get());
+
+            tag(AllTags.AllItemTags.CHAIN_RIDEABLE.tag)
+                    .add(MSItems.SCYTHE.get())
+                    .add(MSItems.MARASCHINO_CHERRY_SCYTHE.get())
+                    .add(MSItems.KISSY_CUTIE_HEART_SPLITTER.get())
+                    .add(MSItems.MUTANT_CUTIE_CELL_CUTTER.get())
+                    .add(MSItems.PROSPECTING_PICKSCYTHE.get())
+                    .add(MSItems.EIGHTBALL_SCYTHE.get())
+                    .add(MSItems.TIME_FLAYER.get())
+                    .add(MSItems.DESTINY_DECIMATOR.get())
+                    .add(MSItems.SUNRAY_HARVESTER.get())
+                    .add(MSItems.GREEN_SUN_RAYREAPER.get())
+                    .add(MSItems.SKAITHE.get())
+                    .add(MSItems.HELLBRINGERS_HOE_ACTIVE.get())
+                    .add(MSItems.HELLBRINGERS_HOE_INACTIVE.get())
+                    .add(SEAGRIFT_SCYTHE.get());
 
             tag(ModTags.CABINETS)
                     .add(FDCompatItems.BREATH_CABINET.get())

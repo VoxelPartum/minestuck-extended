@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minestuck_extended:scalemate_applescab"
+      "item": "minestuck_extended:plush_salamander"
     }
   ],
   "result": {
     "count": 1,
-    "id": "minestuck:scalemate_applescab"
+    "id": "minestuck:plush_salamander"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minestuck_extended:item/large_weapon",
+  "textures": {
+    "layer0": "minestuck_extended:item/seagrift_scythe"
+  }
+}

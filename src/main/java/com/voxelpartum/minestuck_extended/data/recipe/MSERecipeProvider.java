@@ -18,6 +18,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
+import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
@@ -43,11 +44,11 @@ public class MSERecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_TURTLE.get()).unlockedBy("has_plush_turtle_item", has(MSItems.PLUSH_TURTLE)).requires(MSItems.PLUSH_TURTLE).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_turtle_item_to_block"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_MUTATED_CAT.get()).unlockedBy("has_plush_mutated_cat_item", has(MSItems.PLUSH_MUTATED_CAT)).requires(MSItems.PLUSH_MUTATED_CAT).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_mutated_cat_item_to_block"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_plush_salamander_block", has(MSEItems.SCALEMATE_APPLESCAB)).requires(MSEItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_salamander_block_to_item"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_plush_nakagator_block", has(MSEItems.SCALEMATE_APPLESCAB)).requires(MSEItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_nakagator_block_to_item"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_plush_iguana_block", has(MSEItems.SCALEMATE_APPLESCAB)).requires(MSEItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_iguana_block_to_item"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_plush_turtle_block", has(MSEItems.SCALEMATE_APPLESCAB)).requires(MSEItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_turtle_block_to_item"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_plush_mutated_cat_block", has(MSEItems.SCALEMATE_APPLESCAB)).requires(MSEItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_mutated_cat_block_to_item"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.PLUSH_SALAMANDER.get()).unlockedBy("has_plush_salamander_block", has(MSEItems.PLUSH_SALAMANDER)).requires(MSEItems.PLUSH_SALAMANDER).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_salamander_block_to_item"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.PLUSH_NAKAGATOR.get()).unlockedBy("has_plush_nakagator_block", has(MSEItems.PLUSH_NAKAGATOR)).requires(MSEItems.PLUSH_NAKAGATOR).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_nakagator_block_to_item"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.PLUSH_IGUANA.get()).unlockedBy("has_plush_iguana_block", has(MSEItems.PLUSH_IGUANA)).requires(MSEItems.PLUSH_IGUANA).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_iguana_block_to_item"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.PLUSH_TURTLE.get()).unlockedBy("has_plush_turtle_block", has(MSEItems.PLUSH_TURTLE)).requires(MSEItems.PLUSH_TURTLE).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_turtle_block_to_item"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSItems.PLUSH_MUTATED_CAT.get()).unlockedBy("has_plush_mutated_cat_block", has(MSEItems.PLUSH_MUTATED_CAT)).requires(MSEItems.PLUSH_MUTATED_CAT).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_mutated_cat_block_to_item"));
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.SCALEMATE_APPLESCAB.get()).unlockedBy("has_scalemate1_item", has(MSItems.SCALEMATE_APPLESCAB)).requires(MSItems.SCALEMATE_APPLESCAB).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "scalemate1_item_to_block"));
@@ -130,6 +131,15 @@ public class MSERecipeProvider extends RecipeProvider {
                 .addIngredient(CommonTags.CROPS_CABBAGE)
                 .addIngredient(Items.CARROT)
                 .addIngredient(MSTags.Items.BUGS)
+                .addIngredient(MSItems.GRUB_SAUCE)
+                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
+                .build(recipeBuilder);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(FDCompatItems.GRASSHOPPER_SALSA.get(), 1, 200, 1f)
+                .addIngredient(MSItems.GRASSHOPPER)
+                .addIngredient(MSItems.GRASSHOPPER)
+                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(ModItems.TOMATO_SAUCE.get())
                 .addIngredient(MSItems.GRUB_SAUCE)
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
                 .build(recipeBuilder);

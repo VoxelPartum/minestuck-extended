@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:cobalt": 176,
+    "minestuck:rust": 45,
+    "minestuck:shale": 88
+  },
+  "ingredient": {
+    "item": "minestuck_extended:seagrift_scythe"
+  }
+}

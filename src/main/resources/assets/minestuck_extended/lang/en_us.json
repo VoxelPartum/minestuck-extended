@@ -53,6 +53,7 @@
   "item.minestuck_extended.lancer.tooltip" : "Hohoho! I'm a tough boy! Treat me like one of your WEAPONs!",
 
   "item.minestuck_extended.devilsknife" : "Devilsknife",
+  "item.minestuck_extended.seagrift_scythe" : "Seagrift Scythe",
 
   "item.minestuck_extended.princess_wand" : "Princess Wand",
   "item.minestuck_extended.princess_wand.tooltip" : "...were you expecting something else?",
@@ -94,6 +95,8 @@
   "block.minestuck_extended.shadewood_cabinet" : "Shadewood Cabinet",
   "item.minestuck_extended.bileslaw" : "Bileslaw",
   "item.minestuck_extended.bileslaw.tooltip" : "Careful, this stuff doesn't keep well.",
+  "item.minestuck_extended.grasshopper_salsa" : "Salsa de Chapulines",
+  "item.minestuck_extended.grasshopper_salsa.tooltip" : "I can excuse the grasshoppers, but eating straight salsa? Abhorrent.",
   "item.minestuck_extended.strawberry_milkshake" : "Strawberry Milkshake",
 
   "item.minestuck_extended.whifflebat": "Whifflebat",
@@ -111,6 +114,8 @@
   "item.minestuck_extended.beaglepiss.tooltip": "...surely you aren't *actually* going to wear this, are you?",
   "item.minestuck_extended.testifipuss" : "Testifipuss",
   "item.minestuck_extended.testifipuss.tooltip": "Is this cultural appropriation?",
+  "item.minestuck_extended.scarlet_sunglasses": "Scarlet Sunglasses",
+  "item.minestuck_extended.scarlet_sunglasses.tooltip": "Why would a bowler store sell these?",
 
   "item.minestuck_extended.chat_modus_card" : "Chat Modus",
   "item.minestuck_extended.roulette_modus_card" : "Roulette Modus",

@@ -3,10 +3,7 @@ package com.voxelpartum.minestuck_extended.client;
 import com.mraof.minestuck.client.model.armor.ArmorModels;
 import com.mraof.minestuck.item.armor.MSArmorItem;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import com.voxelpartum.minestuck_extended.client.model.armor.BeaglepissModel;
-import com.voxelpartum.minestuck_extended.client.model.armor.BeaglepussModel;
-import com.voxelpartum.minestuck_extended.client.model.armor.DisguiseModel;
-import com.voxelpartum.minestuck_extended.client.model.armor.TestifipussModel;
+import com.voxelpartum.minestuck_extended.client.model.armor.*;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.client.model.HumanoidModel;
@@ -37,6 +34,7 @@ public class ClientProxy {
         ArmorModels.register(MSEItems.DISGUISE.get(), new HumanoidModel<>(DisguiseModel.createBodyLayer().bakeRoot()));
         ArmorModels.register(MSEItems.BEAGLEPISS.get(), new HumanoidModel<>(BeaglepissModel.createBodyLayer().bakeRoot()));
         ArmorModels.register(MSEItems.TESTIFIPUSS.get(), new HumanoidModel<>(TestifipussModel.createBodyLayer().bakeRoot()));
+        ArmorModels.register(MSEItems.SCARLET_SUNGLASSES.get(), new HumanoidModel<>(ScarletSunglasses.createBodyLayer().bakeRoot()));
     }
 
     @SubscribeEvent
@@ -45,7 +43,8 @@ public class ClientProxy {
                 MSEItems.BEAGLEPUSS,
                 MSEItems.DISGUISE,
                 MSEItems.BEAGLEPISS,
-                MSEItems.TESTIFIPUSS
+                MSEItems.TESTIFIPUSS,
+                MSEItems.SCARLET_SUNGLASSES
                         //DONT FORGET THE OTHER THINGS.
                 )
         ){

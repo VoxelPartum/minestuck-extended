@@ -7,5 +7,5 @@
     "tag": "minecraft:flowers"
   },
   "mode": "and",
-  "output": "minecraft:torch"
+  "output": "minecraft:torchflower"
 }

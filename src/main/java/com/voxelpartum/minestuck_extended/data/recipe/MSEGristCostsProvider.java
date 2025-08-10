@@ -68,10 +68,12 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.SPRING_MACE.get()).grist(BUILD, 4740).grist(RUST, 4897).grist(SHALE, 647).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.MARKET_GARDENER.get()).grist(RUST, 433).grist(CHALK, 375).grist(CAULK, 469).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.BIT_MUNCHER.get()).grist(URANIUM, 180).grist(RUST, 46).grist(SHALE, 82).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.LANCER.get()).grist(CHALK, 77).grist(BUILD, 126).grist(COBALT, 413).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.DEVILS_KNIFE.get()).grist(TAR, 150).grist(SHALE, 276).grist(GOLD, 15).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.SEAGRIFT_SCYTHE.get()).grist(SHALE, 88).grist(COBALT, 176).grist(RUST, 45).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.PRINCESS_WAND.get()).grist(SHALE, 126).grist(AMETHYST, 631).grist(AMBER, 100).build(recipeSaver);
 
@@ -109,6 +111,9 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(AllItems.IRON_SHEET.get()).grist(RUST, 9).build(recipeSaver);
         GristCostRecipeBuilder.of(AllItems.GOLDEN_SHEET.get()).grist(GOLD, 9).build(recipeSaver);
         GristCostRecipeBuilder.of(AllItems.DOUGH.get()).grist(IODINE, 2).build(recipeSaver);
+        GristCostRecipeBuilder.of(AllBlocks.BLAZE_BURNER.get()).grist(TAR, 150).grist(URANIUM, 10).grist(GOLD, 15).grist(BUILD, 100).build(recipeSaver);
+        GristCostRecipeBuilder.of(AllItems.BLAZE_CAKE_BASE.get()).grist(SHALE, 1).grist(TAR, 1).grist(AMBER, 8).grist(IODINE, 2).build(recipeSaver);
+        GristCostRecipeBuilder.of(AllItems.BLAZE_CAKE.get()).grist(SHALE, 5).grist(TAR, 25).grist(AMBER, 8).grist(IODINE, 2).build(recipeSaver);
 
         GristCostRecipeBuilder.of(AllBlocks.ANDESITE_CASING.get()).grist(BUILD, 12).grist(RUST,2).build(recipeSaver);
         GristCostRecipeBuilder.of(AllBlocks.BRASS_CASING.get()).grist(BUILD, 8).grist(CAULK,8).grist(RUST,12).build(recipeSaver);

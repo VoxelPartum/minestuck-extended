@@ -21,7 +21,7 @@ public class RouletteSylladexScreen extends SylladexScreen {
 
     @Override
     public ResourceLocation getCardTexture(GuiCard card) {
-        return ResourceLocation.fromNamespaceAndPath("minestuck_plus", "textures/gui/icons.png");
+        return ResourceLocation.fromNamespaceAndPath("minestuck_extended", "textures/gui/icons.png");
     }
 
     @Override

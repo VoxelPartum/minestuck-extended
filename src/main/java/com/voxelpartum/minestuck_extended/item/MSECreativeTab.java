@@ -24,12 +24,11 @@ public class MSECreativeTab {
 
     private static void buildMain(CreativeModeTab.ItemDisplayParameters parameters, CreativeModeTab.Output output){
 
-        //output.accept(MSPItems.GRIST_DISPLAY.get());
-
         output.accept(MSEItems.BEAGLEPUSS.get());
         output.accept(MSEItems.DISGUISE.get());
         output.accept(MSEItems.BEAGLEPISS.get());
         output.accept(MSEItems.TESTIFIPUSS.get());
+        output.accept(MSEItems.SCARLET_SUNGLASSES.get());
         output.accept(MSEItems.ORANGE_CREAMSICLE.get());
         output.accept(MSEItems.NORMAL_BROWNIE.get());
         output.accept(MSEItems.NORMALER_BROWNIE.get());
@@ -54,8 +53,10 @@ public class MSECreativeTab {
         output.accept(MSEItems.CLUB_SPIKED.get());
         output.accept(MSEItems.SPRING_MACE.get());
         output.accept(MSEItems.MARKET_GARDENER.get());
+        output.accept(MSEItems.BIT_MUNCHER.get());
         output.accept(MSEItems.LANCER.get());
         output.accept(MSEItems.DEVILS_KNIFE.get());
+        output.accept(MSEItems.SEAGRIFT_SCYTHE.get());
         output.accept(MSEItems.PRINCESS_WAND.get());
         output.accept(MSEItems.SHEELD.get());
         output.accept(MSEItems.POGO_SHIELD.get());

@@ -19,7 +19,8 @@ public class MSECombinationsProvider {
 
     public static void buildRecipes(RecipeOutput consumer){
 
-        CombinationRecipeBuilder.of(Items.TORCH).input(Items.TORCH).and().input(ItemTags.FLOWERS).build(consumer);
+        CombinationRecipeBuilder.of(Items.TORCHFLOWER).input(Items.TORCH).and().input(ItemTags.FLOWERS).build(consumer);
+        CombinationRecipeBuilder.of(MSItems.GRASSHOPPER).input(Items.SHORT_GRASS).and().input(Items.HOPPER).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.DIAMOND_LICHEN).input(Items.DIAMOND).or().input(Items.GLOW_LICHEN).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL).input(Items.AMETHYST_SHARD).and().input(Items.BLACK_DYE).build(consumer);
@@ -28,6 +29,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.TESTIFIPUSS).input(MSEItems.BEAGLEPUSS).and().input(Items.EMERALD_BLOCK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(MSItems.APPLE_JUICE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.DISGUISE).input(MSEItems.BEAGLEPUSS).and().input(MSItems.CRUMPLY_HAT).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.SCARLET_SUNGLASSES).input(Items.RED_STAINED_GLASS_PANE).and().input(MSItems.FLARP_MANUAL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.CINDERBLOCK).input(Tags.Items.CONCRETES).and().input(Items.BRICK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ACABRICK).input(MSEItems.CINDERBLOCK).and().input(MSItems.BI_DYE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.DELTA_RUNE).input(Items.ENCHANTING_TABLE).and().input(Items.STONE).build(consumer);
@@ -54,10 +56,12 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.SPRING_MACE).input(Items.MACE).and().input(Items.SLIME_BALL).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.MARKET_GARDENER).input(Items.HEAVY_CORE).and().input(MSItems.SILVER_SPOON).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.BIT_MUNCHER).input(MSItems.SILVER_SPOON).and().input(MSItems.BINARY_CODE).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.LANCER).input(MSItems.WOODEN_LANCE).and().input(MSItems.ACE_OF_SPADES).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.DEVILS_KNIFE).input(MSItems.SCYTHE).and().input(MSItems.HORN).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.SEAGRIFT_SCYTHE).input(MSItems.SCYTHE).and().input(MSItems.FLARP_MANUAL).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.PRINCESS_WAND).input(MSItems.WAND).and().input(Items.DIAMOND).build(consumer);
 
@@ -84,6 +88,9 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(CreateCompat.DEADRINGER).input(AllBlocks.HAUNTED_BELL.get()).and().input(MSItems.SLEDGE_HAMMER).build(consumer);
         CombinationRecipeBuilder.of(CreateCompat.MECHANICAL_CHAINSAW).input(MSItems.LIPSTICK_CHAINSAW).and().input(AllBlocks.ROTATION_SPEED_CONTROLLER.get()).build(consumer);
 
+        CombinationRecipeBuilder.of(AllBlocks.BLAZE_BURNER.get()).input(AllItems.EMPTY_BLAZE_BURNER).or().input(Items.BLAZE_ROD).build(consumer);
+        CombinationRecipeBuilder.of(AllItems.BLAZE_CAKE.get()).input(AllItems.BLAZE_CAKE_BASE).or().input(Items.LAVA_BUCKET).build(consumer);
+        CombinationRecipeBuilder.of(AllItems.BLAZE_CAKE_BASE.get()).input(Items.NETHERRACK).or().input(Items.EGG).build(consumer);
         CombinationRecipeBuilder.of(AllItems.PULP.get()).input(ItemTags.SAPLINGS).or().input(Items.WATER_BUCKET).build(consumer);
         CombinationRecipeBuilder.of(AllItems.DOUGH.get()).input(MSItems.BREADCRUMBS).and().input(Items.WATER_BUCKET).build(consumer);
         CombinationRecipeBuilder.of(AllItems.HONEYED_APPLE.get()).input(Items.HONEY_BOTTLE).and().input(Items.APPLE).build(consumer);

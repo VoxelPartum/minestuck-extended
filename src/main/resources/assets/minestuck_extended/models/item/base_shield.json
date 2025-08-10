@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "minestuck_plus:item/handle"
+		"1": "minestuck_extended:item/handle"
 	},
 	"elements": [
 		{

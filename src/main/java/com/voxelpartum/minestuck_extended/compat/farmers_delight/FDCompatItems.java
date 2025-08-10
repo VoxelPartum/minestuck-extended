@@ -27,8 +27,14 @@ public class FDCompatItems {
 
     public static final Supplier<Item> BILESLAW = registerWithTab("bileslaw",
             () -> new ConsumableItem(bowlFoodItem((new FoodProperties.Builder())
-                    .nutrition(14).saturationModifier(0.75f)
+                    .nutrition(10).saturationModifier(0.6f)
                     .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 1200,0,false,false),1f)
+                    .build()), true));
+
+    public static final Supplier<Item> GRASSHOPPER_SALSA = registerWithTab("grasshopper_salsa",
+            () -> new ConsumableItem(bowlFoodItem((new FoodProperties.Builder())
+                    .nutrition(11).saturationModifier(0.75f)
+                    .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 1800,0,false,false),1f)
                     .build()), true));
 
     public static final Supplier<Item> STRAWBERRY_MILKSHAKE = registerWithTab("strawberry_milkshake",

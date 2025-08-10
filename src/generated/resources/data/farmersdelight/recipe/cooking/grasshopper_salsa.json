@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minestuck:grasshopper"
+    },
+    {
+      "item": "minestuck:grasshopper"
+    },
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "item": "minestuck:grub_sauce"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "minestuck_extended:grasshopper_salsa"
+  }
+}
