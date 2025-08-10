@@ -1,5 +1,6 @@
 package com.voxelpartum.minestuck_extended.item;
 
+import com.mraof.minestuck.item.MSItemProperties;
 import com.mraof.minestuck.item.MSItemTypes;
 import com.mraof.minestuck.item.armor.MSArmorItem;
 import com.mraof.minestuck.item.weapon.MagicRangedRightClickEffect;
@@ -40,6 +41,7 @@ public class MSEItems {
     public static final DeferredItem<Item> SHADOW_SWORD = REGISTER.register("shadow_sword", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
     public static final DeferredItem<Item> SHOVEL_BLADE = REGISTER.register("shovel_blade", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 3, -3f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL, MSItemTypes.SHOVEL_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
     public static final DeferredItem<Item> ENERGY_SWORD = REGISTER.register("energy_sword", () -> new WeaponItem(new WeaponItem.Builder(MSItemTypes.URANIUM_TIER, 4, -2.8f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
+    public static final DeferredItem<Item> FORCE_QUIT = REGISTER.register("force_quit", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
 
     //Axekind
     public static final DeferredItem<Item> RUDE_AXE = REGISTER.register("rude_axe", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -3f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));
@@ -68,6 +70,7 @@ public class MSEItems {
     public static final DeferredItem<Item> PRINCESS_WAND = REGISTER.register("princess_wand", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 0, -1f).efficiency(1f).set(MSItemTypes.WAND_TOOL).set(MagicRangedRightClickEffect.STANDARD_MAGIC), new Item.Properties()));
 
     //Misc
+    public static final DeferredItem<Item> FLUORITE_ICOSAHEDRON = REGISTER.register("fluorite_icosahedron", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 6, -3.0F).efficiency(1.0F).add(OnHitEffect.RANDOM_DAMAGE), new MSItemProperties().durability(4096).rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SHEELD = REGISTER.registerItem("sheeld", p -> new MSEShieldItem(p.durability(59)));
     public static final DeferredItem<Item> POGO_SHIELD = REGISTER.registerItem("pogo_shield", p -> new MSEShieldItem(p.durability(512)));
     public static final DeferredItem<Item> MAGNET_SHIELD = REGISTER.registerItem("magnet_shield", p -> new MSEShieldItem(p.durability(512)));

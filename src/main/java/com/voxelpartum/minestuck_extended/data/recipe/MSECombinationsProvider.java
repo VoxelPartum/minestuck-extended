@@ -44,6 +44,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.SHADOW_SWORD).input(MSEItems.SHADOW_CRYSTAL).and().input(Items.IRON_SWORD).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHOVEL_BLADE).input(Items.DIAMOND_SHOVEL).and().input(MSItems.CLAYMORE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ENERGY_SWORD).input(Items.DIAMOND_SWORD).and().input(MSItems.CLAYMORE).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.FORCE_QUIT).input(MSItems.CLAYMORE).and().input(MSItems.TILLDEATH_HANDBOOK).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.RUDE_AXE).input(MSEItems.SHADOW_CRYSTAL).and().input(Items.IRON_AXE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ROCKSTARS_GUITAR).input(Items.NOTE_BLOCK).and().input(Items.DIAMOND_AXE).build(consumer);
@@ -65,6 +66,7 @@ public class MSECombinationsProvider {
 
         CombinationRecipeBuilder.of(MSEItems.PRINCESS_WAND).input(MSItems.WAND).and().input(Items.DIAMOND).build(consumer);
 
+        CombinationRecipeBuilder.of(MSEItems.FLUORITE_ICOSAHEDRON).input(MSItems.FLUORITE_OCTET).and().input(MSItems.TABLESTUCK_MANUAL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHEELD).input(Items.SHIELD).and().input(MSItems.SBAHJ_POSTER).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.POGO_SHIELD).input(Items.SHIELD).and().input(Items.SLIME_BALL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.MAGNET_SHIELD).input(Items.SHIELD).and().input(MSItems.ITEM_MAGNET).build(consumer);

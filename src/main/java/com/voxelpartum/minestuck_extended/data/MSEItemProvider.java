@@ -30,6 +30,7 @@ public class MSEItemProvider extends ItemModelProvider{
         handheldItem(MSEItems.SHADOW_SWORD.get());
         handheldItem(MSEItems.SHOVEL_BLADE.get());
         handheldItem(MSEItems.ENERGY_SWORD.get());
+        handheldItem(MSEItems.FORCE_QUIT.get());
         largeWeapon(MSEItems.RUDE_AXE);
         handheldItem(MSEItems.ROCKSTARS_GUITAR.get());
         largeWeapon(MSEItems.SOULSPLITTER);
@@ -44,6 +45,7 @@ public class MSEItemProvider extends ItemModelProvider{
         largeWeapon(MSEItems.DEVILS_KNIFE);
         largeWeapon(MSEItems.SEAGRIFT_SCYTHE);
         handheldItem(MSEItems.PRINCESS_WAND.get());
+        handheldItem(MSEItems.FLUORITE_ICOSAHEDRON.get());
 
         shieldModel(MSEItems.SHEELD, "base_shield");
         shieldModel(MSEItems.POGO_SHIELD, "base_shield");

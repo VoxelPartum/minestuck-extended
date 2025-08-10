@@ -60,6 +60,7 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.RUDE_AXE.get()).grist(BUILD, 400).grist(TAR, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ROCKSTARS_GUITAR.get()).grist(GARNET, 57).grist(BUILD, 580).grist(CHALK, 100).grist(AMBER, 50).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SOULSPLITTER.get()).grist(DIAMOND, 500).grist(BUILD, 2065).grist(CHALK, 729).grist(TAR, 1430).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.FORCE_QUIT.get()).grist(TAR, 592).grist(URANIUM, 123).grist(RUST, 67).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.WHIFFLEBAT.get()).grist(AMBER, 567).grist(BUILD, 479).grist(TAR, 37).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.METAL_PAN.get()).grist(BUILD, 662).grist(RUST, 631).build(recipeSaver);
@@ -77,6 +78,7 @@ public final class MSEGristCostsProvider {
 
         GristCostRecipeBuilder.of(MSEItems.PRINCESS_WAND.get()).grist(SHALE, 126).grist(AMETHYST, 631).grist(AMBER, 100).build(recipeSaver);
 
+        GristCostRecipeBuilder.of(MSEItems.FLUORITE_ICOSAHEDRON.get()).grist(DIAMOND, 3400).grist(COBALT, 1700).grist(CHALK, 1200).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SHEELD.get()).grist(ARTIFACT, 10).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.POGO_SHIELD.get()).grist(BUILD, 125).grist(SHALE, 15).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.MAGNET_SHIELD.get()).grist(BUILD, 24).grist(MERCURY, 19).grist(GARNET, 9).grist(RUST, 66).grist(DIAMOND, 11).grist(URANIUM, 41).build(recipeSaver);

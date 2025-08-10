@@ -1,18 +1,19 @@
-// 1.21.1	2025-08-05T05:11:51.770042	Tags for minecraft:item mod id minestuck_extended
+// 1.21.1	2025-08-10T10:47:58.8215106	Tags for minecraft:item mod id minestuck_extended
+5652fa5d41344332c6c043db7c950aa579f717b3 data/create/tags/item/chain_rideable.json
 c5177d783b66b5f13166cd766fb8d2fab2050847 data/c/tags/item/tools/knife.json
-b2fe066a07862e7f67bf1b4661b787886d7d1c21 data/c/tags/item/tools/melee_weapon.json
+d69d77bfda358cf2248a2d2ae670bd62926e7ca9 data/c/tags/item/tools/melee_weapon.json
 fa6e524cb2268cb64b29e7b94bb333103265dfca data/c/tags/item/tools/ranged_weapon.json
 4f31c216ccd9de9b8edecb1e63c41cc88740103c data/c/tags/item/tools/spear.json
 90235e2a297b31fb8085c6fe3bae8df3f0fc9bbf data/farmersdelight/tags/item/cabinets.json
 bb37c9eba2a3f52ef7f6ed6a2b0bd63a6e644c4a data/minecraft/tags/item/axes.json
-e463e87a41f5b584e9064c1b0cb1615a37db2337 data/minecraft/tags/item/breaks_decorated_pots.json
-b2fe066a07862e7f67bf1b4661b787886d7d1c21 data/minecraft/tags/item/enchantable/durability.json
-f8128bd0e6c9d2df561ee016bd4244bfd84aa608 data/minecraft/tags/item/enchantable/mining.json
-f8128bd0e6c9d2df561ee016bd4244bfd84aa608 data/minecraft/tags/item/enchantable/mining_loot.json
-b2fe066a07862e7f67bf1b4661b787886d7d1c21 data/minecraft/tags/item/enchantable/sword.json
-b2fe066a07862e7f67bf1b4661b787886d7d1c21 data/minecraft/tags/item/enchantable/vanishing.json
+351ac8af5abf81c134d2c5e4c7c5a542b3d75764 data/minecraft/tags/item/breaks_decorated_pots.json
+d69d77bfda358cf2248a2d2ae670bd62926e7ca9 data/minecraft/tags/item/enchantable/durability.json
+7190afa2abcabcb537879dfc9c07344008d69bd8 data/minecraft/tags/item/enchantable/mining.json
+7190afa2abcabcb537879dfc9c07344008d69bd8 data/minecraft/tags/item/enchantable/mining_loot.json
+d69d77bfda358cf2248a2d2ae670bd62926e7ca9 data/minecraft/tags/item/enchantable/sword.json
+d69d77bfda358cf2248a2d2ae670bd62926e7ca9 data/minecraft/tags/item/enchantable/vanishing.json
 fa9dcb7386c73f1a27afa2ba9535e92487d082bb data/minecraft/tags/item/shovels.json
-53ce1ec48d7f65ccb2e9fda0fdc3c547f8446eac data/minecraft/tags/item/swords.json
+8b705177b695d2264ce8c2eb1141ba828050f678 data/minecraft/tags/item/swords.json
 70af9df744964fdb08adffa101023481f33fd089 data/minecraft/tags/item/trim_materials.json
 fc1f25c2f5fb705e138b4061bc01e67642560506 data/minecraft/tags/item/trim_templates.json
 ca318cefcadfd559e63dae070848e78681b57c34 data/minestuck/tags/item/modus_card.json

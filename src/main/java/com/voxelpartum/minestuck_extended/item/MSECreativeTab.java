@@ -44,6 +44,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.SHADOW_SWORD.get());
         output.accept(MSEItems.SHOVEL_BLADE.get());
         output.accept(MSEItems.ENERGY_SWORD.get());
+        output.accept(MSEItems.FORCE_QUIT.get());
         output.accept(MSEItems.RUDE_AXE.get());
         output.accept(MSEItems.ROCKSTARS_GUITAR.get());
         output.accept(MSEItems.SOULSPLITTER.get());
@@ -58,6 +59,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.DEVILS_KNIFE.get());
         output.accept(MSEItems.SEAGRIFT_SCYTHE.get());
         output.accept(MSEItems.PRINCESS_WAND.get());
+        output.accept(MSEItems.FLUORITE_ICOSAHEDRON.get());
         output.accept(MSEItems.SHEELD.get());
         output.accept(MSEItems.POGO_SHIELD.get());
         output.accept(MSEItems.MAGNET_SHIELD.get());

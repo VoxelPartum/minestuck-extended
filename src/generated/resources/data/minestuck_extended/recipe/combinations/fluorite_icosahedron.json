@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:fluorite_octet"
+  },
+  "input2": {
+    "item": "minestuck:tablestuck_manual"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:fluorite_icosahedron"
+}

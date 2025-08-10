@@ -3,6 +3,7 @@
     "minestuck_extended:shadow_sword",
     "minestuck_extended:shovel_blade",
     "minestuck_extended:energy_sword",
+    "minestuck_extended:force_quit",
     "minestuck_extended:rude_axe",
     "minestuck_extended:rockstars_guitar",
     "minestuck_extended:soulsplitter",
@@ -16,6 +17,7 @@
     "minestuck_extended:lancer",
     "minestuck_extended:devilsknife",
     "minestuck_extended:seagrift_scythe",
-    "minestuck_extended:princess_wand"
+    "minestuck_extended:princess_wand",
+    "minestuck_extended:fluorite_icosahedron"
   ]
 }

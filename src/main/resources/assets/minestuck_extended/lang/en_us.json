@@ -35,13 +35,17 @@
   "item.minestuck_extended.normal_brownie" : "Normal Brownie",
   "item.minestuck_extended.normal_brownie.tooltip" : "Did you know you can hide all sorts of things in brownies?",
   "item.minestuck_extended.normaler_brownie" : "Normal-er Brownie",
+
   "item.minestuck_extended.shadow_sword" : "Shadow Sword",
   "item.minestuck_extended.shadow_sword.tooltip" : "A blade reinforced by a carbon core.",
   "item.minestuck_extended.shovel_blade" : "Shovel Blade",
   "item.minestuck_extended.energy_sword" : "Energy Sword",
+  "item.minestuck_extended.force_quit" : "Force Quit",
+  "item.minestuck_extended.force_quit.tooltip" : "if(enemy.hasPulse()){ doDamage() }",
 
   "item.minestuck_extended.market_gardener" : "Market Gardener",
   "item.minestuck_extended.market_gardener.tooltip" : "SCREAMIN' EAGLE!",
+  "item.minestuck_extended.bit_muncher" : "Bit Muncher",
 
   "item.minestuck_extended.rude_axe" : "Rude Axe",
   "item.minestuck_extended.rude_axe.tooltip" : "Wielded by those specialized in rude magic, whats \"rude magic\"? I dunno!",

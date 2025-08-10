@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:chalk": 1200,
+    "minestuck:cobalt": 1700,
+    "minestuck:diamond": 3400
+  },
+  "ingredient": {
+    "item": "minestuck_extended:fluorite_icosahedron"
+  }
+}
