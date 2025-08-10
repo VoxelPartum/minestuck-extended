@@ -62,6 +62,9 @@
   "item.minestuck_extended.princess_wand" : "Princess Wand",
   "item.minestuck_extended.princess_wand.tooltip" : "...were you expecting something else?",
 
+  "item.minestuck_extended.fluorite_icosahedron" : "Fluorite Icosahedron",
+  "item.minestuck_extended.fluorite_icosahedron.tooltip" : "Roll for initiate, then for damage, then for imagination.",
+
   "item.minestuck_extended.sheeld" : "Sheeld.....",
   "item.minestuck_extended.sheeld.tooltip" : "A shitty shield. Not much more too it.",
   "item.minestuck_extended.pogo_shield" : "Pogo Shield",
