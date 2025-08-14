@@ -40,8 +40,8 @@
   "item.minestuck_extended.shadow_sword.tooltip" : "A blade reinforced by a carbon core.",
   "item.minestuck_extended.shovel_blade" : "Shovel Blade",
   "item.minestuck_extended.energy_sword" : "Energy Sword",
-  "item.minestuck_extended.force_quit" : "Force Quit",
-  "item.minestuck_extended.force_quit.tooltip" : "if(enemy.hasPulse()){ doDamage() }",
+  "item.minestuck_extended.memory_allocator" : "Memory Allocator",
+  "item.minestuck_extended.memory_allocator.tooltip" : "Those memories weren't important, probably.",
 
   "item.minestuck_extended.market_gardener" : "Market Gardener",
   "item.minestuck_extended.market_gardener.tooltip" : "SCREAMIN' EAGLE!",
@@ -163,5 +163,6 @@
   "trim_material.minestuck_extended.cruxite" : "Cruxite Material",
   "trim_material.minestuck_extended.bi_dye" : "Bisexual Material",
 
-  "effect.minestuck_extended.creative_inspiration" : "Creative Inspiration"
+  "effect.minestuck_extended.creative_inspiration" : "Creative Inspiration",
+  "effect.minestuck_extended.brain_fog" : "Brain Fog"
 }

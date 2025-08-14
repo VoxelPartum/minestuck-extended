@@ -41,7 +41,7 @@ public class MSEItems {
     public static final DeferredItem<Item> SHADOW_SWORD = REGISTER.register("shadow_sword", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
     public static final DeferredItem<Item> SHOVEL_BLADE = REGISTER.register("shovel_blade", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 3, -3f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL, MSItemTypes.SHOVEL_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
     public static final DeferredItem<Item> ENERGY_SWORD = REGISTER.register("energy_sword", () -> new WeaponItem(new WeaponItem.Builder(MSItemTypes.URANIUM_TIER, 4, -2.8f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
-    public static final DeferredItem<Item> FORCE_QUIT = REGISTER.register("force_quit", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
+    public static final DeferredItem<Item> MEMORY_ALLOCATOR = REGISTER.register("memory_allocator", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.enemyPotionEffect(() -> new MobEffectInstance(MSEEffects.BRAIN_FOG, 15, 2))), new Item.Properties()));
 
     //Axekind
     public static final DeferredItem<Item> RUDE_AXE = REGISTER.register("rude_axe", ()-> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 5, -3f).efficiency(6.0f).disableShield().set(MSItemTypes.AXE_TOOL), new Item.Properties()));

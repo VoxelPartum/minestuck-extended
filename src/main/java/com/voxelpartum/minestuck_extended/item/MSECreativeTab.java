@@ -44,7 +44,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.SHADOW_SWORD.get());
         output.accept(MSEItems.SHOVEL_BLADE.get());
         output.accept(MSEItems.ENERGY_SWORD.get());
-        output.accept(MSEItems.FORCE_QUIT.get());
+        output.accept(MSEItems.MEMORY_ALLOCATOR.get());
         output.accept(MSEItems.RUDE_AXE.get());
         output.accept(MSEItems.ROCKSTARS_GUITAR.get());
         output.accept(MSEItems.SOULSPLITTER.get());

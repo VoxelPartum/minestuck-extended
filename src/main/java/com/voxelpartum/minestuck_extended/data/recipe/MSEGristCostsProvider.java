@@ -60,7 +60,7 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.RUDE_AXE.get()).grist(BUILD, 400).grist(TAR, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ROCKSTARS_GUITAR.get()).grist(GARNET, 57).grist(BUILD, 580).grist(CHALK, 100).grist(AMBER, 50).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SOULSPLITTER.get()).grist(DIAMOND, 500).grist(BUILD, 2065).grist(CHALK, 729).grist(TAR, 1430).build(recipeSaver);
-        GristCostRecipeBuilder.of(MSEItems.FORCE_QUIT.get()).grist(TAR, 592).grist(URANIUM, 123).grist(RUST, 67).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.MEMORY_ALLOCATOR.get()).grist(TAR, 592).grist(URANIUM, 123).grist(RUST, 67).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.WHIFFLEBAT.get()).grist(AMBER, 567).grist(BUILD, 479).grist(TAR, 37).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.METAL_PAN.get()).grist(BUILD, 662).grist(RUST, 631).build(recipeSaver);

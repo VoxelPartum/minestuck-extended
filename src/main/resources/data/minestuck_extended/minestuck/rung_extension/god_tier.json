@@ -1,0 +1,12 @@
+{
+  "attributes": [
+    {
+      "attribute": "neoforge:creative_flight",
+      "id": "minestuck_extended:echeladder_flight",
+      "operation": "add_value",
+      "value": 1.0,
+      "change_per_rung": 0.0,
+      "rung": 49
+    }
+  ]
+}

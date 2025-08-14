@@ -11,5 +11,6 @@ public class MSEEffects {
     public static final DeferredRegister<MobEffect> REGISTER = DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, MinestuckExtended.MOD_ID);
 
     public static final DeferredHolder<MobEffect, CreativeInspiration> CREATIVE_INSPIRATION = REGISTER.register("creative_inspiration", CreativeInspiration::new);
+    public static final DeferredHolder<MobEffect, BrainFog> BRAIN_FOG = REGISTER.register("brain_fog", BrainFog::new);
 
 }

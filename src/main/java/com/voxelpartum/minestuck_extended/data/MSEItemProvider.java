@@ -30,7 +30,7 @@ public class MSEItemProvider extends ItemModelProvider{
         handheldItem(MSEItems.SHADOW_SWORD.get());
         handheldItem(MSEItems.SHOVEL_BLADE.get());
         handheldItem(MSEItems.ENERGY_SWORD.get());
-        handheldItem(MSEItems.FORCE_QUIT.get());
+        handheldItem(MSEItems.MEMORY_ALLOCATOR.get());
         largeWeapon(MSEItems.RUDE_AXE);
         handheldItem(MSEItems.ROCKSTARS_GUITAR.get());
         largeWeapon(MSEItems.SOULSPLITTER);
