@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "tag": "minestuck:modus_card"
+  },
+  "input2": {
+    "item": "minecraft:enchanted_book"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:zip_modus_card"
+}

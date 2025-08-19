@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 333,
+    "minestuck:marble": 62
+  },
+  "ingredient": {
+    "item": "minestuck_extended:zip_modus_card"
+  }
+}

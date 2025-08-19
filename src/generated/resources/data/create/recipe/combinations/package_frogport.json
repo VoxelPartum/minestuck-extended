@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:frog"
+  },
+  "input2": {
+    "item": "create:andesite_casing"
+  },
+  "mode": "or",
+  "output": "create:package_frogport"
+}
