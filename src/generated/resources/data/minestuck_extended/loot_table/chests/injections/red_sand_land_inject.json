@@ -7,32 +7,38 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:power_glove",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:cowboy_hat",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:kitty_slippers",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:night_vision_goggles",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:shock_pendant",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:superstitious_hat",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         }
       ],
       "name": "minestuck_extended",

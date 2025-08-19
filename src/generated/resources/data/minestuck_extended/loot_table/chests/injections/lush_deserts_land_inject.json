@@ -7,32 +7,38 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:aqua_dashers",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:kitty_slippers",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:rooted_boots",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:antidote_vessel",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:anglers_hat",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:bunny_hoppers",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         }
       ],
       "name": "minestuck_extended",

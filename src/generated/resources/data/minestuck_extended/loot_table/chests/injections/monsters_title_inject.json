@@ -7,32 +7,38 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:night_vision_goggles",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:power_glove",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:vampiric_glove",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:panic_necklace",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:steadfast_spikes",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:superstitious_hat",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         }
       ],
       "name": "minestuck_extended",

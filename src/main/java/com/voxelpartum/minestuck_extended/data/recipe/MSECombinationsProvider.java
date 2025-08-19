@@ -25,6 +25,8 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.DIAMOND_LICHEN).input(Items.DIAMOND).or().input(Items.GLOW_LICHEN).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL).input(Items.AMETHYST_SHARD).and().input(Items.BLACK_DYE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ROULETTE_CARD).input(MSTags.Items.MODUS_CARD).and().input(MSItems.DICE).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.ZIP_CARD).input(MSTags.Items.MODUS_CARD).and().input(Items.ENCHANTED_BOOK).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.ARRAY_CARD).input(MSItems.SET_MODUS_CARD).and().input(Items.CHEST).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPUSS).input(Items.GLASS).and().input(Items.BROWN_WOOL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.TESTIFIPUSS).input(MSEItems.BEAGLEPUSS).and().input(Items.EMERALD_BLOCK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(MSItems.APPLE_JUICE).build(consumer);
@@ -93,6 +95,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(AllBlocks.BLAZE_BURNER.get()).input(AllItems.EMPTY_BLAZE_BURNER).or().input(Items.BLAZE_ROD).build(consumer);
         CombinationRecipeBuilder.of(AllItems.BLAZE_CAKE.get()).input(AllItems.BLAZE_CAKE_BASE).or().input(Items.LAVA_BUCKET).build(consumer);
         CombinationRecipeBuilder.of(AllItems.BLAZE_CAKE_BASE.get()).input(Items.NETHERRACK).or().input(Items.EGG).build(consumer);
+        CombinationRecipeBuilder.of(AllBlocks.PACKAGE_FROGPORT).input(MSItems.FROG).or().input(AllBlocks.ANDESITE_CASING).build(consumer);
         CombinationRecipeBuilder.of(AllItems.PULP.get()).input(ItemTags.SAPLINGS).or().input(Items.WATER_BUCKET).build(consumer);
         CombinationRecipeBuilder.of(AllItems.DOUGH.get()).input(MSItems.BREADCRUMBS).and().input(Items.WATER_BUCKET).build(consumer);
         CombinationRecipeBuilder.of(AllItems.HONEYED_APPLE.get()).input(Items.HONEY_BOTTLE).and().input(Items.APPLE).build(consumer);

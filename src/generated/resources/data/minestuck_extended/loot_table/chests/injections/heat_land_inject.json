@@ -7,32 +7,38 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:flame_pendant",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:strider_shoes",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:panic_necklace",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:obsidian_skull",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:withered_bracelet",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:fire_gauntlet",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         }
       ],
       "name": "minestuck_extended",

@@ -7,32 +7,38 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:aqua_dashers",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:running_shoes",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:digging_claws",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:everlasting_beef",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:superstitious_hat",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "artifacts:crystal_heart",
-          "quality": 1
+          "quality": 1,
+          "weight": 4
         }
       ],
       "name": "minestuck_extended",

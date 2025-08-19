@@ -349,7 +349,7 @@ public class MSEChestLootTables implements LootTableSubProvider {
     }
 
     public static LootPoolSingletonContainer.Builder<?> addItem(Item item){
-        return LootItem.lootTableItem(item).setWeight(1).setQuality(1);
+        return LootItem.lootTableItem(item).setWeight(4).setQuality(1);
     }
 
 }

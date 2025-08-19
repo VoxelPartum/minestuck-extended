@@ -42,24 +42,26 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider){
 
-        List<MSToolType> minestuckplusMiningToolTypes = List.of(SICKLE_TOOL, SCYTHE_TOOL, CLAWS_TOOL, HAMMER_TOOL, FORK_TOOL);
-        List<MSToolType> minestuckMeleeplusToolTypes = List.of(LANCE_TOOL, CLUB_TOOL, KNIFE_TOOL, KEY_TOOL, FAN_TOOL, BATON_TOOL, STAFF_TOOL, CANE_TOOL, WAND_TOOL);
-        List<MSToolType> minestuckplusToolTypes = Stream.concat(minestuckplusMiningToolTypes.stream(), minestuckMeleeplusToolTypes.stream()).toList();
+        List<MSToolType> minestuckextendedMiningToolTypes = List.of(SICKLE_TOOL, SCYTHE_TOOL, CLAWS_TOOL, HAMMER_TOOL, FORK_TOOL);
+        List<MSToolType> minestuckMeleeExtendedToolTypes = List.of(LANCE_TOOL, CLUB_TOOL, KNIFE_TOOL, KEY_TOOL, FAN_TOOL, BATON_TOOL, STAFF_TOOL, CANE_TOOL, WAND_TOOL);
+        List<MSToolType> minestuckExtendedToolTypes = Stream.concat(minestuckextendedMiningToolTypes.stream(), minestuckMeleeExtendedToolTypes.stream()).toList();
 
-        tag(MODUS_CARD).add(ROULETTE_CARD.get());
+        tag(BOOKSHELF_BOOKS).add(MSItems.CAPTCHA_CARD.get());
+
+        tag(MODUS_CARD).add(ROULETTE_CARD.get()).add(ZIP_CARD.get()).add(ARRAY_CARD.get());
         tag(SWORDS).add(relevantWeapons(item -> hasToolType(item, List.of(SWORD_TOOL))));
         tag(AXES).add(relevantWeapons(item -> hasToolType(item, List.of(AXE_TOOL))));
         tag(SHOVELS).add(relevantWeapons(item -> hasToolType(item, List.of(SHOVEL_TOOL))));
 
-        tag(BREAKS_DECORATED_POTS).add(relevantWeapons(item -> hasToolType(item, minestuckplusToolTypes)));
+        tag(BREAKS_DECORATED_POTS).add(relevantWeapons(item -> hasToolType(item, minestuckExtendedToolTypes)));
 
         tag(MELEE_WEAPON_TOOLS).add(relevantWeapons(item -> item instanceof WeaponItem));
         tag(TOOLS_SPEAR).add(relevantWeapons(item -> hasToolType(item, List.of(LANCE_TOOL))));
         tag(RANGED_WEAPON_TOOLS).add(relevantWeapons(item -> item instanceof ConsumableProjectileWeaponItem || (item instanceof WeaponItem weapon && (weapon.getItemRightClickEffect() instanceof MagicRangedRightClickEffect))));
 
         tag(DURABILITY_ENCHANTABLE).add(relevantWeapons(item -> item instanceof WeaponItem && item.isDamageable(item.getDefaultInstance())));
-        tag(MINING_ENCHANTABLE).add(relevantWeapons(item -> hasToolType(item, minestuckplusMiningToolTypes)));
-        tag(MINING_LOOT_ENCHANTABLE).add(relevantWeapons(item -> hasToolType(item, minestuckplusMiningToolTypes)));
+        tag(MINING_ENCHANTABLE).add(relevantWeapons(item -> hasToolType(item, minestuckextendedMiningToolTypes)));
+        tag(MINING_LOOT_ENCHANTABLE).add(relevantWeapons(item -> hasToolType(item, minestuckextendedMiningToolTypes)));
         tag(SWORD_ENCHANTABLE).add(relevantWeapons(item -> item instanceof WeaponItem));
         tag(VANISHING_ENCHANTABLE).add(relevantWeapons(item -> item instanceof WeaponItem));
 

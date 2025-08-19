@@ -9,8 +9,7 @@ import net.neoforged.fml.LogicalSide;
 public class RouletteModus extends BaseModus
 {
 
-    public RouletteModus(ModusType<? extends RouletteModus> type, LogicalSide side)
-    {
+    public RouletteModus(ModusType<? extends RouletteModus> type, LogicalSide side) {
         super(type, side);
     }
 

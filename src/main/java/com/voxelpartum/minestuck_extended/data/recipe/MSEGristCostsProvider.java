@@ -41,10 +41,13 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.DIAMOND_LICHEN.get()).grist(DIAMOND, 1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL.get()).grist(AMETHYST,4).grist(TAR,5).grist(QUARTZ,1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ROULETTE_CARD.get()).grist(BUILD, 300).grist(COBALT, 25).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.ZIP_CARD.get()).grist(BUILD, 333).grist(MARBLE, 62).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.ARRAY_CARD.get()).grist(BUILD, 540).grist(GARNET, 86).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.BEAGLEPUSS.get()).grist(BUILD, 5).grist(AMBER, 1).grist(CHALK, 5).grist(IODINE, 1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.TESTIFIPUSS.get()).grist(URANIUM, 5).grist(BUILD, 20).grist(SHALE, 5).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.BEAGLEPISS.get()).grist(AMBER, 50).grist(GOLD, 50).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.DISGUISE.get()).grist(BUILD, 20).grist(AMBER, 5).grist(CHALK, 20).grist(IODINE, 5).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.SCARLET_SUNGLASSES.get()).grist(BUILD, 50).grist(GARNET, 62).grist(RUBY, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.CINDERBLOCK.get()).grist(BUILD, 2).grist(CAULK, 2).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ACABRICK.get()).grist(BUILD, 5).grist(SHALE, 5).grist(CHALK, 5).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.LANCER_COOKIE.get()).grist(AMBER, 1).grist(IODINE, 1).grist(COBALT, 1).build(recipeSaver);

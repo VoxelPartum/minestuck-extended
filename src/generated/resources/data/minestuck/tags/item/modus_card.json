@@ -1,5 +1,7 @@
 {
   "values": [
-    "minestuck_extended:roulette_modus_card"
+    "minestuck_extended:roulette_modus_card",
+    "minestuck_extended:zip_modus_card",
+    "minestuck_extended:array_modus_card"
   ]
 }

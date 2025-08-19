@@ -33,6 +33,8 @@ public class MSECreativeTab {
         output.accept(MSEItems.NORMAL_BROWNIE.get());
         output.accept(MSEItems.NORMALER_BROWNIE.get());
         output.accept(MSEItems.ROULETTE_CARD.get());
+        output.accept(MSEItems.ZIP_CARD.get());
+        output.accept(MSEItems.ARRAY_CARD.get());
 
         output.accept(MSEItems.SHADOW_CRYSTAL.get());
         output.accept(MSEItems.DELTA_RUNE.get());
@@ -77,7 +79,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.SPACE_ARMOR_TRIM.get());
         output.accept(MSEItems.MIND_ARMOR_TRIM.get());
         output.accept(MSEItems.HOPE_ARMOR_TRIM.get());
-
+        
         output.accept(MSEItems.CHESS_TILE.get());
         output.accept(MSEItems.DIAMOND_LICHEN.get());
         output.accept(MSEItems.PLUSH_VRISKA.get());

@@ -1,5 +1,6 @@
 package com.voxelpartum.minestuck_extended.block;
 
+import com.mraof.minestuck.block.machine.ComputerBlock;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;

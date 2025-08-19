@@ -68,6 +68,9 @@ public class MSEItemProvider extends ItemModelProvider{
         basicItem(MSEItems.CINDERBLOCK.get());
         basicItem(MSEItems.ACABRICK.get());
         basicItem(MSEItems.ROULETTE_CARD.get());
+        basicItem(MSEItems.ZIP_CARD.get());
+        basicItem(MSEItems.ZIP_BUNDLE.get());
+        basicItem(MSEItems.ARRAY_CARD.get());
         basicItem(MSEItems.SPIROGRAPH_ARMOR_TRIM.get());
         basicItem(MSEItems.BREATH_ARMOR_TRIM.get());
         basicItem(MSEItems.LIFE_ARMOR_TRIM.get());

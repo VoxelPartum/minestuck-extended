@@ -1,0 +1,30 @@
+{
+  "aspect": "space",
+  "effects": [
+    {
+      "effect": "minestuck_extended:creative_inspiration",
+      "amplifier": 0,
+      "rung": 5
+    },
+    {
+      "effect": "minestuck_extended:creative_inspiration",
+      "amplifier": 1,
+      "rung": 15
+    },
+    {
+      "effect": "minestuck_extended:creative_inspiration",
+      "amplifier": 2,
+      "rung": 25
+    },
+    {
+      "effect": "minestuck_extended:creative_inspiration",
+      "amplifier": 3,
+      "rung": 35
+    },
+    {
+      "effect": "minestuck_extended:creative_inspiration",
+      "amplifier": 4,
+      "rung": 45
+    }
+  ]
+}

@@ -65,7 +65,7 @@ public class MSEBlockstateProvider extends BlockStateProvider {
 
     }
 
-    public void cabinetBlock(CabinetBlock block, String type) {
+        public void cabinetBlock(CabinetBlock block, String type) {
         this.horizontalBlock(block, state -> {
             String suffix = state.getValue(CabinetBlock.OPEN) ? "_open" : "";
             return models().orientable(blockName(block) + suffix,

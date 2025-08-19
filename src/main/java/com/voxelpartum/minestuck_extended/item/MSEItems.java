@@ -14,11 +14,13 @@ import com.voxelpartum.minestuck_extended.item.projectile.MSEConsumableProjectil
 import com.voxelpartum.minestuck_extended.item.weapon.MSEShieldItem;
 import com.voxelpartum.minestuck_extended.item.weapon.MaceWeaponItem;
 import com.voxelpartum.minestuck_extended.util.MSESoundEvents;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.BundleContents;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -32,8 +34,9 @@ public class MSEItems {
     public static final DeferredRegister.Items REGISTER = DeferredRegister.createItems(MinestuckExtended.MOD_ID);
 
     public static final DeferredItem<Item> ROULETTE_CARD = REGISTER.register("roulette_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
-
-    //Do something with the books.
+    public static final DeferredItem<Item> ZIP_CARD = REGISTER.register("zip_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ZIP_BUNDLE = REGISTER.register("zip_bundle", () -> new ZipBundleItem(new Item.Properties().stacksTo(1).component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY)));
+    public static final DeferredItem<Item> ARRAY_CARD = REGISTER.register("array_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
 
     //Weapons
 
@@ -105,14 +108,14 @@ public class MSEItems {
     public static final DeferredItem<Item> ORANGE_CREAMSICLE = REGISTER.register("orange_creamsicle", ()->new Item(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.0F).alwaysEdible().build())));
     public static final DeferredItem<Item> DELTA_RUNE = REGISTER.register("delta_rune", ()->new Item(new Item.Properties()));
     public static final DeferredItem<Item> NORMAL_BROWNIE = REGISTER.register("normal_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 1200,0), 1f).build())));
-    public static final DeferredItem<Item> NORMALER_BROWNIE = REGISTER.register("normaler_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 3600,0), 1f).build())));
+    public static final DeferredItem<Item> NORMALER_BROWNIE = REGISTER.register("normaler_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 3600,1), 1f).build())));
 
     //BlockItems
 
 
+    public static final DeferredItem<BlockItem> CHESS_TILE = registerBlockItem(MSEBlocks.CHESS_TILE);
     public static final DeferredItem<BlockItem> DIAMOND_LICHEN = registerBlockItem(MSEBlocks.DIAMOND_LICHEN);
     public static final DeferredItem<BlockItem> PLUSH_VRISKA = registerBlockItem(MSEBlocks.PLUSH_VRISKA);
-    public static final DeferredItem<BlockItem> CHESS_TILE = registerBlockItem(MSEBlocks.CHESS_TILE);
 
     public static final DeferredItem<BlockItem> PLUSH_SALAMANDER = registerBlockItem(MSEBlocks.PLUSH_SALAMANDER);
     public static final DeferredItem<BlockItem> PLUSH_NAKAGATOR = registerBlockItem(MSEBlocks.PLUSH_NAKAGATOR);

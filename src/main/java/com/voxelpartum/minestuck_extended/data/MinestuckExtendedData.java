@@ -53,6 +53,8 @@ public final class MinestuckExtendedData {
                 new LootTableProvider.SubProviderEntry(FDCompatBlockLoot::new, LootContextParamSets.BLOCK),
                 new LootTableProvider.SubProviderEntry((provider ) -> new MSEChestLootTables(), LootContextParamSets.CHEST)
         ), lookupProvider));
+
+        generator.addProvider(event.includeServer(), new MSEComputerThemeProvider(pOutput));
     }
 
     private static RegistrySetBuilder registrySetBuilder()

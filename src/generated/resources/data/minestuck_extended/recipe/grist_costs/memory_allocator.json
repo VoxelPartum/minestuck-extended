@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:rust": 67,
+    "minestuck:tar": 592,
+    "minestuck:uranium": 123
+  },
+  "ingredient": {
+    "item": "minestuck_extended:memory_allocator"
+  }
+}

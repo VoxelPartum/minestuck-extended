@@ -5,6 +5,8 @@
   "subtitles.minestuck_extended.pan": "Player bludgeons",
   "subtitles.minestuck_extended.bat": "Player steps up to bat",
 
+  "theme.minestuck_extended.boner":"Boner",
+
   "block.minestuck_extended.chess_tile" : "Chess Tile",
 
   "block.minestuck_extended.diamond_lichen" : "Diamond Lichen",
@@ -124,10 +126,12 @@
   "item.minestuck_extended.scarlet_sunglasses": "Scarlet Sunglasses",
   "item.minestuck_extended.scarlet_sunglasses.tooltip": "Why would a bowler store sell these?",
 
-  "item.minestuck_extended.chat_modus_card" : "Chat Modus",
   "item.minestuck_extended.roulette_modus_card" : "Roulette Modus",
-  "item.minestuck_extended.eightball_modus_card" : "Magic-8-Ball Modus",
-  "item.minestuck_extended.magic_eight_ball" : "Magic 8 Ball",
+  "item.minestuck_extended.zip_modus_card" : "Zip Modus",
+  "item.minestuck_extended.zip_modus_card.tooltip" : "Please note that ModusZip is not a free software. After a 40 day trial period you must either buy a license or remove it from your sylladex.",
+  "item.minestuck_extended.zip_bundle" : "Zip Bundle",
+  "item.minestuck_extended.array_modus_card" : "Array Modus",
+  "item.minestuck_extended.array_modus_card.tooltip" : "This is more in line with what you were looking for, if you HATE FUN.",
   "item.minestuck_extended.cinderblock" : "Cinderblock",
   "item.minestuck_extended.acabrick" : "ACAB-rick",
   "item.minestuck_extended.acabrick.tooltip" : "Remember, cops aren't your friends!",
