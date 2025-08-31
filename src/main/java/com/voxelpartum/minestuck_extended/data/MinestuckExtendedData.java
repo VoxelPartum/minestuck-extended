@@ -51,7 +51,7 @@ public final class MinestuckExtendedData {
         generator.addProvider(event.includeServer(), new LootTableProvider(pOutput, Collections.emptySet(), List.of(
                 new LootTableProvider.SubProviderEntry(MSEBlockLoot::new, LootContextParamSets.BLOCK),
                 new LootTableProvider.SubProviderEntry(FDCompatBlockLoot::new, LootContextParamSets.BLOCK),
-                new LootTableProvider.SubProviderEntry((provider ) -> new MSEChestLootTables(), LootContextParamSets.CHEST)
+                new LootTableProvider.SubProviderEntry(provider -> new MSEChestLootTables(), LootContextParamSets.CHEST)
         ), lookupProvider));
 
         generator.addProvider(event.includeServer(), new MSEComputerThemeProvider(pOutput));

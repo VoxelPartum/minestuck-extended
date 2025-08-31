@@ -2,6 +2,7 @@ package com.voxelpartum.minestuck_extended.client.gui.captchalouge;
 
 import com.mraof.minestuck.client.gui.captchalouge.SylladexScreen;
 import com.mraof.minestuck.inventory.captchalogue.Modus;
+import com.voxelpartum.minestuck_extended.MinestuckExtendedConfig;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -39,7 +40,7 @@ public class RouletteSylladexScreen extends SylladexScreen {
     public void updateContent()
     {
         NonNullList<ItemStack> stacks = modus.getItems();
-        int randIndex = modus.getNonEmptyCards() == 0 ? 0 : new Random().nextInt(modus.getNonEmptyCards());
+        int randIndex = modus.getNonEmptyCards() == 0 ? 0 : new Random().nextInt(MinestuckExtendedConfig.SERVER.useFullRoulette.get() ? modus.getSize() : modus.getNonEmptyCards());
         int radius = (50 + ((stacks.size() * stacks.size()) /16));
         this.cards.clear();
         this.maxWidth = Math.max(mapWidth, (2 * (radius + X_OFFSET)));
@@ -57,7 +58,7 @@ public class RouletteSylladexScreen extends SylladexScreen {
     @Override
     public void updatePosition()
     {
-        int randIndex = modus.getNonEmptyCards() == 0 ? 0 : new Random().nextInt(modus.getNonEmptyCards());
+        int randIndex = modus.getNonEmptyCards() == 0 ? 0 : new Random().nextInt(MinestuckExtendedConfig.SERVER.useFullRoulette.get() ? modus.getSize() : modus.getNonEmptyCards());
         int radius = (int) (50 + ((double) (cards.size() * cards.size()) /16));
         this.maxWidth = Math.max(mapWidth, (2 * (radius + X_OFFSET)));
         this.maxHeight = Math.max(mapHeight, (2 * (radius + Y_OFFSET)));
@@ -71,11 +72,7 @@ public class RouletteSylladexScreen extends SylladexScreen {
     }
 
     public boolean canUse(RouletteCard card){
-        if(card.item == ItemStack.EMPTY) {
-            return true;
-        }else {
-            return card.isUsable;
-        }
+        return card.isUsable;
     }
 
     public static class RouletteCard extends GuiCard{

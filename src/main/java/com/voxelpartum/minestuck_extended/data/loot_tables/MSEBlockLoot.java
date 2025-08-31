@@ -18,6 +18,10 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     protected void generate() {
 
         dropSelf(MSEBlocks.CHESS_TILE.get());
+//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get());
+//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get());
+//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get());
         dropSelf(MSEBlocks.PLUSH_VRISKA.get());
         dropSelf(MSEBlocks.DIAMOND_LICHEN.get());
 

@@ -112,8 +112,11 @@ public class MSEItems {
 
     //BlockItems
 
-
     public static final DeferredItem<BlockItem> CHESS_TILE = registerBlockItem(MSEBlocks.CHESS_TILE);
+//    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS);
+//    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_SLAB = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB);
+//    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_STAIRS = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS);
+//    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_WALL = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL);
     public static final DeferredItem<BlockItem> DIAMOND_LICHEN = registerBlockItem(MSEBlocks.DIAMOND_LICHEN);
     public static final DeferredItem<BlockItem> PLUSH_VRISKA = registerBlockItem(MSEBlocks.PLUSH_VRISKA);
 

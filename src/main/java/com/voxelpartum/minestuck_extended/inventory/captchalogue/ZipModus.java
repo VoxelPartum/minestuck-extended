@@ -4,6 +4,7 @@ import com.mraof.minestuck.inventory.captchalogue.CaptchaDeckHandler;
 import com.mraof.minestuck.inventory.captchalogue.ModusType;
 import com.mraof.minestuck.item.CaptchaCardItem;
 import com.mraof.minestuck.item.MSItems;
+import com.voxelpartum.minestuck_extended.MinestuckExtendedConfig;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
@@ -65,45 +66,16 @@ public class ZipModus extends BaseModus{
             return ItemStack.EMPTY;
 
         NonNullList<ItemStack> gottenItems = NonNullList.create();
-        if(list.size()==1){
-            if(asCard){
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.removeFirst(), player.server));
-                size--;
-            }
-            else
-                gottenItems.add(list.removeFirst());
+
+        int maxBack = Math.max(0, id - MinestuckExtendedConfig.SERVER.zipSize.get());
+        int maxFront = Math.min(list.size()-1, id+MinestuckExtendedConfig.SERVER.zipSize.get());
+
+        for(int i = 0; i < maxFront-maxBack+1; i++){
+            gottenItems.add(asCard ? CaptchaCardItem.createCardWithItem(list.remove(maxBack), player.server) : list.remove(maxBack));
         }
-        else if(id == list.size()-1){
-            if(asCard){
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.remove(id-1), player.server));
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.remove(id-1), player.server));
-                size-=2;
-            } else {
-                gottenItems.add(list.remove(id-1));
-                gottenItems.add(list.remove(id-1));
-            }
-        }
-        else if(id == 0){
-            if(asCard){
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.removeFirst(), player.server));
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.removeFirst(), player.server));
-                size-=2;
-            } else {
-                gottenItems.add(list.removeFirst());
-                gottenItems.add(list.removeFirst());
-            }
-        }
-        else {
-            if(asCard){
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.remove(id-1), player.server));
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.remove(id-1), player.server));
-                gottenItems.add(CaptchaCardItem.createCardWithItem(list.remove(id-1), player.server));
-                size-=3;
-            } else {
-                gottenItems.add(list.remove(id-1));
-                gottenItems.add(list.remove(id-1));
-                gottenItems.add(list.remove(id-1));
-            }
+
+        if(asCard){
+            size-=gottenItems.size();
         }
 
         markDirty();

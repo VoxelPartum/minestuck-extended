@@ -99,6 +99,11 @@ public class MSECreativeTab {
         output.accept(MSEItems.SCALEMATE_PYRALSPITE.get());
         output.accept(MSEItems.SCALEMATE_WITNESS.get());
 
+//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS.get());
+//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_STAIRS.get());
+//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_SLAB.get());
+//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_WALL.get());
+
         if(ModList.get().isLoaded("create")){
             output.accept(CreateCompat.RENCH.get());
             output.accept(CreateCompat.DEADRINGER.get());

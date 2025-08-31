@@ -14,6 +14,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import vectorwing.farmersdelight.common.tag.CommonTags;
@@ -47,6 +48,10 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
         List<MSToolType> minestuckExtendedToolTypes = Stream.concat(minestuckextendedMiningToolTypes.stream(), minestuckMeleeExtendedToolTypes.stream()).toList();
 
         tag(BOOKSHELF_BOOKS).add(MSItems.CAPTCHA_CARD.get());
+
+        tag(CommonTags.CROPS_ONION).add(MSItems.ONION.get());
+
+        tag(TOOLS_SHIELD).add(SHEELD.get()).add(POGO_SHIELD.get()).add(MAGNET_SHIELD.get());
 
         tag(MODUS_CARD).add(ROULETTE_CARD.get()).add(ZIP_CARD.get()).add(ARRAY_CARD.get());
         tag(SWORDS).add(relevantWeapons(item -> hasToolType(item, List.of(SWORD_TOOL))));
@@ -138,6 +143,11 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
                     .add(FDCompatItems.DEAD_CABINET.get())
                     .add(FDCompatItems.CINDERED_CABINET.get())
                     .add(FDCompatItems.SHADEWOOD_CABINET.get())
+            ;
+
+            tag(UNREADABLE)
+                    .add(Items.HEAVY_CORE)
+                    .add(Items.MACE)
             ;
 
     }

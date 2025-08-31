@@ -1,11 +1,7 @@
 package com.voxelpartum.minestuck_extended.block;
 
-import com.mraof.minestuck.block.machine.ComputerBlock;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlowLichenBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -17,6 +13,10 @@ public class MSEBlocks {
     public static final DeferredRegister.Blocks REGISTER = DeferredRegister.createBlocks(MinestuckExtended.MOD_ID);
 
     public static final DeferredBlock<Block> CHESS_TILE = REGISTER.register("chess_tile", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_TERRACOTTA)));
+//    public static final DeferredBlock<Block> CRACKED_END_STONE_BRICKS = REGISTER.register("cracked_end_stone_bricks", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS)));
+//    public static final DeferredBlock<SlabBlock> CRACKED_END_STONE_BRICKS_SLAB = REGISTER.register("cracked_end_stone_bricks_slab", ()-> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
+//    public static final DeferredBlock<StairBlock> CRACKED_END_STONE_BRICKS_STAIRS = REGISTER.register("cracked_end_stone_bricks_stairs", ()-> new StairBlock(MSEBlocks.CRACKED_END_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
+//    public static final DeferredBlock<WallBlock> CRACKED_END_STONE_BRICKS_WALL = REGISTER.register("cracked_end_stone_bricks_wall", ()-> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
 
     public static final DeferredBlock<Block> DIAMOND_LICHEN = REGISTER.register("diamond_lichen", ()->new GlowLichenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GLOW_LICHEN).noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN).lightLevel(GlowLichenBlock.emission(7)).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PLUSH_VRISKA = REGISTER.register("plush_vriska", ()->new PlushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL)));

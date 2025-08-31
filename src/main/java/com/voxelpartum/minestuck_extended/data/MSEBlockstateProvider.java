@@ -8,10 +8,19 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import vectorwing.farmersdelight.common.block.CabinetBlock;
+
+import java.util.function.Supplier;
+
+import static com.mraof.minestuck.data.MSBlockStateProvider.texture;
 
 public class MSEBlockstateProvider extends BlockStateProvider {
     public MSEBlockstateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -22,6 +31,10 @@ public class MSEBlockstateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         simpleBlock(MSEBlocks.CHESS_TILE.get());
+//        simpleBlock(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+//        slabWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB, MSEBlocks.CRACKED_END_STONE_BRICKS);
+//        stairsWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS, MSEBlocks.CRACKED_END_STONE_BRICKS);
+//        wallWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL, MSEBlocks.CRACKED_END_STONE_BRICKS);
 
         simpleHorizontal(MSEBlocks.PLUSH_VRISKA.get());
         simpleHorizontal(MSEBlocks.PLUSH_SALAMANDER.get());
@@ -65,7 +78,58 @@ public class MSEBlockstateProvider extends BlockStateProvider {
 
     }
 
-        public void cabinetBlock(CabinetBlock block, String type) {
+    public void slabWithItem(Supplier<SlabBlock> block, DeferredBlock<?> sourceBlock)
+    {
+        slabWithItem(block, sourceBlock.getId().getPath(), texture(sourceBlock));
+    }
+
+    public void slabWithItem(Supplier<SlabBlock> block, String baseName, ResourceLocation texture)
+    {
+        slabWithItem(block, baseName, texture, texture);
+    }
+
+    private void slabWithItem(Supplier<SlabBlock> block, String baseName, ResourceLocation side, ResourceLocation topBottom)
+    {
+        ModelFile slabBottom = models().slab(baseName + "_slab", side, topBottom, topBottom);
+        ModelFile slabTop = models().slabTop(baseName + "_slab_top", side, topBottom, topBottom);
+        ModelFile doubleSlab = models().getExistingFile(MinestuckExtended.id(baseName));
+        slabBlock(block.get(), slabBottom, slabTop, doubleSlab);
+        simpleBlockItem(block.get(), slabBottom);
+    }
+
+    public void stairsWithItem(Supplier<StairBlock> block, DeferredBlock<?> sourceBlock)
+    {
+        stairsWithItem(block, sourceBlock.getId().getPath(), texture(sourceBlock));
+    }
+
+    void stairsWithItem(Supplier<StairBlock> block, String baseName, ResourceLocation texture)
+    {
+        stairsWithItem(block, baseName, texture, texture, texture);
+    }
+
+    private void stairsWithItem(Supplier<StairBlock> block, String baseName, ResourceLocation side, ResourceLocation bottom, ResourceLocation top)
+    {
+        ModelFile stairs = models().stairs(baseName + "_stairs", side, bottom, top);
+        ModelFile stairsInner = models().stairsInner(baseName + "_inner_stairs", side, bottom, top);
+        ModelFile stairsOuter = models().stairsOuter(baseName + "_outer_stairs", side, bottom, top);
+        stairsBlock(block.get(), stairs, stairsInner, stairsOuter);
+        simpleBlockItem(block.get(), stairs);
+    }
+
+    void wallWithItem(Supplier<WallBlock> block, DeferredBlock<?> sourceBlock)
+    {
+        wallWithItem(block, sourceBlock.getId().getPath(), texture(sourceBlock));
+    }
+
+    public void wallWithItem(Supplier<WallBlock> block, String baseName, ResourceLocation texture)
+    {
+        wallBlock(block.get(), texture);
+
+        ModelFile wallInventory = models().wallInventory(baseName + "_wall_inventory", texture);
+        simpleBlockItem(block.get(), wallInventory);
+    }
+
+    public void cabinetBlock(CabinetBlock block, String type) {
         this.horizontalBlock(block, state -> {
             String suffix = state.getValue(CabinetBlock.OPEN) ? "_open" : "";
             return models().orientable(blockName(block) + suffix,

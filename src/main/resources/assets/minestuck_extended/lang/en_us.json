@@ -8,6 +8,10 @@
   "theme.minestuck_extended.boner":"Boner",
 
   "block.minestuck_extended.chess_tile" : "Chess Tile",
+  "block.minestuck_extended.cracked_end_stone_bricks" : "Cracked End Stone Bricks",
+  "block.minestuck_extended.cracked_end_stone_bricks_slab" : "Cracked End Stone Brick Slab",
+  "block.minestuck_extended.cracked_end_stone_bricks_stairs" : "Cracked End Stone Brick Stairs",
+  "block.minestuck_extended.cracked_end_stone_bricks_wall" : "Cracked End Stone Brick Wall",
 
   "block.minestuck_extended.diamond_lichen" : "Diamond Lichen",
   "block.minestuck_extended.plush_vriska" : "Vriska Plush",
@@ -115,6 +119,7 @@
   "item.minestuck_extended.club_spiked.tooltip": "...I think the order of operations was flubbed here.",
   "item.minestuck_extended.spring_mace": "Spring Mace",
   "item.minestuck_extended.spring_mace.tooltip": "You shouldn't have been able to make this.",
+  "item.minestuck_extended.sheep_fucker": "Sheep Fucker",
 
   "item.minestuck_extended.beaglepuss": "Beaglepuss",
   "item.minestuck_extended.disguise" : "Trickster's Disguise",

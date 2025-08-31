@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
   "type": "minecraft:chest",
   "pools": [
     {
@@ -6,37 +12,43 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "artifacts:rooted_boots",
+          "name": "artifacts:obsidian_skull",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:feral_claws",
+          "name": "artifacts:snorkel",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:steadfast_spikes",
+          "name": "artifacts:helium_flamingo",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:power_glove",
+          "name": "artifacts:umbrella",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:thorn_pendant",
+          "name": "artifacts:everlasting_beef",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:night_vision_goggles",
+          "name": "artifacts:plastic_drinking_hat",
+          "quality": 1,
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:novelty_drinking_hat",
           "quality": 1,
           "weight": 4
         }
@@ -49,5 +61,5 @@
       }
     }
   ],
-  "random_sequence": "minestuck_extended:chests/injections/taiga_land_inject"
+  "random_sequence": "minestuck:chests/rare_item/title/minestuck/buckets"
 }

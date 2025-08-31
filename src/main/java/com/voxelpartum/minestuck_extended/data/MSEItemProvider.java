@@ -87,6 +87,7 @@ public class MSEItemProvider extends ItemModelProvider{
 
 
         simpleBlockItem(MSEBlocks.CHESS_TILE.get());
+//        simpleBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
         simpleBlockItem(MSEBlocks.PLUSH_SALAMANDER.get());
         simpleBlockItem(MSEBlocks.PLUSH_NAKAGATOR.get());
         simpleBlockItem(MSEBlocks.PLUSH_IGUANA.get());

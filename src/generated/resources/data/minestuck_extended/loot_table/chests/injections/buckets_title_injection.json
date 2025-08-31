@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
   "type": "minecraft:chest",
   "pools": [
     {
@@ -6,19 +12,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "artifacts:lucky_scarf",
+          "name": "artifacts:obsidian_skull",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:rooted_boots",
+          "name": "artifacts:snorkel",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:feral_claws",
+          "name": "artifacts:helium_flamingo",
+          "quality": 1,
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:umbrella",
           "quality": 1,
           "weight": 4
         },
@@ -30,13 +42,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:scarf_of_invisibility",
+          "name": "artifacts:plastic_drinking_hat",
           "quality": 1,
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "artifacts:steadfast_spikes",
+          "name": "artifacts:novelty_drinking_hat",
           "quality": 1,
           "weight": 4
         }
@@ -49,5 +61,5 @@
       }
     }
   ],
-  "random_sequence": "minestuck_extended:chests/injections/forest_land_inject"
+  "random_sequence": "minestuck:chests/rare_item/title/minestuck/buckets"
 }

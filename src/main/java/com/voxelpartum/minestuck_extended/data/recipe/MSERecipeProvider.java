@@ -38,6 +38,20 @@ public class MSERecipeProvider extends RecipeProvider {
 
         IrradiatingRecipeBuilder.irradiating(Ingredient.of(MSEItems.NORMAL_BROWNIE), MSEItems.NORMALER_BROWNIE.get(), 0.2F, 250).save(recipeBuilder);
 
+//        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.END_STONE_BRICKS), RecipeCategory.MISC, MSEItems.CRACKED_ENDSTONE_BRICKS.get().asItem(), 0.1f, 200)
+//                .unlockedBy("has_end_stone_bricks", has(Items.END_STONE_BRICKS))
+//                .save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_brick_smelting"));
+//
+//        CommonRecipes.slabRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
+//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get(),2).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_slab_from_stonecutting"));
+//        CommonRecipes.stairsRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
+//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get(),1).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_stairs_from_stonecutting"));
+//        CommonRecipes.wallRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
+//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
+//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get(),1).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_wall_from_stonecutting"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_SALAMANDER.get()).unlockedBy("has_plush_salamander_item", has(MSItems.PLUSH_SALAMANDER)).requires(MSItems.PLUSH_SALAMANDER).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_salamander_item_to_block"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_NAKAGATOR.get()).unlockedBy("has_plush_nakagator_item", has(MSItems.PLUSH_NAKAGATOR)).requires(MSItems.PLUSH_NAKAGATOR).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_nakagator_item_to_block"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_IGUANA.get()).unlockedBy("has_plush_iguana_item", has(MSItems.PLUSH_IGUANA)).requires(MSItems.PLUSH_IGUANA).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_iguana_item_to_block"));
