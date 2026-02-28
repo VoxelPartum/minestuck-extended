@@ -1,0 +1,13 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amethyst": 274,
+    "minestuck:build": 512,
+    "minestuck:diamond": 274,
+    "minestuck:ruby": 274,
+    "minestuck:uranium": 274
+  },
+  "ingredient": {
+    "item": "minestuck_extended:plush_genesis_frog"
+  }
+}

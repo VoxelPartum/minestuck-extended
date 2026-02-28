@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 640,
+    "minestuck:garnet": 48
+  },
+  "ingredient": {
+    "item": "minestuck_extended:hashstack_modus_card"
+  }
+}

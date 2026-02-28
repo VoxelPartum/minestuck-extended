@@ -4,7 +4,7 @@
     "item": "minestuck:set_modus_card"
   },
   "input2": {
-    "item": "minecraft:chest"
+    "item": "minecraft:ender_chest"
   },
   "mode": "and",
   "output": "minestuck_extended:array_modus_card"

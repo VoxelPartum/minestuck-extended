@@ -3,6 +3,11 @@
     "minestuck_extended:cracked_end_stone_bricks",
     "minestuck_extended:cracked_end_stone_bricks_slab",
     "minestuck_extended:cracked_end_stone_bricks_stairs",
-    "minestuck_extended:cracked_end_stone_bricks_wall"
+    "minestuck_extended:cracked_end_stone_bricks_wall",
+    "minestuck_extended:deepslate_cruxite_ore",
+    "minestuck_extended:sculked_deepslate_bricks",
+    "minestuck_extended:sculked_deepslate_brick_wall",
+    "minestuck_extended:sculked_deepslate_brick_slab",
+    "minestuck_extended:sculked_deepslate_brick_stairs"
   ]
 }

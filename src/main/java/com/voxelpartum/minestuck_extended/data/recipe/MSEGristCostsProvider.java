@@ -42,7 +42,8 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL.get()).grist(AMETHYST,4).grist(TAR,5).grist(QUARTZ,1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ROULETTE_CARD.get()).grist(BUILD, 300).grist(COBALT, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ZIP_CARD.get()).grist(BUILD, 333).grist(MARBLE, 62).build(recipeSaver);
-        GristCostRecipeBuilder.of(MSEItems.ARRAY_CARD.get()).grist(BUILD, 540).grist(GARNET, 86).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.ARRAY_CARD.get()).grist(BUILD, 540).grist(GARNET, 86).grist(ZILLIUM, 10).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.HASHSTACK_CARD.get()).grist(BUILD, 640).grist(GARNET, 48).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.BEAGLEPUSS.get()).grist(BUILD, 5).grist(AMBER, 1).grist(CHALK, 5).grist(IODINE, 1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.TESTIFIPUSS.get()).grist(URANIUM, 5).grist(BUILD, 20).grist(SHALE, 5).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.BEAGLEPISS.get()).grist(AMBER, 50).grist(GOLD, 50).build(recipeSaver);
@@ -59,11 +60,12 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.SHADOW_SWORD.get()).grist(BUILD, 250).grist(TAR, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SHOVEL_BLADE.get()).grist(BUILD, 1500).grist(COBALT, 413).grist(GOLD, 126).grist(DIAMOND, 50).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ENERGY_SWORD.get()).grist(BUILD, 2250).grist(URANIUM, 450).grist(CHALK, 250).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.MEMORY_ALLOCATOR.get()).grist(TAR, 592).grist(URANIUM, 123).grist(RUST, 67).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.BLACK_SHARD.get()).grist(TAR, 1842).grist(URANIUM, 65).grist(RUST, 16).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.RUDE_AXE.get()).grist(BUILD, 400).grist(TAR, 25).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ROCKSTARS_GUITAR.get()).grist(GARNET, 57).grist(BUILD, 580).grist(CHALK, 100).grist(AMBER, 50).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.SOULSPLITTER.get()).grist(DIAMOND, 500).grist(BUILD, 2065).grist(CHALK, 729).grist(TAR, 1430).build(recipeSaver);
-        GristCostRecipeBuilder.of(MSEItems.MEMORY_ALLOCATOR.get()).grist(TAR, 592).grist(URANIUM, 123).grist(RUST, 67).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.WHIFFLEBAT.get()).grist(AMBER, 567).grist(BUILD, 479).grist(TAR, 37).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.METAL_PAN.get()).grist(BUILD, 662).grist(RUST, 631).build(recipeSaver);
@@ -88,6 +90,12 @@ public final class MSEGristCostsProvider {
 
         GristCostRecipeBuilder.of(MSEItems.CHESS_TILE.get()).grist(CHALK, 32).grist(TAR, 32).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.PLUSH_VRISKA.get()).grist(CHALK, 8).grist(COBALT, 8).grist(BUILD,8).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_NEPETA.get()).grist(CHALK, 8).grist(COBALT, 8).grist(BUILD,8).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_GENESIS_FROG.get()).grist(BUILD, 512).grist(AMETHYST, 274).grist(RUBY, 274).grist(DIAMOND, 274).grist(URANIUM, 274).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_SPADES_SLICK.get()).grist(BUILD, 128).grist(TAR, 283).grist(RUBY, 73).grist(URANIUM, 5).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_HEARTS_BOXCARS.get()).grist(BUILD, 128).grist(TAR, 283).grist(RUBY, 73).grist(URANIUM, 5).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_DIAMONDS_DROOG.get()).grist(BUILD, 128).grist(TAR, 283).grist(RUBY, 73).grist(URANIUM, 5).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.PLUSH_CLUBS_DEUCE.get()).grist(BUILD, 128).grist(TAR, 283).grist(RUBY, 73).grist(URANIUM, 5).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.SPIROGRAPH_ARMOR_TRIM.get()).grist(CHALK, 413).grist(URANIUM, 612).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.BREATH_ARMOR_TRIM.get()).grist(BUILD, 413).build(recipeSaver);

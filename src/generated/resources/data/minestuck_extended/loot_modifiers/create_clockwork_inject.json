@@ -1,0 +1,13 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minestuck_extended:medium_loot_modifier",
+  "conditions": [],
+  "inject": "minestuck_extended:chests/inject/create/title/clockwork",
+  "target": "minestuck:chests/medium_basic",
+  "title": "minestuck:clockwork"
+}

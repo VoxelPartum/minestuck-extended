@@ -3,6 +3,7 @@ package com.voxelpartum.minestuck_extended.data.tag;
 import com.mraof.minestuck.block.AspectTreeBlocks;
 import com.mraof.minestuck.block.MSBlocks;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
+import com.voxelpartum.minestuck_extended.block.MSEBlocks;
 import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -21,14 +22,22 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-//        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-//                .add(MSEBlocks.CRACKED_END_STONE_BRICKS.get())
-//                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get())
-//                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get())
-//                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get())
-//        ;
-//
-//        tag(BlockTags.WALLS).add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(MSEBlocks.CRACKED_END_STONE_BRICKS.get())
+                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get())
+                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get())
+                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get())
+                .add(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get())
+                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get())
+                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get())
+                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB.get())
+                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS.get())
+        ;
+
+        tag(BlockTags.WALLS)
+                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get())
+                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get())
+        ;
 
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(AspectTreeBlocks.BREATH_ASPECT_BOOKSHELF.asBlock())
@@ -76,6 +85,5 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
             .add(FDCompatBlocks.DEAD_CABINET.get())
             .add(FDCompatBlocks.CINDERED_CABINET.get())
             .add(FDCompatBlocks.SHADEWOOD_CABINET.get());
-
     }
 }

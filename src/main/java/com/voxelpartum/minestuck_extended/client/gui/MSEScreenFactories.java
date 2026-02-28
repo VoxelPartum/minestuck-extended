@@ -2,6 +2,7 @@ package com.voxelpartum.minestuck_extended.client.gui;
 
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import com.voxelpartum.minestuck_extended.client.gui.captchalouge.ArraySylladexScreen;
+import com.voxelpartum.minestuck_extended.client.gui.captchalouge.HashStackSylladexScreen;
 import com.voxelpartum.minestuck_extended.client.gui.captchalouge.RouletteSylladexScreen;
 import com.voxelpartum.minestuck_extended.client.gui.captchalouge.ZipSylladexScreen;
 import com.voxelpartum.minestuck_extended.inventory.captchalogue.MSEModi;
@@ -20,6 +21,7 @@ public class MSEScreenFactories {
         registerSylladexFactory(MSEModi.ROULETTE, RouletteSylladexScreen::new);
         registerSylladexFactory(MSEModi.ZIP, ZipSylladexScreen::new);
         registerSylladexFactory(MSEModi.ARRAY, ArraySylladexScreen::new);
+        registerSylladexFactory(MSEModi.HASHSTACK, HashStackSylladexScreen::new);
     }
 
 }

@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -95,7 +96,9 @@ public class FDCompatBlocks {
     }
 
     public static CabinetBlock createCabinetBlock(){
-        return new CabinetBlock(Block.Properties.ofFullCopy(Blocks.BARREL));
+        if(ModList.get().isLoaded("farmersdelight"))
+            return new CabinetBlock(Block.Properties.ofFullCopy(Blocks.BARREL));
+        return null;
     }
 
 }

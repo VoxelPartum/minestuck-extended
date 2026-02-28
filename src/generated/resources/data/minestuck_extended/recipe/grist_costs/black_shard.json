@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:rust": 16,
+    "minestuck:tar": 1842,
+    "minestuck:uranium": 65
+  },
+  "ingredient": {
+    "item": "minestuck_extended:black_shard"
+  }
+}

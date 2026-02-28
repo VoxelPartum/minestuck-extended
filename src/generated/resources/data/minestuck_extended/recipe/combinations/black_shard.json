@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:delta_rune"
+  },
+  "input2": {
+    "item": "minestuck_extended:shadow_crystal"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:black_shard"
+}

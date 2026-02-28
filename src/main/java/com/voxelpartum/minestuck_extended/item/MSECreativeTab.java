@@ -34,6 +34,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.NORMALER_BROWNIE.get());
         output.accept(MSEItems.ROULETTE_CARD.get());
         output.accept(MSEItems.ZIP_CARD.get());
+        output.accept(MSEItems.HASHSTACK_CARD.get());
         output.accept(MSEItems.ARRAY_CARD.get());
 
         output.accept(MSEItems.SHADOW_CRYSTAL.get());
@@ -46,6 +47,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.SHADOW_SWORD.get());
         output.accept(MSEItems.SHOVEL_BLADE.get());
         output.accept(MSEItems.ENERGY_SWORD.get());
+        output.accept(MSEItems.BLACK_SHARD.get());
         output.accept(MSEItems.MEMORY_ALLOCATOR.get());
         output.accept(MSEItems.RUDE_AXE.get());
         output.accept(MSEItems.ROCKSTARS_GUITAR.get());
@@ -82,7 +84,15 @@ public class MSECreativeTab {
         
         output.accept(MSEItems.CHESS_TILE.get());
         output.accept(MSEItems.DIAMOND_LICHEN.get());
+
         output.accept(MSEItems.PLUSH_VRISKA.get());
+        output.accept(MSEItems.PLUSH_NEPETA.get());
+        output.accept(MSEItems.PLUSH_GENESIS_FROG.get());
+        output.accept(MSEItems.PLUSH_SPADES_SLICK.get());
+        output.accept(MSEItems.PLUSH_HEARTS_BOXCARS.get());
+        output.accept(MSEItems.PLUSH_DIAMONDS_DROOG.get());
+        output.accept(MSEItems.PLUSH_CLUBS_DEUCE.get());
+
         output.accept(MSEItems.PLUSH_SALAMANDER.get());
         output.accept(MSEItems.PLUSH_NAKAGATOR.get());
         output.accept(MSEItems.PLUSH_IGUANA.get());
@@ -98,6 +108,12 @@ public class MSECreativeTab {
         output.accept(MSEItems.SCALEMATE_PUMPKINSNUFFLE.get());
         output.accept(MSEItems.SCALEMATE_PYRALSPITE.get());
         output.accept(MSEItems.SCALEMATE_WITNESS.get());
+
+        output.accept(MSEItems.DEEPSLATE_CRUXITE_ORE.get());
+        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICKS.get());
+        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_STAIRS.get());
+        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_SLAB.get());
+        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_WALL.get());
 
 //        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS.get());
 //        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_STAIRS.get());

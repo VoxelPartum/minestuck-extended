@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 128,
+    "minestuck:ruby": 73,
+    "minestuck:tar": 283,
+    "minestuck:uranium": 5
+  },
+  "ingredient": {
+    "item": "minestuck_extended:plush_hearts_boxcars"
+  }
+}

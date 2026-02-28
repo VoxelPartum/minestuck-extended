@@ -26,7 +26,8 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL).input(Items.AMETHYST_SHARD).and().input(Items.BLACK_DYE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ROULETTE_CARD).input(MSTags.Items.MODUS_CARD).and().input(MSItems.DICE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ZIP_CARD).input(MSTags.Items.MODUS_CARD).and().input(Items.ENCHANTED_BOOK).build(consumer);
-        CombinationRecipeBuilder.of(MSEItems.ARRAY_CARD).input(MSItems.SET_MODUS_CARD).and().input(Items.CHEST).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.ARRAY_CARD).input(MSItems.SET_MODUS_CARD).and().input(Items.ENDER_CHEST).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.HASHSTACK_CARD).input(MSItems.HASHMAP_MODUS_CARD).or().input(MSItems.STACK_MODUS_CARD).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPUSS).input(Items.GLASS).and().input(Items.BROWN_WOOL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.TESTIFIPUSS).input(MSEItems.BEAGLEPUSS).and().input(Items.EMERALD_BLOCK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(MSItems.APPLE_JUICE).build(consumer);
@@ -41,12 +42,19 @@ public class MSECombinationsProvider {
 
         CombinationRecipeBuilder.of(MSEItems.CHESS_TILE).input(SkaiaBlocks.BLACK_CHESS_DIRT).or().input(SkaiaBlocks.WHITE_CHESS_DIRT).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.PLUSH_VRISKA).input(ItemTags.WOOL).and().input(Items.SPIDER_EYE).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_NEPETA).input(ItemTags.WOOL).and().input(ItemTags.FISHES).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_GENESIS_FROG).input(ItemTags.WOOL).and().input(MSItems.FROG).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_SPADES_SLICK).input(ItemTags.WOOL).and().input(MSItems.ACE_OF_SPADES).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_HEARTS_BOXCARS).input(ItemTags.WOOL).and().input(MSItems.ACE_OF_HEARTS).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_DIAMONDS_DROOG).input(ItemTags.WOOL).and().input(MSItems.ACE_OF_DIAMONDS).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.PLUSH_CLUBS_DEUCE).input(ItemTags.WOOL).and().input(MSItems.ACE_OF_CLUBS).build(consumer);
 
         //Weapons:
         CombinationRecipeBuilder.of(MSEItems.SHADOW_SWORD).input(MSEItems.SHADOW_CRYSTAL).and().input(Items.IRON_SWORD).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHOVEL_BLADE).input(Items.DIAMOND_SHOVEL).and().input(MSItems.CLAYMORE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ENERGY_SWORD).input(Items.DIAMOND_SWORD).and().input(MSItems.CLAYMORE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.MEMORY_ALLOCATOR).input(MSItems.CLAYMORE).and().input(MSItems.TILLDEATH_HANDBOOK).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.BLACK_SHARD).input(MSEItems.DELTA_RUNE).and().input(MSEItems.SHADOW_CRYSTAL).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.RUDE_AXE).input(MSEItems.SHADOW_CRYSTAL).and().input(Items.IRON_AXE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ROCKSTARS_GUITAR).input(Items.NOTE_BLOCK).and().input(Items.DIAMOND_AXE).build(consumer);
@@ -86,6 +94,10 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.SPACE_ARMOR_TRIM).input(AspectTreeBlocks.SPACE_ASPECT_SAPLING).and().input(ItemTags.TRIM_TEMPLATES).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.MIND_ARMOR_TRIM).input(AspectTreeBlocks.MIND_ASPECT_SAPLING).and().input(ItemTags.TRIM_TEMPLATES).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.HOPE_ARMOR_TRIM).input(AspectTreeBlocks.HOPE_ASPECT_SAPLING).and().input(ItemTags.TRIM_TEMPLATES).build(consumer);
+
+        CombinationRecipeBuilder.of(MSItems.DRAGON_KEY).input(MSItems.KEYBLADE).and().input(MSEItems.SCALEMATE_APPLESCAB).build(consumer);
+        CombinationRecipeBuilder.of(MSItems.NIGHTSTICK).input(MSItems.NIGHT_CLUB).and().input(MSEItems.SCALEMATE_APPLESCAB).build(consumer);
+        CombinationRecipeBuilder.of(MSItems.DRAGON_LANCE).input(MSItems.JOUSTING_LANCE).and().input(MSEItems.SCALEMATE_APPLESCAB).build(consumer);
 
         //Create Compat:
         CombinationRecipeBuilder.of(CreateCompat.RENCH).input(AllItems.WRENCH.get()).and().input(MSItems.SBAHJ_POSTER).build(consumer);

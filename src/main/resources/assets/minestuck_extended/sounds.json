@@ -13,5 +13,13 @@
     "sounds": [
       "minestuck_extended:item/bat_hit"
     ]
+  },
+
+  "entity.swoon": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.swoon",
+    "sounds": [
+      "minestuck_extended:item/swoon"
+    ]
   }
 }

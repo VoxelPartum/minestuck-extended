@@ -1,10 +1,19 @@
 package com.voxelpartum.minestuck_extended.data.loot_tables;
 
+import com.mraof.minestuck.item.MSItems;
 import com.voxelpartum.minestuck_extended.block.MSEBlocks;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
 
@@ -17,12 +26,24 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
+        add(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get(), this::cruxiteOreDrop);
+        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get());
+        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB.get());
+        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS.get());
+        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get());
+
         dropSelf(MSEBlocks.CHESS_TILE.get());
-//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
-//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get());
-//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get());
-//        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get());
+        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get());
+        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get());
+        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get());
         dropSelf(MSEBlocks.PLUSH_VRISKA.get());
+        dropSelf(MSEBlocks.PLUSH_NEPETA.get());
+        dropSelf(MSEBlocks.PLUSH_GENESIS_FROG.get());
+        dropSelf(MSEBlocks.PLUSH_SPADES_SLICK.get());
+        dropSelf(MSEBlocks.PLUSH_HEARTS_BOXCARS.get());
+        dropSelf(MSEBlocks.PLUSH_DIAMONDS_DROOG.get());
+        dropSelf(MSEBlocks.PLUSH_CLUBS_DEUCE.get());
         dropSelf(MSEBlocks.DIAMOND_LICHEN.get());
 
         dropSelf(MSEBlocks.PLUSH_SALAMANDER.get());
@@ -46,6 +67,15 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return MSEBlocks.REGISTER.getEntries().stream().map(e -> (Block) e.value()).toList();
+    }
+
+    public LootTable.Builder cruxiteOreDrop(Block block)
+    {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return createSilkTouchDispatchTable(block, applyExplosionDecay(block,
+                LootItem.lootTableItem(MSItems.RAW_CRUXITE.get())
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
     }
 
 }

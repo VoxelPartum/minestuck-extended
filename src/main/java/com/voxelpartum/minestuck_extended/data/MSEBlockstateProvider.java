@@ -30,13 +30,26 @@ public class MSEBlockstateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
+        simpleBlock(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get());
+
+        simpleBlock(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get());
+        slabWithItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB, MSEBlocks.SCULKED_DEEPSLATE_BRICKS);
+        stairsWithItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS, MSEBlocks.SCULKED_DEEPSLATE_BRICKS);
+        wallWithItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL, MSEBlocks.SCULKED_DEEPSLATE_BRICKS);
+
         simpleBlock(MSEBlocks.CHESS_TILE.get());
-//        simpleBlock(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
-//        slabWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB, MSEBlocks.CRACKED_END_STONE_BRICKS);
-//        stairsWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS, MSEBlocks.CRACKED_END_STONE_BRICKS);
-//        wallWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL, MSEBlocks.CRACKED_END_STONE_BRICKS);
+        simpleBlock(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+        slabWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB, MSEBlocks.CRACKED_END_STONE_BRICKS);
+        stairsWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS, MSEBlocks.CRACKED_END_STONE_BRICKS);
+        wallWithItem(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL, MSEBlocks.CRACKED_END_STONE_BRICKS);
 
         simpleHorizontal(MSEBlocks.PLUSH_VRISKA.get());
+        simpleHorizontal(MSEBlocks.PLUSH_NEPETA.get());
+        simpleHorizontal(MSEBlocks.PLUSH_GENESIS_FROG.get());
+        simpleHorizontal(MSEBlocks.PLUSH_SPADES_SLICK.get());
+        simpleHorizontal(MSEBlocks.PLUSH_HEARTS_BOXCARS.get());
+        simpleHorizontal(MSEBlocks.PLUSH_DIAMONDS_DROOG.get());
+        simpleHorizontal(MSEBlocks.PLUSH_CLUBS_DEUCE.get());
         simpleHorizontal(MSEBlocks.PLUSH_SALAMANDER.get());
         simpleHorizontal(MSEBlocks.PLUSH_NAKAGATOR.get());
         simpleHorizontal(MSEBlocks.PLUSH_IGUANA.get());

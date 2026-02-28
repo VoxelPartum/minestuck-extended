@@ -32,6 +32,7 @@ public class MSEItemProvider extends ItemModelProvider{
         handheldItem(MSEItems.ENERGY_SWORD.get());
         handheldItem(MSEItems.MEMORY_ALLOCATOR.get());
         largeWeapon(MSEItems.RUDE_AXE);
+        largeWeapon(MSEItems.BLACK_SHARD);
         handheldItem(MSEItems.ROCKSTARS_GUITAR.get());
         largeWeapon(MSEItems.SOULSPLITTER);
         handheldItem(MSEItems.WHIFFLEBAT.get());
@@ -53,7 +54,12 @@ public class MSEItemProvider extends ItemModelProvider{
 
         //Regular Items
         basicItem(MSEItems.DIAMOND_LICHEN.get());
+
         basicItem(MSEItems.PLUSH_VRISKA.get());
+        simpleBlockItem(MSEBlocks.PLUSH_NEPETA.get());
+        simpleBlockItem(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get());
+        simpleBlockItem(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get());
+
         basicItem(MSEItems.BEAGLEPUSS.get());
         basicItem(MSEItems.DISGUISE.get());
         basicItem(MSEItems.BEAGLEPISS.get());
@@ -71,6 +77,7 @@ public class MSEItemProvider extends ItemModelProvider{
         basicItem(MSEItems.ZIP_CARD.get());
         basicItem(MSEItems.ZIP_BUNDLE.get());
         basicItem(MSEItems.ARRAY_CARD.get());
+        basicItem(MSEItems.HASHSTACK_CARD.get());
         basicItem(MSEItems.SPIROGRAPH_ARMOR_TRIM.get());
         basicItem(MSEItems.BREATH_ARMOR_TRIM.get());
         basicItem(MSEItems.LIFE_ARMOR_TRIM.get());
@@ -87,7 +94,13 @@ public class MSEItemProvider extends ItemModelProvider{
 
 
         simpleBlockItem(MSEBlocks.CHESS_TILE.get());
-//        simpleBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+        simpleBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
+
+        simpleBlockItem(MSEBlocks.PLUSH_GENESIS_FROG.get());
+        simpleBlockItem(MSEBlocks.PLUSH_SPADES_SLICK.get());
+        simpleBlockItem(MSEBlocks.PLUSH_HEARTS_BOXCARS.get());
+        simpleBlockItem(MSEBlocks.PLUSH_DIAMONDS_DROOG.get());
+        simpleBlockItem(MSEBlocks.PLUSH_CLUBS_DEUCE.get());
         simpleBlockItem(MSEBlocks.PLUSH_SALAMANDER.get());
         simpleBlockItem(MSEBlocks.PLUSH_NAKAGATOR.get());
         simpleBlockItem(MSEBlocks.PLUSH_IGUANA.get());

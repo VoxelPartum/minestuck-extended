@@ -2,7 +2,8 @@
   "type": "minestuck:grist_cost",
   "grist_cost": {
     "minestuck:build": 540,
-    "minestuck:garnet": 86
+    "minestuck:garnet": 86,
+    "minestuck:zillium": 10
   },
   "ingredient": {
     "item": "minestuck_extended:array_modus_card"

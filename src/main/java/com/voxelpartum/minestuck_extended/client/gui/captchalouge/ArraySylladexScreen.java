@@ -34,17 +34,7 @@ public class ArraySylladexScreen extends SylladexScreen {
     @Override
     public void updatePosition()
     {
-        int columns = (cards.size() + 1)/2;
-        this.maxWidth = Math.max(mapWidth, 10 + (columns*CARD_WIDTH + (columns - 1)*5));
-        this.maxHeight = mapHeight;
-
-        int start = Math.max(5, (mapWidth - (columns*CARD_WIDTH + (columns - 1)*5))/2);
-        for(int i = 0; i < cards.size(); i++)
-        {
-            GuiCard card = cards.get(i);
-            card.xPos = start + i/2*(CARD_WIDTH + 5);
-            card.yPos = (mapHeight - 2*CARD_HEIGHT - 5)/2 + (i%2)*(CARD_HEIGHT + 5);
-        }
+        updateContent();
     }
 
     @Override
