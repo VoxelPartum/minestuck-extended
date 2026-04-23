@@ -28,8 +28,6 @@ public class MaceWeaponItem extends WeaponItem {
             if (!canSmashAttack(livingentity)) {
                 return 0.0F;
             } else {
-                float f3 = 3.0F;
-                float f = 8.0F;
                 float f1 = livingentity.fallDistance;
                 float f2;
                 if (f1 <= 3.0F) {

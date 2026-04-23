@@ -23,11 +23,11 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSItems.GRASSHOPPER).input(Items.SHORT_GRASS).and().input(Items.HOPPER).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.DIAMOND_LICHEN).input(Items.DIAMOND).or().input(Items.GLOW_LICHEN).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.CRUXITE_LICHEN).input(MSItems.RAW_CRUXITE).or().input(Items.GLOW_LICHEN).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.URANIUM_LICHEN).input(MSItems.RAW_URANIUM).or().input(Items.GLOW_LICHEN).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.SHADOW_CRYSTAL).input(Items.AMETHYST_SHARD).and().input(Items.BLACK_DYE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ROULETTE_CARD).input(MSTags.Items.MODUS_CARD).and().input(MSItems.DICE).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.ZIP_CARD).input(MSTags.Items.MODUS_CARD).and().input(Items.ENCHANTED_BOOK).build(consumer);
-        CombinationRecipeBuilder.of(MSEItems.ARRAY_CARD).input(MSItems.SET_MODUS_CARD).and().input(Items.ENDER_CHEST).build(consumer);
-        CombinationRecipeBuilder.of(MSEItems.HASHSTACK_CARD).input(MSItems.HASHMAP_MODUS_CARD).or().input(MSItems.STACK_MODUS_CARD).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPUSS).input(Items.GLASS).and().input(Items.BROWN_WOOL).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.TESTIFIPUSS).input(MSEItems.BEAGLEPUSS).and().input(Items.EMERALD_BLOCK).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BEAGLEPISS).input(MSEItems.BEAGLEPUSS).and().input(MSItems.APPLE_JUICE).build(consumer);

@@ -28,23 +28,15 @@ public class BetterCombatCompats implements DataProvider {
     private static final String PICKAXE = "bettercombat:pickaxe";
     private static final String HAMMER = "bettercombat:hammer";
     private static final String AXE = "bettercombat:axe";
-    private static final String HEAVY_AXE = "bettercombat:heavy_axe";
     private static final String CHAINSAW = "minestuck:chainsaw_base";
     private static final String MACE = "bettercombat:mace";
     private static final String SWORD = "bettercombat:sword";
-    private static final String KATANA = "bettercombat:katana";
-    private static final String CUTLASS = "bettercombat:cutlass";
-    private static final String CLAYMORE = "bettercombat:claymore";
-    private static final String RAPIER = "bettercombat:rapier";
     private static final String DAGGER = "bettercombat:dagger";
     private static final String LANCE = "bettercombat:lance";
     private static final String STAFF = "bettercombat:battlestaff";
     private static final String CANE = "minestuck:cane_base";
     private static final String FORK = "minestuck:fork_base";
     private static final String WAND = "bettercombat:wand";
-    private static final String HALBERD = "bettercombat:halberd";
-    private static final String SPEAR = "bettercombat:spear";
-    private static final String TRIDENT = "bettercombat:trident";
 
     private final PackOutput output;
 

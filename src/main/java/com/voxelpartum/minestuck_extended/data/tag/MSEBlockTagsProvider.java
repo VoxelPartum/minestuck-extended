@@ -22,23 +22,6 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(MSEBlocks.CRACKED_END_STONE_BRICKS.get())
-                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get())
-                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get())
-                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get())
-                .add(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get())
-                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get())
-                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get())
-                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB.get())
-                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS.get())
-        ;
-
-        tag(BlockTags.WALLS)
-                .add(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get())
-                .add(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get())
-        ;
-
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(AspectTreeBlocks.BREATH_ASPECT_BOOKSHELF.asBlock())
                 .add(AspectTreeBlocks.LIFE_ASPECT_BOOKSHELF.asBlock())
@@ -61,6 +44,8 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
                 .add(MSBlocks.CINDERED_BOOKSHELF.get())
                 .add(MSBlocks.SHADEWOOD_BOOKSHELF.get())
         ;
+
+    tag(BlockTags.MINEABLE_WITH_SHOVEL).add(MSEBlocks.CHESS_TILE.get());
 
     tag(BlockTags.MINEABLE_WITH_AXE)
             .add(FDCompatBlocks.BREATH_CABINET.get())

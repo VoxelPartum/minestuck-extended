@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "minestuck_extended:block/cracked_end_stone_bricks",
-    "side": "minestuck_extended:block/cracked_end_stone_bricks",
-    "top": "minestuck_extended:block/cracked_end_stone_bricks"
-  }
-}

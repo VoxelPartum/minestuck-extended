@@ -1,4 +1,12 @@
 {
+  "inventory.zip": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.zip",
+    "sounds": [
+      "minestuck_extended:inventory/zip"
+    ]
+  },
+
   "entity.pan": {
     "category": "player",
     "subtitle": "subtitles.minestuck_extended.pan",

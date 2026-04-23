@@ -15,6 +15,7 @@ public final class MSESoundEvents {
     public static final Supplier<SoundEvent> PAN_HIT = register("entity.pan");
     public static final Supplier<SoundEvent> BAT_HIT = register("entity.bat");
     public static final Supplier<SoundEvent> SWOON = register("entity.swoon");
+    public static final Supplier<SoundEvent> ZIP = register("inventory.zip");
 
 
 

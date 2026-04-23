@@ -53,7 +53,7 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
 
         tag(TOOLS_SHIELD).add(SHEELD.get()).add(POGO_SHIELD.get()).add(MAGNET_SHIELD.get());
 
-        tag(MODUS_CARD).add(ROULETTE_CARD.get()).add(ZIP_CARD.get()).add(ARRAY_CARD.get()).add(HASHSTACK_CARD.get());
+        tag(MODUS_CARD).add(ROULETTE_CARD.get()).add(ZIP_CARD.get());
         tag(SWORDS).add(relevantWeapons(item -> hasToolType(item, List.of(SWORD_TOOL))));
         tag(AXES).add(relevantWeapons(item -> hasToolType(item, List.of(AXE_TOOL))));
         tag(SHOVELS).add(relevantWeapons(item -> hasToolType(item, List.of(SHOVEL_TOOL))));

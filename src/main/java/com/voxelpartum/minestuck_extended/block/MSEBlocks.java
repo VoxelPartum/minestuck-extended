@@ -1,10 +1,8 @@
 package com.voxelpartum.minestuck_extended.block;
 
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -14,24 +12,11 @@ public class MSEBlocks {
 
     public static final DeferredRegister.Blocks REGISTER = DeferredRegister.createBlocks(MinestuckExtended.MOD_ID);
 
-    public static final DeferredBlock<Block> DEEPSLATE_CRUXITE_ORE = REGISTER.register("deepslate_cruxite_ore", () -> cruxiteOre(Block.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> SCULKED_DEEPSLATE_BRICKS = REGISTER.register("sculked_deepslate_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS)));
-    public static final DeferredBlock<StairBlock> SCULKED_DEEPSLATE_BRICK_STAIRS = REGISTER.register("sculked_deepslate_brick_stairs", () -> new StairBlock(SCULKED_DEEPSLATE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(SCULKED_DEEPSLATE_BRICKS.get())));
-    public static final DeferredBlock<SlabBlock> SCULKED_DEEPSLATE_BRICK_SLAB = REGISTER.register("sculked_deepslate_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(SCULKED_DEEPSLATE_BRICKS.get())));
-    public static final DeferredBlock<WallBlock> SCULKED_DEEPSLATE_BRICK_WALL = REGISTER.register("sculked_deepslate_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(SCULKED_DEEPSLATE_BRICKS.get())));
-
-    private static Block cruxiteOre(BlockBehaviour.Properties properties)
-    {
-        return new DropExperienceBlock(UniformInt.of(2, 5), properties);
-    }
-
     public static final DeferredBlock<Block> CHESS_TILE = REGISTER.register("chess_tile", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_TERRACOTTA)));
-    public static final DeferredBlock<Block> CRACKED_END_STONE_BRICKS = REGISTER.register("cracked_end_stone_bricks", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS)));
-    public static final DeferredBlock<SlabBlock> CRACKED_END_STONE_BRICKS_SLAB = REGISTER.register("cracked_end_stone_bricks_slab", ()-> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
-    public static final DeferredBlock<StairBlock> CRACKED_END_STONE_BRICKS_STAIRS = REGISTER.register("cracked_end_stone_bricks_stairs", ()-> new StairBlock(MSEBlocks.CRACKED_END_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
-    public static final DeferredBlock<WallBlock> CRACKED_END_STONE_BRICKS_WALL = REGISTER.register("cracked_end_stone_bricks_wall", ()-> new WallBlock(BlockBehaviour.Properties.ofFullCopy(CRACKED_END_STONE_BRICKS.get())));
 
     public static final DeferredBlock<Block> DIAMOND_LICHEN = REGISTER.register("diamond_lichen", ()->new GlowLichenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GLOW_LICHEN).noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN).lightLevel(GlowLichenBlock.emission(7)).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CRUXITE_LICHEN = REGISTER.register("cruxite_lichen", ()->new GlowLichenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GLOW_LICHEN).noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN).lightLevel(GlowLichenBlock.emission(7)).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> URANIUM_LICHEN = REGISTER.register("uranium_lichen", ()->new GlowLichenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GLOW_LICHEN).noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN).lightLevel(GlowLichenBlock.emission(7)).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> PLUSH_VRISKA = REGISTER.register("plush_vriska", ()->new PlushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL)));
     public static final DeferredBlock<Block> PLUSH_NEPETA = REGISTER.register("plush_nepeta", ()->new PlushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL)));

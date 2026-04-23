@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "minestuck_extended:block/sculked_deepslate_bricks",
-    "side": "minestuck_extended:block/sculked_deepslate_bricks",
-    "top": "minestuck_extended:block/sculked_deepslate_bricks"
-  }
-}

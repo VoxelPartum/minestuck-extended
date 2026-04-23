@@ -34,8 +34,6 @@ public class MSECreativeTab {
         output.accept(MSEItems.NORMALER_BROWNIE.get());
         output.accept(MSEItems.ROULETTE_CARD.get());
         output.accept(MSEItems.ZIP_CARD.get());
-        output.accept(MSEItems.HASHSTACK_CARD.get());
-        output.accept(MSEItems.ARRAY_CARD.get());
 
         output.accept(MSEItems.SHADOW_CRYSTAL.get());
         output.accept(MSEItems.DELTA_RUNE.get());
@@ -84,6 +82,8 @@ public class MSECreativeTab {
         
         output.accept(MSEItems.CHESS_TILE.get());
         output.accept(MSEItems.DIAMOND_LICHEN.get());
+        output.accept(MSEItems.CRUXITE_LICHEN.get());
+        output.accept(MSEItems.URANIUM_LICHEN.get());
 
         output.accept(MSEItems.PLUSH_VRISKA.get());
         output.accept(MSEItems.PLUSH_NEPETA.get());
@@ -108,17 +108,6 @@ public class MSECreativeTab {
         output.accept(MSEItems.SCALEMATE_PUMPKINSNUFFLE.get());
         output.accept(MSEItems.SCALEMATE_PYRALSPITE.get());
         output.accept(MSEItems.SCALEMATE_WITNESS.get());
-
-        output.accept(MSEItems.DEEPSLATE_CRUXITE_ORE.get());
-        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICKS.get());
-        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_STAIRS.get());
-        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_SLAB.get());
-        output.accept(MSEItems.SCULKED_DEEPSLATE_BRICK_WALL.get());
-
-//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS.get());
-//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_STAIRS.get());
-//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_SLAB.get());
-//        output.accept(MSEItems.CRACKED_ENDSTONE_BRICKS_WALL.get());
 
         if(ModList.get().isLoaded("create")){
             output.accept(CreateCompat.RENCH.get());

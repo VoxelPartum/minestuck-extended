@@ -1,2 +1,4 @@
-// 1.21.1	2025-08-05T05:11:51.7670416	Tags for minecraft:block mod id minestuck_extended
+// 1.21.1	2026-03-08T08:14:35.1024098	Tags for minecraft:block mod id minestuck_extended
+84f09b99aba994a5659a2bf3f215dd2d280b1587 data/minecraft/tags/block/enchantment_power_provider.json
 90235e2a297b31fb8085c6fe3bae8df3f0fc9bbf data/minecraft/tags/block/mineable/axe.json
+cb320aea356e9b705e2e3d8ad3ca17730676064f data/minecraft/tags/block/mineable/shovel.json

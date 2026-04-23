@@ -37,8 +37,6 @@ public class MSEItems {
     public static final DeferredItem<Item> ROULETTE_CARD = REGISTER.register("roulette_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> ZIP_CARD = REGISTER.register("zip_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> ZIP_BUNDLE = REGISTER.register("zip_bundle", () -> new ZipBundleItem(new Item.Properties().stacksTo(1).component(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY)));
-    public static final DeferredItem<Item> ARRAY_CARD = REGISTER.register("array_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
-    public static final DeferredItem<Item> HASHSTACK_CARD = REGISTER.register("hashstack_modus_card", ()-> new Item(new Item.Properties().stacksTo(1)));
 
     //#region Bladekind
     public static final DeferredItem<Item> SHADOW_SWORD = REGISTER.register("shadow_sword", () -> new WeaponItem(new WeaponItem.Builder(Tiers.DIAMOND, 2, -2.2f).efficiency(1.0F).set(MSItemTypes.SWORD_TOOL).add(OnHitEffect.SWEEP), new Item.Properties()));
@@ -119,19 +117,11 @@ public class MSEItems {
     public static final DeferredItem<Item> NORMALER_BROWNIE = REGISTER.register("normaler_brownie", ()->new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).alwaysEdible().effect(() -> new MobEffectInstance(MSEEffects.CREATIVE_INSPIRATION, 3600,1), 1f).build())));
 
     //BlockItems
-
-    public static final DeferredItem<BlockItem> DEEPSLATE_CRUXITE_ORE = registerBlockItem(MSEBlocks.DEEPSLATE_CRUXITE_ORE);
-    public static final DeferredItem<BlockItem> SCULKED_DEEPSLATE_BRICKS = registerBlockItem(MSEBlocks.SCULKED_DEEPSLATE_BRICKS);
-    public static final DeferredItem<BlockItem> SCULKED_DEEPSLATE_BRICK_STAIRS = registerBlockItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS);
-    public static final DeferredItem<BlockItem> SCULKED_DEEPSLATE_BRICK_SLAB = registerBlockItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB);
-    public static final DeferredItem<BlockItem> SCULKED_DEEPSLATE_BRICK_WALL = registerBlockItem(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL);
-
     public static final DeferredItem<BlockItem> CHESS_TILE = registerBlockItem(MSEBlocks.CHESS_TILE);
-    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS);
-    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_SLAB = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB);
-    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_STAIRS = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS);
-    public static final DeferredItem<BlockItem> CRACKED_ENDSTONE_BRICKS_WALL = registerBlockItem(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL);
+
     public static final DeferredItem<BlockItem> DIAMOND_LICHEN = registerBlockItem(MSEBlocks.DIAMOND_LICHEN);
+    public static final DeferredItem<BlockItem> CRUXITE_LICHEN = registerBlockItem(MSEBlocks.CRUXITE_LICHEN);
+    public static final DeferredItem<BlockItem> URANIUM_LICHEN = registerBlockItem(MSEBlocks.URANIUM_LICHEN);
     public static final DeferredItem<BlockItem> PLUSH_VRISKA = registerBlockItem(MSEBlocks.PLUSH_VRISKA);
     public static final DeferredItem<BlockItem> PLUSH_NEPETA = registerBlockItem(MSEBlocks.PLUSH_NEPETA);
     public static final DeferredItem<BlockItem> PLUSH_GENESIS_FROG = registerBlockItem(MSEBlocks.PLUSH_GENESIS_FROG);

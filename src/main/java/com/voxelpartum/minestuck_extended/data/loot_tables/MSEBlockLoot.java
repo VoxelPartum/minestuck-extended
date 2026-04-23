@@ -26,17 +26,7 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
-        add(MSEBlocks.DEEPSLATE_CRUXITE_ORE.get(), this::cruxiteOreDrop);
-        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICKS.get());
-        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_SLAB.get());
-        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_STAIRS.get());
-        dropSelf(MSEBlocks.SCULKED_DEEPSLATE_BRICK_WALL.get());
-
         dropSelf(MSEBlocks.CHESS_TILE.get());
-        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS.get());
-        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get());
-        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get());
-        dropSelf(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get());
         dropSelf(MSEBlocks.PLUSH_VRISKA.get());
         dropSelf(MSEBlocks.PLUSH_NEPETA.get());
         dropSelf(MSEBlocks.PLUSH_GENESIS_FROG.get());
@@ -45,6 +35,8 @@ public class MSEBlockLoot extends BlockLootSubProvider {
         dropSelf(MSEBlocks.PLUSH_DIAMONDS_DROOG.get());
         dropSelf(MSEBlocks.PLUSH_CLUBS_DEUCE.get());
         dropSelf(MSEBlocks.DIAMOND_LICHEN.get());
+        dropSelf(MSEBlocks.CRUXITE_LICHEN.get());
+        dropSelf(MSEBlocks.URANIUM_LICHEN.get());
 
         dropSelf(MSEBlocks.PLUSH_SALAMANDER.get());
         dropSelf(MSEBlocks.PLUSH_NAKAGATOR.get());

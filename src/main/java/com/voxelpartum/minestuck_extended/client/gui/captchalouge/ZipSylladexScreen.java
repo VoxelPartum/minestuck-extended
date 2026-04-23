@@ -4,14 +4,15 @@ import com.mraof.minestuck.client.gui.captchalouge.SylladexScreen;
 import com.mraof.minestuck.inventory.captchalogue.Modus;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 
 public class ZipSylladexScreen extends SylladexScreen {
 
     public Modus modus;
 
-    public ZipSylladexScreen(Modus modus){
-        super();
+    public ZipSylladexScreen(int windowId, Inventory inventory, Modus modus){
+        super(windowId, inventory, modus);
         this.modus = modus;
         this.textureIndex = 0;
     }

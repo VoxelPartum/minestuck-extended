@@ -11,7 +11,6 @@ import com.voxelpartum.minestuck_extended.item.MSEItems;
 import com.voxelpartum.minestuck_extended.inventory.captchalogue.MSEModi;
 import com.voxelpartum.minestuck_extended.compat.CreateCompat;
 import com.voxelpartum.minestuck_extended.util.MSESoundEvents;
-import com.voxelpartum.minestuck_extended.world.lands.MSELandTypes;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -26,7 +25,6 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.RegisterEvent;
 
 @Mod(MinestuckExtended.MOD_ID)
 public class MinestuckExtended
@@ -55,7 +53,6 @@ public class MinestuckExtended
         MSECreativeTab.REGISTER.register(modEventBus);
         MSEEffects.REGISTER.register(modEventBus);
         MSESoundEvents.REGISTER.register(modEventBus);
-        //MSELandTypes.TERRAIN_REGISTER.register(modEventBus);
 
         MSEModi.REGISTER.register(modEventBus);
 
