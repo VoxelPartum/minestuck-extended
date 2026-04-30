@@ -12,15 +12,17 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
+import javax.annotation.Nonnull;
 import java.util.concurrent.CompletableFuture;
 
 public class MSEBlockTagsProvider extends BlockTagsProvider {
-    public MSEBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+    public MSEBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
+                                @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, MinestuckExtended.MOD_ID, existingFileHelper);
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(@Nonnull HolderLookup.Provider provider) {
 
         tag(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(AspectTreeBlocks.BREATH_ASPECT_BOOKSHELF.asBlock())

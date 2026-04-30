@@ -28,8 +28,8 @@ public class RouletteSylladexScreen extends SylladexScreen {
     public void init()
     {
         super.init();
-        guiButton = new ExtendedButton(xOffset + BUTTON_X_OFFSET, yOffset + BUTTON_Y_OFFSET + BUTTON_HEIGHT * 2 + 6, BUTTON_WIDTH, BUTTON_HEIGHT, Component.empty(), button -> spinModus());
-        addRenderableWidget(guiButton);
+//        guiButton = new ExtendedButton(xOffset + BUTTON_X_OFFSET, yOffset + BUTTON_Y_OFFSET + BUTTON_HEIGHT * 2 + 6, BUTTON_WIDTH, BUTTON_HEIGHT, Component.empty(), button -> spinModus());
+//        addRenderableWidget(guiButton);
     }
 
     @Override
@@ -106,7 +106,7 @@ public class RouletteSylladexScreen extends SylladexScreen {
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float f)
     {
-        guiButton.setMessage(Component.translatable("minestuck_extended.spin_modus"));
+        //guiButton.setMessage(Component.translatable("minestuck_extended.spin_modus"));
         super.render(guiGraphics, mouseX, mouseY, f);
     }
 
