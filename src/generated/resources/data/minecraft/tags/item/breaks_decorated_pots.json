@@ -1,13 +1,28 @@
 {
   "values": [
+    "minestuck_extended:oven_mitt",
+    "minestuck_extended:metal_gauntlet",
+    "minestuck_extended:prismarine_gauntlet",
+    "minestuck_extended:strong_glove",
+    "minestuck_extended:mantisblade",
     "minestuck_extended:whifflebat",
     "minestuck_extended:metal_pan",
     "minestuck_extended:home_run_bat",
     "minestuck_extended:club_spiked",
     "minestuck_extended:spring_mace",
+    "minestuck_extended:magnified_glass",
+    "minestuck_extended:extendo_bat",
+    "minestuck_extended:brain_fork",
+    "minestuck_extended:psidon_entente",
+    "minestuck_extended:pearlescent_sixant",
     "minestuck_extended:lancer",
+    "minestuck_extended:glaive",
+    "minestuck_extended:shadow_glaive",
     "minestuck_extended:devilsknife",
     "minestuck_extended:seagrift_scythe",
-    "minestuck_extended:princess_wand"
+    "minestuck_extended:gunscythe",
+    "minestuck_extended:princess_wand",
+    "minestuck_extended:ice_staff",
+    "minestuck_extended:unicorns_hunting_knife"
   ]
 }

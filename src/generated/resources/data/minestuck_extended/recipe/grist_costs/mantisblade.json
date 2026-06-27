@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 400,
+    "minestuck:ruby": 150,
+    "minestuck:tar": 200
+  },
+  "ingredient": {
+    "item": "minestuck_extended:mantisblade"
+  }
+}

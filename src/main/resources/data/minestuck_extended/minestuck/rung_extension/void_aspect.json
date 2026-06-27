@@ -1,0 +1,20 @@
+{
+  "aspect": "void",
+  "effects": [
+    {
+      "effect": "minestuck_extended:shade_strength",
+      "amplifier": 0,
+      "rung": 10
+    },
+    {
+      "effect": "minestuck_extended:shade_strength",
+      "amplifier": 1,
+      "rung": 20
+    },
+    {
+      "effect": "minestuck_extended:shade_strength",
+      "amplifier": 2,
+      "rung": 30
+    }
+  ]
+}

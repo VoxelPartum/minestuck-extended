@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent":"minestuck_extended:item/glove_model",
+    "textures": {"0": "minestuck_extended:item/strong_glove_3d"}
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/strong_glove_2d" }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/strong_glove_2d" }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/strong_glove_2d" }
+    }
+  }
+}

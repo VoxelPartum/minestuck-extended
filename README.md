@@ -9,13 +9,23 @@ Features:
 Currently, the mod adds:
 
 - Grist costs for pre-existing Minecraft items that previously did not have them.
-- Beaglepusses (beaglepi?) - A silly disguise for any aspiring prankster.
-- Weapons: A collection of weapons both drawing from other games as well as creative combinations of vanilla Minecraft items.
+- 2 new effects tied to the echeladder rank of Void and Space players.
+  - Void: "Shade Strength" - Deals 5% more damage depending on how dark your surroundings are.
+    - The specific formula is (15-\*Light Level\*) x (0.05 x \*Amplifier\*)
+  - Space: "Creative Inspiration" - Increases block interaction reach.
+    - Each level increments the reach by 1.5 blocks.
+- Beaglepusses (beaglepi?): A silly disguise for any aspiring prankster.
+- "Hornbands" of every canon troll seen in base Homestuck (and the horns of 24 OC's as well).
+- Wearable hats for every member of The Felt.
+- Weapons: A collection of weapons both drawing from other games and creative combinations of vanilla Minecraft items.
+  - This also includes a handful of personal fantroll weapons (can't a mod author get a _little_ self-indulgent?)
 - Shields: 2 (actually useful) shields that give either enhanced knockback or the chance to steal your opponent's weapon!
 - Roulette Modus: A more convoluted way to collect your items, since every fetch *might* not give you the item!
+- Zip Modus: Rather than fetch one item at a time, you can zip 3 items (by default) up into a "Zip bundle."
 - Armor Trims: There is an armor trim for every aspect, as well as a general spirogram themed trim.
 - Armor Materials: You can now use raw cruxite, uranium, and bi-dye to trim armor.
 - Placeable plushies of both consort and scalemate varieties.
+- Placeable plushies of the midnight crew, genesis frog, and 2 trolls.
 
 Mod Compat(s):
 =======

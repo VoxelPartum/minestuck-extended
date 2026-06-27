@@ -42,6 +42,9 @@ public class MSEComputerThemeProvider implements DataProvider {
     public CompletableFuture<?> run(CachedOutput cache) {
 
         add(MSEComputerThemes.BONER, 0xFF780B);
+        add(MSEComputerThemes.JACK_BLACKTOP, 0xFF780B);
+        add(MSEComputerThemes.FUCKIN_SICK, 0x0021CB);
+        add(MSEComputerThemes.SELFCEST, 0x53A3FF);
 
         Path outputPath = output.getOutputFolder(PackOutput.Target.RESOURCE_PACK);
         List<CompletableFuture<?>> futures = new ArrayList<>(computerThemes.size());

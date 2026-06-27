@@ -1,26 +1,20 @@
 package com.voxelpartum.minestuck_extended.data.recipe;
 
-import com.mraof.minestuck.block.AspectTreeBlocks;
 import com.mraof.minestuck.data.recipe.IrradiatingRecipeBuilder;
 import com.mraof.minestuck.item.MSItems;
-import com.mraof.minestuck.util.MSTags;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatItems;
+import com.voxelpartum.minestuck_extended.block.MSEBlocks;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
-import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
-import vectorwing.farmersdelight.common.registry.ModItems;
-import vectorwing.farmersdelight.common.tag.CommonTags;
-import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.concurrent.CompletableFuture;
@@ -38,19 +32,60 @@ public class MSERecipeProvider extends RecipeProvider {
 
         IrradiatingRecipeBuilder.irradiating(Ingredient.of(MSEItems.NORMAL_BROWNIE), MSEItems.NORMALER_BROWNIE.get(), 0.2F, 250).save(recipeBuilder);
 
-//        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.END_STONE_BRICKS), RecipeCategory.MISC, MSEItems.CRACKED_ENDSTONE_BRICKS.get().asItem(), 0.1f, 200)
-//                .unlockedBy("has_end_stone_bricks", has(Items.END_STONE_BRICKS))
-//                .save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_brick_smelting"));
-//
-//        CommonRecipes.slabRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
-//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
-//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_SLAB.get(),2).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_slab_from_stonecutting"));
-//        CommonRecipes.stairsRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
-//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
-//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_STAIRS.get(),1).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_stairs_from_stonecutting"));
-//        CommonRecipes.wallRecipe(MSEBlocks.CRACKED_END_STONE_BRICKS_WALL, MSEBlocks.CRACKED_END_STONE_BRICKS).group("cracked_end_stone_bricks")
-//                .unlockedBy("has_cracked_end_stone_bricks", has(MSEItems.CRACKED_ENDSTONE_BRICKS)).save(recipeBuilder);
-//        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEBlocks.CRACKED_END_STONE_BRICKS.get()), RecipeCategory.BUILDING_BLOCKS, MSEBlocks.CRACKED_END_STONE_BRICKS_WALL.get(),1).unlockedBy("has_cracked_end_stone_bricks", has(MSEBlocks.CRACKED_END_STONE_BRICKS.get())).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "cracked_end_stone_wall_from_stonecutting"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, MSEItems.GLAIVE.get())
+                .pattern("  S")
+                .pattern(" L ")
+                .pattern("L  ")
+                .define('S', Items.IRON_SWORD)
+                .define('L', Items.STICK)
+                .unlockedBy("has_"+BuiltInRegistries.ITEM.getKey(Items.STRING), has(Items.STRING))
+                .save(recipeBuilder);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MSEItems.OVEN_MITT.get())
+                .pattern("L#")
+                .pattern("#S")
+                .define('L', Items.LEATHER)
+                .define('#', ItemTags.WOOL)
+                .define('S', Items.STRING)
+                .unlockedBy("has_"+BuiltInRegistries.ITEM.getKey(Items.LEATHER), has(Items.LEATHER))
+                .save(recipeBuilder);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MSEItems.HEADBAND.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', Items.STRING)
+                .unlockedBy("has_"+BuiltInRegistries.ITEM.getKey(Items.STRING), has(Items.STRING))
+                .save(recipeBuilder);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, MSEItems.HORUSS_HORNS.get())
+                .pattern("ESE")
+                .define('E', MSEItems.EQUIUS_HORNS)
+                .define('S', Items.STRING)
+                .unlockedBy("has_"+BuiltInRegistries.ITEM.getKey(MSEItems.EQUIUS_HORNS.get()), has(MSEItems.EQUIUS_HORNS.get()))
+                .save(recipeBuilder);
+
+        paneRecipe(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS_PANE::get, MSEItems.HOPEYGLASS, recipeBuilder);
+        paneRecipe(RecipeCategory.DECORATIONS, MSEItems.DEPTHS_HOPEYGLASS::get, MSEItems.DEPTHS_HOPEYGLASS_PANE, recipeBuilder);
+
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.RED_DYE, MSEItems.RED_HOPEYGLASS::get, MSEItems.RED_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.ORANGE_DYE, MSEItems.ORANGE_HOPEYGLASS::get, MSEItems.ORANGE_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.YELLOW_DYE, MSEItems.YELLOW_HOPEYGLASS::get, MSEItems.YELLOW_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.LIME_DYE, MSEItems.LIME_HOPEYGLASS::get, MSEItems.LIME_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.GREEN_DYE, MSEItems.GREEN_HOPEYGLASS::get, MSEItems.GREEN_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.CYAN_DYE, MSEItems.CYAN_HOPEYGLASS::get, MSEItems.CYAN_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.LIGHT_BLUE_DYE, MSEItems.LIGHT_BLUE_HOPEYGLASS::get, MSEItems.LIGHT_BLUE_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.BLUE_DYE, MSEItems.BLUE_HOPEYGLASS::get, MSEItems.BLUE_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.PURPLE_DYE, MSEItems.PURPLE_HOPEYGLASS::get, MSEItems.PURPLE_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.MAGENTA_DYE, MSEItems.MAGENTA_HOPEYGLASS::get, MSEItems.MAGENTA_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.PINK_DYE, MSEItems.PINK_HOPEYGLASS::get, MSEItems.PINK_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.WHITE_DYE, MSEItems.WHITE_HOPEYGLASS::get, MSEItems.WHITE_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.LIGHT_GRAY_DYE, MSEItems.LIGHT_GRAY_HOPEYGLASS::get, MSEItems.LIGHT_GRAY_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.GRAY_DYE, MSEItems.GRAY_HOPEYGLASS::get, MSEItems.GRAY_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.BLACK_DYE, MSEItems.BLACK_HOPEYGLASS::get, MSEItems.BLACK_HOPEYGLASS_PANE::get, recipeBuilder);
+        stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.BROWN_DYE, MSEItems.BROWN_HOPEYGLASS::get, MSEItems.BROWN_HOPEYGLASS_PANE::get, recipeBuilder);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(MSEItems.HOPEYGLASS), RecipeCategory.DECORATIONS, MSEBlocks.HOPEYGLASS_PILLAR)
+                .unlockedBy("has_"+ BuiltInRegistries.ITEM.getKey(MSEItems.HOPEYGLASS.get()), has(MSEItems.HOPEYGLASS)).save(recipeBuilder);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_SALAMANDER.get()).unlockedBy("has_plush_salamander_item", has(MSItems.PLUSH_SALAMANDER)).requires(MSItems.PLUSH_SALAMANDER).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_salamander_item_to_block"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, MSEItems.PLUSH_NAKAGATOR.get()).unlockedBy("has_plush_nakagator_item", has(MSItems.PLUSH_NAKAGATOR)).requires(MSItems.PLUSH_NAKAGATOR).save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "plush_nakagator_item_to_block"));
@@ -104,78 +139,32 @@ public class MSERecipeProvider extends RecipeProvider {
         MSEGristCostsProvider.buildRecipes(recipeBuilder);
         MSECombinationsProvider.buildRecipes(recipeBuilder);
 
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.BREATH_CABINET, AspectTreeBlocks.BREATH_ASPECT_SLAB, AspectTreeBlocks.BREATH_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.LIFE_CABINET, AspectTreeBlocks.LIFE_ASPECT_SLAB, AspectTreeBlocks.LIFE_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.LIGHT_CABINET, AspectTreeBlocks.LIGHT_ASPECT_SLAB, AspectTreeBlocks.LIGHT_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.TIME_CABINET, AspectTreeBlocks.TIME_ASPECT_SLAB, AspectTreeBlocks.TIME_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.HEART_CABINET, AspectTreeBlocks.HEART_ASPECT_SLAB, AspectTreeBlocks.HEART_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.RAGE_CABINET, AspectTreeBlocks.RAGE_ASPECT_SLAB, AspectTreeBlocks.RAGE_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.BLOOD_CABINET, AspectTreeBlocks.BLOOD_ASPECT_SLAB, AspectTreeBlocks.BLOOD_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.DOOM_CABINET, AspectTreeBlocks.DOOM_ASPECT_SLAB, AspectTreeBlocks.DOOM_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.VOID_CABINET, AspectTreeBlocks.VOID_ASPECT_SLAB, AspectTreeBlocks.VOID_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.SPACE_CABINET, AspectTreeBlocks.SPACE_ASPECT_SLAB, AspectTreeBlocks.SPACE_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.MIND_CABINET, AspectTreeBlocks.MIND_ASPECT_SLAB, AspectTreeBlocks.MIND_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.HOPE_CABINET, AspectTreeBlocks.HOPE_ASPECT_SLAB, AspectTreeBlocks.HOPE_ASPECT_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.CARVED_CABINET, MSItems.CARVED_SLAB, MSItems.CARVED_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.TREATED_CABINET, MSItems.TREATED_PLANKS_SLAB, MSItems.TREATED_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.LACQUERED_CABINET, MSItems.LACQUERED_SLAB, MSItems.LACQUERED_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.GLOWING_CABINET, MSItems.GLOWING_SLAB, MSItems.GLOWING_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.FROST_CABINET, MSItems.FROST_SLAB, MSItems.FROST_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.RAINBOW_CABINET, MSItems.RAINBOW_SLAB, MSItems.RAINBOW_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.END_CABINET, MSItems.END_SLAB, MSItems.END_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.DEAD_CABINET, MSItems.DEAD_SLAB, MSItems.DEAD_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.CINDERED_CABINET, MSItems.CINDERED_SLAB, MSItems.CINDERED_TRAPDOOR, recipeBuilder);
-        cabinetBlock(RecipeCategory.BUILDING_BLOCKS, FDCompatItems.SHADEWOOD_CABINET, MSItems.SHADEWOOD_SLAB, MSItems.SHADEWOOD_TRAPDOOR, recipeBuilder);
-
-        CookingPotRecipeBuilder.cookingPotRecipe(MSItems.JAR_OF_BUGS.get(), 1, 100, 0.35f, Items.GLASS_BOTTLE)
-                .addIngredient(MSTags.Items.BUGS)
-                .addIngredient(MSTags.Items.BUGS)
-                .addIngredient(MSTags.Items.BUGS)
-                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeBuilder);
-
-        CookingPotRecipeBuilder.cookingPotRecipe(MSItems.GRUB_SAUCE.get(), 2, 100, 0.35f, Items.PAPER)
-                .addIngredient(MSTags.Items.BUGS)
-                .addIngredient(MSTags.Items.BUGS)
-                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeBuilder);
-
-        CookingPotRecipeBuilder.cookingPotRecipe(FDCompatItems.BILESLAW.get(), 1, 200, 1f)
-                .addIngredient(CommonTags.CROPS_CABBAGE)
-                .addIngredient(CommonTags.CROPS_CABBAGE)
-                .addIngredient(Items.CARROT)
-                .addIngredient(MSTags.Items.BUGS)
-                .addIngredient(MSItems.GRUB_SAUCE)
-                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeBuilder);
-
-        CookingPotRecipeBuilder.cookingPotRecipe(FDCompatItems.GRASSHOPPER_SALSA.get(), 1, 200, 1f)
-                .addIngredient(MSItems.GRASSHOPPER)
-                .addIngredient(MSItems.GRASSHOPPER)
-                .addIngredient(CommonTags.CROPS_ONION)
-                .addIngredient(ModItems.TOMATO_SAUCE.get())
-                .addIngredient(MSItems.GRUB_SAUCE)
-                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeBuilder);
-
-        CookingPotRecipeBuilder.cookingPotRecipe(FDCompatItems.STRAWBERRY_MILKSHAKE.get(), 2, 100, 0.35f, Items.GLASS_BOTTLE)
-                .addIngredient(MSItems.STRAWBERRY_CHUNK)
-                .addIngredient(Items.ICE)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/milk")))
-                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-                .build(recipeBuilder);
-
     }
 
-    public static void cabinetBlock (RecipeCategory category, Supplier<Item> resultItem, ItemLike slabType, ItemLike trapdoorType, RecipeOutput recipeBuilder){
-        ShapedRecipeBuilder.shaped(category, resultItem.get())
-                .pattern("___")
-                .pattern("# #")
-                .pattern("___")
-                .define('_', slabType)
-                .define('#', trapdoorType)
-                .unlockedBy("has_"+trapdoorType.asItem().toString(), has(trapdoorType))
-                .save(recipeBuilder);
+    public static void stainedGlassSuiteRecipes(RecipeCategory category, ItemLike fullGlassInput, ItemLike glassPaneInput, ItemLike dyeColor, Supplier<ItemLike> fullStainedGlassOutput, Supplier<ItemLike> stainedGlassPaneOutput, RecipeOutput recipeBuilder){
+        filledRingRecipe(category, fullStainedGlassOutput, fullGlassInput, dyeColor, recipeBuilder);
+        paneRecipe(category, stainedGlassPaneOutput, fullStainedGlassOutput.get(), recipeBuilder);
+        filledRingRecipe(category, stainedGlassPaneOutput, glassPaneInput, dyeColor, recipeBuilder);
     }
+
+    public static void paneRecipe(RecipeCategory category, Supplier<ItemLike> resultItem, ItemLike fullBlockItem, RecipeOutput recipeBuilder){
+        ShapedRecipeBuilder.shaped(category, resultItem.get(), 16)
+                .pattern("###")
+                .pattern("###")
+                .define('#', fullBlockItem).unlockedBy("has"+fullBlockItem.asItem(), has(fullBlockItem))
+                .save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, BuiltInRegistries.ITEM.getKey(resultItem.get().asItem()).getPath())+"_pane");
+    }
+
+    public static void filledRingRecipe(RecipeCategory category, Supplier<ItemLike> resultItem, ItemLike outerItem, ItemLike innerItem, RecipeOutput recipeBuilder){
+        ShapedRecipeBuilder.shaped(category, resultItem.get(), 8)
+                .pattern("OOO")
+                .pattern("OXO")
+                .pattern("OOO")
+                .define('O', outerItem)
+                .define('X', innerItem)
+                .unlockedBy("has_"+outerItem.asItem(), has(outerItem))
+                .save(recipeBuilder, ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, BuiltInRegistries.ITEM.getKey(resultItem.get().asItem()).getPath())+"_ring");
+    }
+
 
 }

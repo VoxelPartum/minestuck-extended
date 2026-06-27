@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_extended:block/fancy_santa",
+  "textures": {
+    "particle": "minestuck_extended:block/zillysanta",
+    "0": "minestuck_extended:block/zillysanta"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_extended:item/psidon_entente",
+  "textures": {
+    "0": "minestuck_extended:item/pearlescent_sixant",
+    "particle": "minestuck_extended:item/pearlescent_sixant"
+  }
+}

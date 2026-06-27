@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minestuck_extended:block/hopeyglass_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "minestuck_extended:block/hopeyglass_pillar"
+    },
+    "axis=z": {
+      "model": "minestuck_extended:block/hopeyglass_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

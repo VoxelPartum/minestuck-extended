@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:black_shard"
+  },
+  "input2": {
+    "item": "minestuck_extended:hopeyglass_pane"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:hopeyglass_shadowhook"
+}

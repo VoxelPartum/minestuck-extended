@@ -1,0 +1,10 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:artifact": 2000,
+    "minestuck:zillium": 1
+  },
+  "ingredient": {
+    "item": "minestuck_extended:zilly_santa"
+  }
+}

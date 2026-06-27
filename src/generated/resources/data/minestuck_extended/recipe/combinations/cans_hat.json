@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:crumply_hat"
+  },
+  "input2": {
+    "item": "minestuck:food_can"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:cans_hat"
+}

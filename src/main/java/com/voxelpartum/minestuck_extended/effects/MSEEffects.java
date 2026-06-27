@@ -12,5 +12,6 @@ public class MSEEffects {
 
     public static final DeferredHolder<MobEffect, CreativeInspiration> CREATIVE_INSPIRATION = REGISTER.register("creative_inspiration", CreativeInspiration::new);
     public static final DeferredHolder<MobEffect, BrainFog> BRAIN_FOG = REGISTER.register("brain_fog", BrainFog::new);
+    public static final DeferredHolder<MobEffect, ShadeStrength> SHADE_STRENGTH = REGISTER.register("shade_strength", ShadeStrength::new);
 
 }

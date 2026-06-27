@@ -14,11 +14,10 @@ public class DisguiseModel {
 		MeshDefinition mesh = HumanoidModel.createMesh(LayerDefinitions.OUTER_ARMOR_DEFORMATION, 0);
 		PartDefinition root = mesh.getRoot();
 
+		root.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition hat = root.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition head = root.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-
-		PartDefinition glasses = hat.addOrReplaceChild("glasses", CubeListBuilder.create()
+		hat.addOrReplaceChild("glasses", CubeListBuilder.create()
 				.texOffs(8, 0).addBox(-3.0F, -3.0F, 0.0F, 3.0F, 1.0F, 1.0F)
 				.texOffs(4, 7).addBox(0.0F, -2.0F, 0.0F, 1.0F, 3.0F, 1.0F)
 				.texOffs(8, 2).addBox(-3.0F, 1.0F, 0.0F, 3.0F, 1.0F, 1.0F)
@@ -34,18 +33,18 @@ public class DisguiseModel {
 				.texOffs(6, 11).addBox(-4.0F, -2.0F, 1.0F, 1.0F, 1.0F, 4.0F),
 				PartPose.offsetAndRotation(-2.0F, -4.0F, -5.0F,0f,0f,0f));
 
-		PartDefinition nose = hat.addOrReplaceChild("nose", CubeListBuilder.create()
+		hat.addOrReplaceChild("nose", CubeListBuilder.create()
 				.texOffs(0, 4).addBox(1.0F, -1.0F, -0.75F, 2.0F, 2.0F, 1.0F)
 				.texOffs(8, 6).addBox(0.5F, 1.0F, -1.0F, 3.0F, 2.0F, 1.0F),
 				PartPose.offsetAndRotation(-2.0F, -4.0F, -5.0F,0f,0f,0f));
 
-		PartDefinition hair = hat.addOrReplaceChild("hair", CubeListBuilder.create()
+		hat.addOrReplaceChild("hair", CubeListBuilder.create()
 				.texOffs(8, 4).addBox(-2.0F, -1.0F, -5.5F, 4.0F, 2.0F, 0.0F)
 				.texOffs(0, 11).addBox(-6.0F, -9.0F, -4.5F, 5.0F, 3.0F, 0.0F)
 				.texOffs(0, 11).addBox(1.0F, -9.0F, -4.5F, 5.0F, 3.0F, 0.0F),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition disguise = hat.addOrReplaceChild("disguise", CubeListBuilder.create()
+		hat.addOrReplaceChild("disguise", CubeListBuilder.create()
 				.texOffs(24, 48).addBox(-3.0F, -6.0F, 1.0F, 10.0F, 2.0F, 10.0F)
 				.texOffs(0, 52).addBox(-2.0F, -10.0F, 2.0F, 8.0F, 4.0F, 8.0F),
 				PartPose.offsetAndRotation(-2.0F, -4.0F, -5.0F,0f,0f,0f));

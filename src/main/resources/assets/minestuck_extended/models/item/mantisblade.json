@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent":"minestuck_extended:item/mantisblade_right"
+  },
+  "perspectives": {
+    "thirdperson_lefthand": {"parent": "minestuck_extended:item/mantisblade_left"},    
+    "firstperson_lefthand": {"parent": "minestuck_extended:item/mantisblade_left"},
+    "gui": {"parent": "minestuck_extended:item/mantisblade_right"},    
+    "ground": {"parent": "minestuck_extended:item/mantisblade_right"},
+    "fixed": {"parent": "minestuck_extended:item/mantisblade_right"}
+  }
+}

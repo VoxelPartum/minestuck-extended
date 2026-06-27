@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:chalk": 20,
+    "minestuck:iodine": 5,
+    "minestuck:rust": 100
+  },
+  "ingredient": {
+    "item": "minestuck_extended:metal_gauntlet"
+  }
+}

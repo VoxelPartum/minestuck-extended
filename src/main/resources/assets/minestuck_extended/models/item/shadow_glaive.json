@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "minestuck_extended:item/large_weapon",
+    "textures": {
+      "layer0": "minestuck_extended:item/shadow_glaive"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/shadow_glaive_gui"}
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/shadow_glaive_gui"}
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": { "layer0": "minestuck_extended:item/shadow_glaive_gui"}
+    }
+  }
+}

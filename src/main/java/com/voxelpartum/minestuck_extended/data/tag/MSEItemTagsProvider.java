@@ -7,8 +7,8 @@ import com.mraof.minestuck.item.weapon.WeaponItem;
 import com.mraof.minestuck.item.weapon.projectiles.ConsumableProjectileWeaponItem;
 import com.simibubi.create.AllTags;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatItems;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
+import com.voxelpartum.minestuck_extended.item.weapon.MSEItemTypes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -17,8 +17,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import vectorwing.farmersdelight.common.tag.CommonTags;
-import vectorwing.farmersdelight.common.tag.ModTags;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -44,12 +42,10 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider){
 
         List<MSToolType> minestuckextendedMiningToolTypes = List.of(SICKLE_TOOL, SCYTHE_TOOL, CLAWS_TOOL, HAMMER_TOOL, FORK_TOOL);
-        List<MSToolType> minestuckMeleeExtendedToolTypes = List.of(LANCE_TOOL, CLUB_TOOL, KNIFE_TOOL, KEY_TOOL, FAN_TOOL, BATON_TOOL, STAFF_TOOL, CANE_TOOL, WAND_TOOL);
+        List<MSToolType> minestuckMeleeExtendedToolTypes = List.of(LANCE_TOOL, CLUB_TOOL, KNIFE_TOOL, KEY_TOOL, FAN_TOOL, BATON_TOOL, STAFF_TOOL, CANE_TOOL, WAND_TOOL, MSEItemTypes.GLOVE_TOOL);
         List<MSToolType> minestuckExtendedToolTypes = Stream.concat(minestuckextendedMiningToolTypes.stream(), minestuckMeleeExtendedToolTypes.stream()).toList();
 
         tag(BOOKSHELF_BOOKS).add(MSItems.CAPTCHA_CARD.get());
-
-        tag(CommonTags.CROPS_ONION).add(MSItems.ONION.get());
 
         tag(TOOLS_SHIELD).add(SHEELD.get()).add(POGO_SHIELD.get()).add(MAGNET_SHIELD.get());
 
@@ -69,6 +65,8 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
         tag(MINING_LOOT_ENCHANTABLE).add(relevantWeapons(item -> hasToolType(item, minestuckextendedMiningToolTypes)));
         tag(SWORD_ENCHANTABLE).add(relevantWeapons(item -> item instanceof WeaponItem));
         tag(VANISHING_ENCHANTABLE).add(relevantWeapons(item -> item instanceof WeaponItem));
+
+        this.tag(TRIDENT_ENCHANTABLE).add(BRAIN_FORK.get()).add(PSIDON_ENTENTE.get()).add(PEARLESCENT_SIXANT.get());
 
         this.tag(TRIM_MATERIALS)
                 .add(MSItems.RAW_CRUXITE.get())
@@ -90,65 +88,27 @@ public class MSEItemTagsProvider extends ItemTagsProvider {
                 .add(MIND_ARMOR_TRIM.get())
                 .add(HOPE_ARMOR_TRIM.get());
 
-            this.tag(CommonTags.TOOLS_KNIFE)
-                    .add(MSItems.DAGGER.get())
-                    .add(MSItems.DIAMOND_DAGGER.get())
-                    .add(MSItems.PIGLINS_PRIDE.get())
-                    .add(MSItems.BASILISK_BREATH_DRAGONSLAYER.get())
-                    .add(MSItems.HALLOWED_SKEWER.get())
-                    .add(MSItems.GENESIS_GODSTABBER.get())
-                    .add(MSItems.LIGHT_OF_MY_KNIFE.get())
-                    .add(MSItems.THOUSAND_DEGREE_KNIFE.get())
-                    .add(MSItems.STARSHARD_TRI_BLADE.get())
-                    .add(MSItems.TOOTHRIPPER.get())
-                    .add(MSItems.SHADOWRAZOR.get())
-                    .add(MSItems.PRINCESS_PERIL.get());
 
-            tag(AllTags.AllItemTags.CHAIN_RIDEABLE.tag)
-                    .add(MSItems.SCYTHE.get())
-                    .add(MSItems.MARASCHINO_CHERRY_SCYTHE.get())
-                    .add(MSItems.KISSY_CUTIE_HEART_SPLITTER.get())
-                    .add(MSItems.MUTANT_CUTIE_CELL_CUTTER.get())
-                    .add(MSItems.PROSPECTING_PICKSCYTHE.get())
-                    .add(MSItems.EIGHTBALL_SCYTHE.get())
-                    .add(MSItems.TIME_FLAYER.get())
-                    .add(MSItems.DESTINY_DECIMATOR.get())
-                    .add(MSItems.SUNRAY_HARVESTER.get())
-                    .add(MSItems.GREEN_SUN_RAYREAPER.get())
-                    .add(MSItems.SKAITHE.get())
-                    .add(MSItems.HELLBRINGERS_HOE_ACTIVE.get())
-                    .add(MSItems.HELLBRINGERS_HOE_INACTIVE.get())
-                    .add(SEAGRIFT_SCYTHE.get());
+        tag(AllTags.AllItemTags.CHAIN_RIDEABLE.tag)
+                .add(MSItems.SCYTHE.get())
+                .add(MSItems.MARASCHINO_CHERRY_SCYTHE.get())
+                .add(MSItems.KISSY_CUTIE_HEART_SPLITTER.get())
+                .add(MSItems.MUTANT_CUTIE_CELL_CUTTER.get())
+                .add(MSItems.PROSPECTING_PICKSCYTHE.get())
+                .add(MSItems.EIGHTBALL_SCYTHE.get())
+                .add(MSItems.TIME_FLAYER.get())
+                .add(MSItems.DESTINY_DECIMATOR.get())
+                .add(MSItems.SUNRAY_HARVESTER.get())
+                .add(MSItems.GREEN_SUN_RAYREAPER.get())
+                .add(MSItems.SKAITHE.get())
+                .add(MSItems.HELLBRINGERS_HOE_ACTIVE.get())
+                .add(MSItems.HELLBRINGERS_HOE_INACTIVE.get())
+                .add(SEAGRIFT_SCYTHE.get());
 
-            tag(ModTags.CABINETS)
-                    .add(FDCompatItems.BREATH_CABINET.get())
-                    .add(FDCompatItems.LIFE_CABINET.get())
-                    .add(FDCompatItems.LIGHT_CABINET.get())
-                    .add(FDCompatItems.TIME_CABINET.get())
-                    .add(FDCompatItems.HEART_CABINET.get())
-                    .add(FDCompatItems.RAGE_CABINET.get())
-                    .add(FDCompatItems.BLOOD_CABINET.get())
-                    .add(FDCompatItems.DOOM_CABINET.get())
-                    .add(FDCompatItems.VOID_CABINET.get())
-                    .add(FDCompatItems.SPACE_CABINET.get())
-                    .add(FDCompatItems.MIND_CABINET.get())
-                    .add(FDCompatItems.HOPE_CABINET.get())
-                    .add(FDCompatItems.CARVED_CABINET.get())
-                    .add(FDCompatItems.TREATED_CABINET.get())
-                    .add(FDCompatItems.LACQUERED_CABINET.get())
-                    .add(FDCompatItems.GLOWING_CABINET.get())
-                    .add(FDCompatItems.FROST_CABINET.get())
-                    .add(FDCompatItems.RAINBOW_CABINET.get())
-                    .add(FDCompatItems.END_CABINET.get())
-                    .add(FDCompatItems.DEAD_CABINET.get())
-                    .add(FDCompatItems.CINDERED_CABINET.get())
-                    .add(FDCompatItems.SHADEWOOD_CABINET.get())
-            ;
-
-            tag(UNREADABLE)
-                    .add(Items.HEAVY_CORE)
-                    .add(Items.MACE)
-            ;
+        tag(UNREADABLE)
+                .add(Items.HEAVY_CORE)
+                .add(Items.MACE)
+        ;
 
     }
 

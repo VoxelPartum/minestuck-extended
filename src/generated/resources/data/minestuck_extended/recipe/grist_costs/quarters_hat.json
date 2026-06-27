@@ -1,0 +1,9 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 50
+  },
+  "ingredient": {
+    "item": "minestuck_extended:quarters_hat"
+  }
+}

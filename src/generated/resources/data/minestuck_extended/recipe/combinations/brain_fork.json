@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minecraft:trident"
+  },
+  "input2": {
+    "item": "minecraft:player_head"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:brain_fork"
+}

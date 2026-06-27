@@ -1,6 +1,10 @@
 {
   "values": [
+    "minestuck_extended:brain_fork",
+    "minestuck_extended:psidon_entente",
+    "minestuck_extended:pearlescent_sixant",
     "minestuck_extended:devilsknife",
-    "minestuck_extended:seagrift_scythe"
+    "minestuck_extended:seagrift_scythe",
+    "minestuck_extended:gunscythe"
   ]
 }

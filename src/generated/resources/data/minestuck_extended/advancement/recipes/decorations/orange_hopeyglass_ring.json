@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_minestuck_extended:hopeyglass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck_extended:hopeyglass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_extended:orange_hopeyglass_ring"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_minestuck_extended:hopeyglass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_extended:orange_hopeyglass_ring"
+    ]
+  }
+}

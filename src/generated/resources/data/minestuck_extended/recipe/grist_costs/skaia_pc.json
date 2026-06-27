@@ -1,0 +1,15 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 50,
+    "minestuck:garnet": 8,
+    "minestuck:gold": 3,
+    "minestuck:marble": 5,
+    "minestuck:quartz": 6,
+    "minestuck:rust": 10,
+    "minestuck:uranium": 23
+  },
+  "ingredient": {
+    "item": "minestuck_extended:skaia_pc"
+  }
+}

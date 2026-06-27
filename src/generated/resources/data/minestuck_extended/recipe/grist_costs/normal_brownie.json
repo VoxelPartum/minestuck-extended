@@ -3,7 +3,7 @@
   "grist_cost": {
     "minestuck:amber": 4,
     "minestuck:iodine": 4,
-    "minestuck:uranium": 256
+    "minestuck:uranium": 64
   },
   "ingredient": {
     "item": "minestuck_extended:normal_brownie"

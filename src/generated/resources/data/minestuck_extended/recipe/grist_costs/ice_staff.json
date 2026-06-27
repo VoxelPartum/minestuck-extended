@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 900,
+    "minestuck:chalk": 100,
+    "minestuck:cobalt": 486,
+    "minestuck:uranium": 50
+  },
+  "ingredient": {
+    "item": "minestuck_extended:ice_staff"
+  }
+}

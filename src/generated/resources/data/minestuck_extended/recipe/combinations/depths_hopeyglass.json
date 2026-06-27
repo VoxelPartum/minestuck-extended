@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:hopeyglass"
+  },
+  "input2": {
+    "item": "minestuck_extended:shadow_crystal"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:depths_hopeyglass"
+}

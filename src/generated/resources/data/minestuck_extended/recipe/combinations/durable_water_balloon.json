@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minecraft:water_bucket"
+  },
+  "input2": {
+    "item": "minecraft:snowball"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:durable_water_balloon"
+}

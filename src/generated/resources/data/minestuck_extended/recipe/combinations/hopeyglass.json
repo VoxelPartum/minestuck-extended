@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:hope_armor_trim_smithing_template"
+  },
+  "input2": {
+    "tag": "c:glass_blocks"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:hopeyglass"
+}

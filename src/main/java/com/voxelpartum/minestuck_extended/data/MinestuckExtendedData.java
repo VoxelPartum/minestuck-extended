@@ -2,7 +2,6 @@ package com.voxelpartum.minestuck_extended.data;
 
 import com.mraof.minestuck.data.tag.MinestuckBlockTagsProvider;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
-import com.voxelpartum.minestuck_extended.data.loot_tables.FDCompatBlockLoot;
 import com.voxelpartum.minestuck_extended.data.loot_tables.MSEBlockLoot;
 import com.voxelpartum.minestuck_extended.data.loot_modifiers.MSEGlobalLootModifierProvider;
 import com.voxelpartum.minestuck_extended.data.loot_tables.chest_loot.MSELootSubProvider;
@@ -54,7 +53,6 @@ public final class MinestuckExtendedData {
                 (DataProvider.Factory<MSELootTableProvider>) ((o) -> new MSELootTableProvider(o, lookupProvider,
                         List.of(
                                 new LootTableProvider.SubProviderEntry(MSEBlockLoot::new, LootContextParamSets.BLOCK),
-                                new LootTableProvider.SubProviderEntry(FDCompatBlockLoot::new, LootContextParamSets.BLOCK),
                                 new LootTableProvider.SubProviderEntry(MSELootSubProvider::new, LootContextParamSets.CHEST))
                 )));
 

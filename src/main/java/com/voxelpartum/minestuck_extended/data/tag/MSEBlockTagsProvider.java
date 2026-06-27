@@ -4,7 +4,6 @@ import com.mraof.minestuck.block.AspectTreeBlocks;
 import com.mraof.minestuck.block.MSBlocks;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import com.voxelpartum.minestuck_extended.block.MSEBlocks;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -49,28 +48,5 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
 
     tag(BlockTags.MINEABLE_WITH_SHOVEL).add(MSEBlocks.CHESS_TILE.get());
 
-    tag(BlockTags.MINEABLE_WITH_AXE)
-            .add(FDCompatBlocks.BREATH_CABINET.get())
-            .add(FDCompatBlocks.LIFE_CABINET.get())
-            .add(FDCompatBlocks.LIGHT_CABINET.get())
-            .add(FDCompatBlocks.TIME_CABINET.get())
-            .add(FDCompatBlocks.HEART_CABINET.get())
-            .add(FDCompatBlocks.RAGE_CABINET.get())
-            .add(FDCompatBlocks.BLOOD_CABINET.get())
-            .add(FDCompatBlocks.DOOM_CABINET.get())
-            .add(FDCompatBlocks.VOID_CABINET.get())
-            .add(FDCompatBlocks.SPACE_CABINET.get())
-            .add(FDCompatBlocks.MIND_CABINET.get())
-            .add(FDCompatBlocks.HOPE_CABINET.get())
-            .add(FDCompatBlocks.CARVED_CABINET.get())
-            .add(FDCompatBlocks.TREATED_CABINET.get())
-            .add(FDCompatBlocks.LACQUERED_CABINET.get())
-            .add(FDCompatBlocks.GLOWING_CABINET.get())
-            .add(FDCompatBlocks.FROST_CABINET.get())
-            .add(FDCompatBlocks.RAINBOW_CABINET.get())
-            .add(FDCompatBlocks.END_CABINET.get())
-            .add(FDCompatBlocks.DEAD_CABINET.get())
-            .add(FDCompatBlocks.CINDERED_CABINET.get())
-            .add(FDCompatBlocks.SHADEWOOD_CABINET.get());
     }
 }

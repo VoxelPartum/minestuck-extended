@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck:water_staff"
+  },
+  "input2": {
+    "item": "minecraft:blue_ice"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:ice_staff"
+}

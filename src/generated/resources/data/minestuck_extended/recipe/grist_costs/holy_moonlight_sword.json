@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:diamond": 376,
+    "minestuck:quartz": 1954,
+    "minestuck:shale": 208
+  },
+  "ingredient": {
+    "item": "minestuck_extended:holy_moonlight_sword"
+  }
+}

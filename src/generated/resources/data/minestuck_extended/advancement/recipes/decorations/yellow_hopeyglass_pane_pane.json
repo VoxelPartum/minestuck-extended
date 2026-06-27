@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minestuck_extended:yellow_hopeyglass_pane_pane"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "hasminestuck_extended:yellow_hopeyglass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minestuck_extended:yellow_hopeyglass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "hasminestuck_extended:yellow_hopeyglass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minestuck_extended:yellow_hopeyglass_pane_pane"
+    ]
+  }
+}

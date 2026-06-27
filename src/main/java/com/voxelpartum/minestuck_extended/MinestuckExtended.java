@@ -1,15 +1,15 @@
 package com.voxelpartum.minestuck_extended;
 
+import com.mraof.minestuck.blockentity.MSBlockEntityTypes;
 import com.voxelpartum.minestuck_extended.block.MSEBlocks;
 import com.voxelpartum.minestuck_extended.block.MSEFluidInteractions;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatItems;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatBlocks;
 import com.voxelpartum.minestuck_extended.data.loot_modifiers.MSELootModifiers;
 import com.voxelpartum.minestuck_extended.effects.MSEEffects;
+import com.voxelpartum.minestuck_extended.entity.MSEEntities;
 import com.voxelpartum.minestuck_extended.item.MSECreativeTab;
 import com.voxelpartum.minestuck_extended.item.MSEItems;
 import com.voxelpartum.minestuck_extended.inventory.captchalogue.MSEModi;
-import com.voxelpartum.minestuck_extended.compat.CreateCompat;
+import com.voxelpartum.minestuck_extended.compat.create.CreateCompat;
 import com.voxelpartum.minestuck_extended.util.MSESoundEvents;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -24,6 +24,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 @Mod(MinestuckExtended.MOD_ID)
@@ -40,21 +41,20 @@ public class MinestuckExtended
 
         modContainer.registerConfig(ModConfig.Type.SERVER, MinestuckExtendedConfig.serverSpec);
 
-        FDCompatBlocks.BLOCKS.register(modEventBus);
-        FDCompatBlocks.BLOCK_ENTITIES.register(modEventBus);
-        FDCompatItems.ITEMS.register(modEventBus);
-
-        if(ModList.get().isLoaded("create"))
-            CreateCompat.REGISTER.register(modEventBus);
-
         MSEItems.REGISTER.register(modEventBus);
+        MSEItems.ARMOR_MATERIAL_REGISTRY.register(modEventBus);
         MSELootModifiers.REGISTER.register(modEventBus);
         MSEBlocks.REGISTER.register(modEventBus);
+        MSEEntities.REGISTER.register(modEventBus);
         MSECreativeTab.REGISTER.register(modEventBus);
         MSEEffects.REGISTER.register(modEventBus);
         MSESoundEvents.REGISTER.register(modEventBus);
 
         MSEModi.REGISTER.register(modEventBus);
+
+        //I've decided to make the farmer's delight stuff into its own mod :P
+        if(ModList.get().isLoaded("create"))
+            CreateCompat.REGISTER.register(modEventBus);
 
     }
 
@@ -64,7 +64,14 @@ public class MinestuckExtended
         public static void onCommonSetup(FMLCommonSetupEvent event){
             MSEFluidInteractions.registerFluidInteractions();
         }
+
+        @SubscribeEvent
+        public static void addComputerBlockEntity(BlockEntityTypeAddBlocksEvent event){
+            event.modify(MSBlockEntityTypes.COMPUTER.get(), MSEBlocks.SKAIA_PC.get());
+        }
     }
+
+
 
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

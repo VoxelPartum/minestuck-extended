@@ -1,0 +1,13 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 80,
+    "minestuck:ruby": 20,
+    "minestuck:rust": 100,
+    "minestuck:tar": 50,
+    "minestuck:uranium": 20
+  },
+  "ingredient": {
+    "item": "minestuck_extended:extendo_bat"
+  }
+}

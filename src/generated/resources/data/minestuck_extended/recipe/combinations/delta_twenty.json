@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:fluorite_icosahedron"
+  },
+  "input2": {
+    "item": "minestuck_extended:delta_rune"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:delta_twenty"
+}

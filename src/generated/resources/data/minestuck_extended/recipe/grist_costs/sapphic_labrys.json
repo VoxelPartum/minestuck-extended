@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amethyst": 480,
+    "minestuck:iodine": 763,
+    "minestuck:marble": 90
+  },
+  "ingredient": {
+    "item": "minestuck_extended:sapphic_labrys"
+  }
+}

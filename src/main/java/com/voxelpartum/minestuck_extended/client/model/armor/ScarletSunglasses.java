@@ -1,6 +1,4 @@
-package com.voxelpartum.minestuck_extended.client.model.armor;// Made with Blockbench 4.12.5
-// Exported for Minecraft version 1.17 or later with Mojang mappings
-// Paste this class into your mod and generate all required imports
+package com.voxelpartum.minestuck_extended.client.model.armor;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.LayerDefinitions;

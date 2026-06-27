@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:build": 200,
+    "minestuck:cobalt": 225,
+    "minestuck:gold": 100,
+    "minestuck:quartz": 800
+  },
+  "ingredient": {
+    "item": "minestuck_extended:pearlescent_sixant"
+  }
+}

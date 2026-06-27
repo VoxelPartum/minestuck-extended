@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "minestuck_extended:item/large_weapon",
+    "textures": {
+      "layer0": "minestuck_extended:item/rude_axe"
+    }
+  },
+  "perspectives": {
+    "gui": {"parent": "minecraft:item/generated",
+      "textures": {"layer0": "minestuck_extended:item/rude_axe_gui"}
+    },
+    "ground": {"parent": "minecraft:item/generated",
+      "textures": {"layer0": "minestuck_extended:item/rude_axe_gui"}
+    },
+    "fixed": {"parent": "minecraft:item/generated",
+      "textures": {"layer0": "minestuck_extended:item/rude_axe_gui"}
+    }
+  }
+}

@@ -7,6 +7,30 @@
     ]
   },
 
+  "block.santa_place": {
+    "category": "block",
+    "subtitle": "subtitles.minestuck_extended.santa_place",
+    "sounds": [
+      "minestuck_extended:block/santa_place"
+    ]
+  },
+
+  "block.santa_break": {
+    "category": "block",
+    "subtitle": "subtitles.minestuck_extended.santa_break",
+    "sounds": [
+      "minestuck_extended:block/santa_break"
+    ]
+  },
+
+  "entity.shoot": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.gunshot",
+    "sounds": [
+      "minestuck_extended:item/gunshot"
+    ]
+  },
+
   "entity.pan": {
     "category": "player",
     "subtitle": "subtitles.minestuck_extended.pan",
@@ -20,6 +44,14 @@
     "subtitle": "subtitles.minestuck_extended.bat",
     "sounds": [
       "minestuck_extended:item/bat_hit"
+    ]
+  },
+
+  "entity.strong": {
+    "category": "player",
+    "subtitle": "subtitles.minestuck_extended.strong",
+    "sounds": [
+      "minestuck_extended:item/strong"
     ]
   },
 

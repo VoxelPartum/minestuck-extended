@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:oven_mitt"
+  },
+  "input2": {
+    "item": "minecraft:iron_block"
+  },
+  "mode": "and",
+  "output": "minestuck_extended:metal_gauntlet"
+}

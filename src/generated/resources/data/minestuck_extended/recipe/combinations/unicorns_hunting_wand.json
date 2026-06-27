@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:princess_wand"
+  },
+  "input2": {
+    "item": "minecraft:clock"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:unicorns_hunting_wand"
+}

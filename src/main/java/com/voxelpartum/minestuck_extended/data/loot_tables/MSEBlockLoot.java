@@ -27,6 +27,44 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     protected void generate() {
 
         dropSelf(MSEBlocks.CHESS_TILE.get());
+        dropSelf(MSEBlocks.SKAIA_PC.get());
+        dropWhenSilkTouch(MSEBlocks.HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.DEPTHS_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.DEPTHS_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.HOPEYGLASS_PILLAR.get());
+        dropWhenSilkTouch(MSEBlocks.RED_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.ORANGE_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.YELLOW_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.LIME_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.GREEN_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.CYAN_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.LIGHT_BLUE_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.BLUE_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.PURPLE_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.MAGENTA_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.PINK_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.WHITE_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.LIGHT_GRAY_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.GRAY_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.BLACK_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.BROWN_HOPEYGLASS.get());
+        dropWhenSilkTouch(MSEBlocks.RED_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.ORANGE_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.YELLOW_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.LIME_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.GREEN_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.CYAN_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.LIGHT_BLUE_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.BLUE_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.PURPLE_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.MAGENTA_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.PINK_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.WHITE_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.LIGHT_GRAY_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.GRAY_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.BLACK_HOPEYGLASS_PANE.get());
+        dropWhenSilkTouch(MSEBlocks.BROWN_HOPEYGLASS_PANE.get());
         dropSelf(MSEBlocks.PLUSH_VRISKA.get());
         dropSelf(MSEBlocks.PLUSH_NEPETA.get());
         dropSelf(MSEBlocks.PLUSH_GENESIS_FROG.get());
@@ -54,6 +92,9 @@ public class MSEBlockLoot extends BlockLootSubProvider {
         dropSelf(MSEBlocks.SCALEMATE_PUMPKINSNUFFLE.get());
         dropSelf(MSEBlocks.SCALEMATE_PYRALSPITE.get());
         dropSelf(MSEBlocks.SCALEMATE_WITNESS.get());
+
+        dropSelf(MSEBlocks.FANCYSANTA.get());
+        dropSelf(MSEBlocks.ZILLYSANTA.get());
     }
 
     @Override

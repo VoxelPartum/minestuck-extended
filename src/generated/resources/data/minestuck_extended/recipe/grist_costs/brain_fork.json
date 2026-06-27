@@ -1,0 +1,13 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amethyst": 60,
+    "minestuck:artifact": 10,
+    "minestuck:build": 200,
+    "minestuck:cobalt": 225,
+    "minestuck:quartz": 40
+  },
+  "ingredient": {
+    "item": "minestuck_extended:brain_fork"
+  }
+}

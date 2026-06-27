@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "pattern": [
+    "  S",
+    " L ",
+    "L  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_extended:glaive"
+  }
+}

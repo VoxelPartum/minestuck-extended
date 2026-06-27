@@ -1,0 +1,7 @@
+{
+  "parent": "minestuck_extended:item/sapphire_labrys",
+  "textures": {
+    "0": "minestuck_extended:item/sapphic_labrys",
+    "particle": "minestuck_extended:item/sapphic_labrys"
+  }
+}

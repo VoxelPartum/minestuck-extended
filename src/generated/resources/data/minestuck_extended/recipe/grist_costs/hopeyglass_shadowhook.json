@@ -1,0 +1,12 @@
+{
+  "type": "minestuck:grist_cost",
+  "grist_cost": {
+    "minestuck:amber": 1842,
+    "minestuck:diamond": 29,
+    "minestuck:rust": 16,
+    "minestuck:uranium": 65
+  },
+  "ingredient": {
+    "item": "minestuck_extended:hopeyglass_shadowhook"
+  }
+}

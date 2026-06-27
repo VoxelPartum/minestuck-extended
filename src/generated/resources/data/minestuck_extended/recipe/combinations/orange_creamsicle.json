@@ -4,7 +4,7 @@
     "item": "minecraft:orange_dye"
   },
   "input2": {
-    "tag": "c:foods/milk"
+    "item": "minecraft:milk_bucket"
   },
   "mode": "or",
   "output": "minestuck_extended:orange_creamsicle"

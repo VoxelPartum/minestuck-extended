@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minestuck_extended:equius_horns"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "ESE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minestuck_extended:horuss_horns"
+  }
+}

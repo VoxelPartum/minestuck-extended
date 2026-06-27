@@ -1,23 +1,25 @@
 package com.voxelpartum.minestuck_extended.data;
 
+import com.mraof.minestuck.block.machine.ComputerBlock;
 import com.voxelpartum.minestuck_extended.MinestuckExtended;
 import com.voxelpartum.minestuck_extended.block.MSEBlocks;
 import com.voxelpartum.minestuck_extended.block.PlushBlock;
-import com.voxelpartum.minestuck_extended.compat.farmers_delight.FDCompatBlocks;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.ModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import vectorwing.farmersdelight.common.block.CabinetBlock;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 import static com.mraof.minestuck.data.MSBlockStateProvider.texture;
@@ -31,6 +33,46 @@ public class MSEBlockstateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         simpleBlock(MSEBlocks.CHESS_TILE.get());
+        computerBlockWithExistingModels(MSEBlocks.SKAIA_PC);
+        translucentGlassBlock(MSEBlocks.HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+
+        translucentGlassBlock(MSEBlocks.DEPTHS_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.DEPTHS_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.DEPTHS_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassPillar(MSEBlocks.HOPEYGLASS_PILLAR);
+
+        translucentGlassBlock(MSEBlocks.RED_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.RED_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.RED_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.ORANGE_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.ORANGE_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.ORANGE_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.YELLOW_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.YELLOW_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.YELLOW_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.LIME_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.LIME_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.LIME_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.GREEN_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.GREEN_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.GREEN_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.CYAN_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.CYAN_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.CYAN_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.LIGHT_BLUE_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.LIGHT_BLUE_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.LIGHT_BLUE_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.BLUE_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.BLUE_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.BLUE_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.PURPLE_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.PURPLE_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.PURPLE_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.MAGENTA_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.MAGENTA_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.MAGENTA_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.PINK_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.PINK_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.PINK_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.WHITE_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.WHITE_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.WHITE_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.LIGHT_GRAY_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.LIGHT_GRAY_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.LIGHT_GRAY_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.GRAY_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.GRAY_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.GRAY_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.BLACK_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.BLACK_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.BLACK_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
+        translucentGlassBlock(MSEBlocks.BROWN_HOPEYGLASS);
+        paneBlockWithRenderType((IronBarsBlock) MSEBlocks.BROWN_HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.BROWN_HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
 
         simpleHorizontal(MSEBlocks.PLUSH_VRISKA.get());
         simpleHorizontal(MSEBlocks.PLUSH_NEPETA.get());
@@ -55,29 +97,66 @@ public class MSEBlockstateProvider extends BlockStateProvider {
         simpleHorizontal(MSEBlocks.SCALEMATE_PYRALSPITE.get());
         simpleHorizontal(MSEBlocks.SCALEMATE_WITNESS.get());
 
-        cabinetBlock(FDCompatBlocks.BREATH_CABINET.get(), "breath");
-        cabinetBlock(FDCompatBlocks.LIFE_CABINET.get(), "life");
-        cabinetBlock(FDCompatBlocks.LIGHT_CABINET.get(), "light");
-        cabinetBlock(FDCompatBlocks.TIME_CABINET.get(), "time");
-        cabinetBlock(FDCompatBlocks.HEART_CABINET.get(), "heart");
-        cabinetBlock(FDCompatBlocks.RAGE_CABINET.get(), "rage");
-        cabinetBlock(FDCompatBlocks.BLOOD_CABINET.get(), "blood");
-        cabinetBlock(FDCompatBlocks.DOOM_CABINET.get(), "doom");
-        cabinetBlock(FDCompatBlocks.VOID_CABINET.get(), "void");
-        cabinetBlock(FDCompatBlocks.SPACE_CABINET.get(), "space");
-        cabinetBlock(FDCompatBlocks.MIND_CABINET.get(), "mind");
-        cabinetBlock(FDCompatBlocks.HOPE_CABINET.get(), "hope");
-        cabinetBlock(FDCompatBlocks.CARVED_CABINET.get(), "carved");
-        cabinetBlock(FDCompatBlocks.TREATED_CABINET.get(), "treated");
-        cabinetBlock(FDCompatBlocks.LACQUERED_CABINET.get(), "lacquered");
-        cabinetBlock(FDCompatBlocks.GLOWING_CABINET.get(), "glowing");
-        cabinetBlock(FDCompatBlocks.FROST_CABINET.get(), "frost");
-        cabinetBlock(FDCompatBlocks.RAINBOW_CABINET.get(), "rainbow");
-        cabinetBlock(FDCompatBlocks.END_CABINET.get(), "end");
-        cabinetBlock(FDCompatBlocks.DEAD_CABINET.get(), "dead");
-        cabinetBlock(FDCompatBlocks.CINDERED_CABINET.get(), "cindered");
-        cabinetBlock(FDCompatBlocks.SHADEWOOD_CABINET.get(), "shadewood");
+        simpleHorizontal(MSEBlocks.FANCYSANTA.get());
+        simpleHorizontal(MSEBlocks.ZILLYSANTA.get());
 
+    }
+
+    private void computerBlockWithExistingModels(DeferredBlock<?> block)
+    {
+        computerBlock(block,
+                existing(block.getId().withSuffix("_off")),
+                existing(block.getId().withSuffix("_on")),
+                existing(block.getId().withSuffix("_game_loaded")),
+                existing(block.getId().withSuffix("_bsod")));
+    }
+
+    private void computerBlock(DeferredBlock<?> block, ModelFile off, ModelFile on, ModelFile gameLoaded, ModelFile bsod)
+    {
+        horizontal(block, state -> switch(state.getValue(ComputerBlock.STATE))
+        {
+            case OFF -> off;
+            case ON -> on;
+            case GAME_LOADED -> gameLoaded;
+            case BROKEN -> bsod;
+        });
+    }
+
+    private ModelFile existing(ResourceLocation id)
+    {
+        return this.models().getExistingFile(id);
+    }
+
+    private void horizontal(DeferredBlock<?> block, Function<BlockState, ModelFile> modelProvider, Property<?>... ignored)
+    {
+        horizontal(block, 180, modelProvider, ignored);
+    }
+
+    private void horizontal(DeferredBlock<?> block, int angleOffset, Function<BlockState, ModelFile> modelProvider, Property<?>... ignored)
+    {
+        getVariantBuilder(block.get())
+                .forAllStatesExcept(state -> ConfiguredModel.builder()
+                                .modelFile(modelProvider.apply(state))
+                                .rotationY(((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() + angleOffset) % 360)
+                                .build(),
+                        ignored
+                );
+    }
+
+    private String name(Block block){
+        return BuiltInRegistries.BLOCK.getKey(block).getPath();
+    }
+
+    public static ResourceLocation resourceBlock(String name) {
+        return ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, ModelProvider.BLOCK_FOLDER + "/" + name);
+    }
+
+    public void translucentGlassPillar(Supplier<Block> block){
+        axisBlockWithRenderType((RotatedPillarBlock) block.get(), RenderType.TRANSLUCENT.name);
+    }
+
+    public void translucentGlassBlock(Supplier<Block> block){
+        simpleBlock(block.get(), models().cubeAll(name(block.get()), resourceBlock(name(block.get()))).renderType(RenderType.TRANSLUCENT.name));
     }
 
     public void slabWithItem(Supplier<SlabBlock> block, DeferredBlock<?> sourceBlock)
@@ -118,6 +197,17 @@ public class MSEBlockstateProvider extends BlockStateProvider {
         simpleBlockItem(block.get(), stairs);
     }
 
+    void paneWithItem(Supplier<StainedGlassPaneBlock> block, DeferredBlock<?> sourceBlock)
+    {
+        paneWithItem(block, sourceBlock.getId().getPath(), texture(sourceBlock));
+    }
+
+    public void paneWithItem(Supplier<StainedGlassPaneBlock> block, String baseName, ResourceLocation texture)
+    {
+        ModelFile paneInventory = models().wallInventory(baseName + "_pane_inventory", texture);
+        simpleBlockItem(block.get(), paneInventory);
+    }
+
     void wallWithItem(Supplier<WallBlock> block, DeferredBlock<?> sourceBlock)
     {
         wallWithItem(block, sourceBlock.getId().getPath(), texture(sourceBlock));
@@ -129,16 +219,6 @@ public class MSEBlockstateProvider extends BlockStateProvider {
 
         ModelFile wallInventory = models().wallInventory(baseName + "_wall_inventory", texture);
         simpleBlockItem(block.get(), wallInventory);
-    }
-
-    public void cabinetBlock(CabinetBlock block, String type) {
-        this.horizontalBlock(block, state -> {
-            String suffix = state.getValue(CabinetBlock.OPEN) ? "_open" : "";
-            return models().orientable(blockName(block) + suffix,
-                    ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/" + (type + "_cabinet_side")),
-                    ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/" + (type + "_cabinet_front" + suffix)),
-                    ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/" + (type + "_cabinet_top")));
-        });
     }
 
     public void simpleHorizontal(Block block){

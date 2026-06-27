@@ -1,0 +1,11 @@
+{
+  "type": "minestuck:combination",
+  "input1": {
+    "item": "minestuck_extended:sapphire_labrys"
+  },
+  "input2": {
+    "item": "minecraft:lily_of_the_valley"
+  },
+  "mode": "or",
+  "output": "minestuck_extended:sapphic_labrys"
+}
