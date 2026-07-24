@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-26T21:52:47.5757511	Item Models: minestuck_extended
+// 1.21.1	2026-07-21T22:20:20.1526334	Item Models: minestuck_extended
 0841b7ce2841b42c4eec31a43c57fee1f1bb0777 assets/minestuck_extended/models/item/acabrick.json
 f2d7e96d2091d7c6bf92c323d2a04e8a71f7791e assets/minestuck_extended/models/item/achlys_horns.json
 32d883e077b544aca4598b610d7c801b20f5bbf6 assets/minestuck_extended/models/item/aradia_horns.json
@@ -69,6 +69,7 @@ ef23f748caf9ec0ece55ed76c680388121d197ea assets/minestuck_extended/models/item/h
 248d63aaa87a125732d0b06a302326a6b51d5339 assets/minestuck_extended/models/item/horuss_horns.json
 c1b5bd225fa01a84dd2a327ec7ad0b89e297d74a assets/minestuck_extended/models/item/ice_staff.json
 821c504fc1c54c88434db337b4e1790ef34e3585 assets/minestuck_extended/models/item/inanis_horns.json
+a945ef911bfc4398e583acd8738a52b2e2338dc4 assets/minestuck_extended/models/item/invisibility_cloak.json
 a55bf06eab8c474409a359b3f0049176d6bdfda7 assets/minestuck_extended/models/item/itchy_hat.json
 d04de0488447b94a7a1a26b0393a25b976dd6da0 assets/minestuck_extended/models/item/jensis_horns.json
 db8cec49801a5cd923ce1b9d9145204841ee64a1 assets/minestuck_extended/models/item/kanaya_horns.json

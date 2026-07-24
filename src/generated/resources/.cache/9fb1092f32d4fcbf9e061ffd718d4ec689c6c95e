@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-27T14:22:37.8848537	Recipes
+// 1.21.1	2026-07-21T22:20:20.1474226	Recipes
 ab873fa60d2d221ea05f5d95eaaf38c394fccc1d data/create/recipe/combinations/blaze_burner.json
 4b579c956b05e171c1cc534ac8a7eab1357d4e98 data/create/recipe/combinations/blaze_cake.json
 170cf04610a9f7f9b715110c913aa6f5a6ee9e9b data/create/recipe/combinations/blaze_cake_base.json
@@ -222,6 +222,7 @@ fe9fb0e83cac835094adf3cc7b1e8a47123b4f75 data/minestuck_extended/recipe/combinat
 352cfffa818c20c47a8f7b3ebec8a4a4b2003123 data/minestuck_extended/recipe/combinations/horuss_horns.json
 968a013fba66aeea795b8c6da37647d956994e0d data/minestuck_extended/recipe/combinations/ice_staff.json
 c3e35bce715cbb18d96bf1add1800b5d740b09db data/minestuck_extended/recipe/combinations/inanis_horns.json
+b747aca3aca261336d8fb20c523485dabc3134cd data/minestuck_extended/recipe/combinations/invisibility_cloak.json
 fe5ec2c50a9c1d3176e471bcf95765aa61151cdb data/minestuck_extended/recipe/combinations/itchy_hat.json
 2d73e7fdff7096fe135e9d5439fce564bbf0be99 data/minestuck_extended/recipe/combinations/jensis_horns.json
 8b1c9043216e8ef13da276769c036ae12752b8ca data/minestuck_extended/recipe/combinations/kanaya_horns.json
@@ -379,6 +380,7 @@ bc9c810e4e37eca6e48e562c930368d7fa7da662 data/minestuck_extended/recipe/grist_co
 40fb849ed5f23de396a805bb2ac9ea528d513478 data/minestuck_extended/recipe/grist_costs/hope_armor_trim_smithing_template.json
 4076c92ab6b165f4339bdc2524ebab5a05412d64 data/minestuck_extended/recipe/grist_costs/ice_staff.json
 d7e3728f9f05c5c9ea444be035a574f4132cd9be data/minestuck_extended/recipe/grist_costs/inanis_horns.json
+cf663dd2be731906c893e2ac83253a0bca1f922c data/minestuck_extended/recipe/grist_costs/invisibility_cloak.json
 ab26434f46185305084d2453014f963d1013a0ca data/minestuck_extended/recipe/grist_costs/itchy_hat.json
 e21cbb9d80f84f897037d5afe703d4f2a55a76b4 data/minestuck_extended/recipe/grist_costs/jensis_horns.json
 61ab754e53c3b91d3b8217c6b83753f94efe2a64 data/minestuck_extended/recipe/grist_costs/kanaya_horns.json

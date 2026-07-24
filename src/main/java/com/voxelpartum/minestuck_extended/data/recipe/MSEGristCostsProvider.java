@@ -68,6 +68,7 @@ public final class MSEGristCostsProvider {
                 .grist(MERCURY, 1000).grist(QUARTZ, 1000).grist(SULFUR, 1000).grist(AMETHYST, 1000).grist(GARNET, 1000)
                 .grist(RUBY, 1000).grist(RUST, 1000).grist(DIAMOND, 1000).grist(GOLD, 1000).grist(URANIUM, 1000)
                 .grist(ARTIFACT, 1000).grist(ZILLIUM, 50).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.INVIS_CLOAK.get()).grist(QUARTZ, 400).grist(DIAMOND, 100).grist(URANIUM, 80).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.CINDERBLOCK.get()).grist(BUILD, 2).grist(CAULK, 2).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.ACABRICK.get()).grist(BUILD, 5).grist(SHALE, 5).grist(CHALK, 5).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.LANCER_COOKIE.get()).grist(AMBER, 1).grist(IODINE, 1).grist(COBALT, 1).build(recipeSaver);

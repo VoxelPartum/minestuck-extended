@@ -86,6 +86,7 @@ public class MSEItemProvider extends ItemModelProvider{
         basicItem(MSEItems.QUARTERS_HAT.get());
         basicItem(MSEItems.CANS_HAT.get());
         basicItem(MSEItems.CAIRO_OVERCOAT.get());
+        basicItem(MSEItems.INVIS_CLOAK.get());
         basicItem(MSEItems.SHADOW_CRYSTAL.get());
         basicItem(MSEItems.DELTA_RUNE.get());
         basicItem(MSEItems.ORANGE_CREAMSICLE.get());

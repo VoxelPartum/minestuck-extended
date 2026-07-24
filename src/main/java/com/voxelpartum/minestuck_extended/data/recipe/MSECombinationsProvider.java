@@ -128,6 +128,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.QUARTERS_HAT).input(MSItems.CRUMPLY_HAT).and().input(MSItems.BOONDOLLARS).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.CANS_HAT).input(MSItems.CRUMPLY_HAT).and().input(MSItems.FOOD_CAN).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.CAIRO_OVERCOAT).input(Items.NETHERITE_CHESTPLATE).and().input(MSItems.CUEBALL).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.INVIS_CLOAK).input(Items.IRON_CHESTPLATE).and().input(MSItems.MIRROR).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.ARADIA_HORNS).input(MSEItems.HEADBAND).or().input(Items.MUTTON).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.TAVROS_HORNS).input(MSEItems.HEADBAND).or().input(Items.MINECART).build(consumer);

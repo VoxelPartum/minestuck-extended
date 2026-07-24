@@ -43,6 +43,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.QUARTERS_HAT.get());
         output.accept(MSEItems.CANS_HAT.get());
         output.accept(MSEItems.CAIRO_OVERCOAT.get());
+        output.accept(MSEItems.INVIS_CLOAK.get());
         output.accept(MSEItems.ORANGE_CREAMSICLE.get());
         output.accept(MSEItems.NORMAL_BROWNIE.get());
         output.accept(MSEItems.NORMALER_BROWNIE.get());

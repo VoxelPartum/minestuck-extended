@@ -144,6 +144,11 @@ public class MSEItems {
             15, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.EMPTY, List.of(new ArmorMaterial.Layer(MinestuckExtended.id("cario_overcoat"))), 5F, 0.8f));
     public static final DeferredItem<CarioOvercoatItem> CAIRO_OVERCOAT = REGISTER.register("cairo_overcoat", ()-> new CarioOvercoatItem(OVERCOAT_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
 
+    public static final Holder<ArmorMaterial> CLOAK_MATERIAL = ARMOR_MATERIAL_REGISTRY.register("cloak", () -> new ArmorMaterial(Map.of(ArmorItem.Type.CHESTPLATE, 7),
+            15, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.EMPTY, List.of(new ArmorMaterial.Layer(MinestuckExtended.id("cario_overcoat"))), 5F, 0.8f));
+    public static final DeferredItem<InvisCloakItem> INVIS_CLOAK = REGISTER.register("invisibility_cloak", ()-> new InvisCloakItem(CLOAK_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+
+
     public static final DeferredItem<MSArmorItem> HEADBAND = REGISTER.register("headband", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<MSArmorItem> ARADIA_HORNS = REGISTER.register("aradia_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));

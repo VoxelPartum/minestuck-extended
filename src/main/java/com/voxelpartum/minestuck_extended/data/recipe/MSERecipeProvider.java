@@ -65,7 +65,7 @@ public class MSERecipeProvider extends RecipeProvider {
                 .save(recipeBuilder);
 
         paneRecipe(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS_PANE::get, MSEItems.HOPEYGLASS, recipeBuilder);
-        paneRecipe(RecipeCategory.DECORATIONS, MSEItems.DEPTHS_HOPEYGLASS::get, MSEItems.DEPTHS_HOPEYGLASS_PANE, recipeBuilder);
+        paneRecipe(RecipeCategory.DECORATIONS, MSEItems.DEPTHS_HOPEYGLASS_PANE::get, MSEItems.DEPTHS_HOPEYGLASS, recipeBuilder);
 
         stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.RED_DYE, MSEItems.RED_HOPEYGLASS::get, MSEItems.RED_HOPEYGLASS_PANE::get, recipeBuilder);
         stainedGlassSuiteRecipes(RecipeCategory.DECORATIONS, MSEItems.HOPEYGLASS::get, MSEItems.HOPEYGLASS_PANE::get, Items.ORANGE_DYE, MSEItems.ORANGE_HOPEYGLASS::get, MSEItems.ORANGE_HOPEYGLASS_PANE::get, recipeBuilder);
