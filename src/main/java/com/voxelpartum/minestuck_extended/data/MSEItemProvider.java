@@ -151,6 +151,7 @@ public class MSEItemProvider extends ItemModelProvider{
         basicItem(MSEItems.DEVROS_HORNS.get());
         basicItem(MSEItems.NEYHIL_HORNS.get());
         basicItem(MSEItems.VERISI_HORNS.get());
+        basicItem(MSEItems.CASYLA_HORNS.get());
         basicItem(MSEItems.NERIUS_HORNS.get());
         basicItem(MSEItems.JENSIS_HORNS.get());
         basicItem(MSEItems.PHANES_HORNS.get());
@@ -161,7 +162,6 @@ public class MSEItemProvider extends ItemModelProvider{
 
 
         simpleBlockItem(MSEBlocks.CHESS_TILE.get());
-        basicItem(MSEItems.SKAIA_PC.get());
         simpleBlockItem(MSEBlocks.HOPEYGLASS.get());
         simpleBlockItem(MSEBlocks.HOPEYGLASS_PILLAR.get());
         glassPaneTexture(MSEItems.HOPEYGLASS_PANE.get(), MSEItems.HOPEYGLASS.get());

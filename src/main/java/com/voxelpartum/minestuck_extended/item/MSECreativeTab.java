@@ -119,7 +119,7 @@ public class MSECreativeTab {
         output.accept(MSEItems.HOPE_ARMOR_TRIM.get());
         
         output.accept(MSEItems.CHESS_TILE.get());
-	output.accept(MSEItems.SKAIA_PC.get());
+//	    output.accept(MSEItems.SKAIA_PC.get());
         output.accept(MSEItems.HOPEYGLASS.get());
         output.accept(MSEItems.HOPEYGLASS_PILLAR.get());
         output.accept(MSEItems.HOPEYGLASS_PANE.get());

@@ -19,7 +19,7 @@ public class MSEBlocks {
 
     public static final DeferredBlock<Block> CHESS_TILE = REGISTER.register("chess_tile", ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_TERRACOTTA)));
 
-    public static final DeferredBlock<Block> SKAIA_PC = REGISTER.register("skaia_pc", () -> new ComputerBlock(MSEBlockShapes.SKAIA_PC_SHAPE, MSEBlockShapes.SKAIA_PC_SHAPE, MSComputerThemes.JOY, Block.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops().strength(4.0F)));
+//    public static final DeferredBlock<Block> SKAIA_PC = REGISTER.register("skaia_pc", () -> new ComputerBlock(MSEBlockShapes.SKAIA_PC_SHAPE, MSEBlockShapes.SKAIA_PC_SHAPE, MSComputerThemes.JOY, Block.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops().strength(4.0F)));
 
     public static final DeferredBlock<Block> HOPEYGLASS = REGISTER.register("hopeyglass", ()-> new StainedGlassBlock(DyeColor.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_STAINED_GLASS)));
     public static final DeferredBlock<Block> HOPEYGLASS_PANE = REGISTER.register("hopeyglass_pane", ()-> new StainedGlassPaneBlock(DyeColor.ORANGE, BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_STAINED_GLASS)));

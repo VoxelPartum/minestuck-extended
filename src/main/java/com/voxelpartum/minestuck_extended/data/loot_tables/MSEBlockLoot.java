@@ -27,7 +27,6 @@ public class MSEBlockLoot extends BlockLootSubProvider {
     protected void generate() {
 
         dropSelf(MSEBlocks.CHESS_TILE.get());
-        dropSelf(MSEBlocks.SKAIA_PC.get());
         dropWhenSilkTouch(MSEBlocks.HOPEYGLASS.get());
         dropWhenSilkTouch(MSEBlocks.HOPEYGLASS_PANE.get());
         dropWhenSilkTouch(MSEBlocks.DEPTHS_HOPEYGLASS.get());

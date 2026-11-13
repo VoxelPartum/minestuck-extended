@@ -47,6 +47,7 @@ public class MSEBlockTagsProvider extends BlockTagsProvider {
         ;
 
     tag(BlockTags.MINEABLE_WITH_SHOVEL).add(MSEBlocks.CHESS_TILE.get());
+//    tag(BlockTags.MINEABLE_WITH_PICKAXE).add(MSEBlocks.SKAIA_PC.get());
 
     }
 }

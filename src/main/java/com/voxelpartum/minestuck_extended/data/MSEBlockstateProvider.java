@@ -33,7 +33,6 @@ public class MSEBlockstateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         simpleBlock(MSEBlocks.CHESS_TILE.get());
-        computerBlockWithExistingModels(MSEBlocks.SKAIA_PC);
         translucentGlassBlock(MSEBlocks.HOPEYGLASS);
         paneBlockWithRenderType((IronBarsBlock) MSEBlocks.HOPEYGLASS_PANE.get(), resourceBlock(name(MSEBlocks.HOPEYGLASS.get())), ResourceLocation.fromNamespaceAndPath(MinestuckExtended.MOD_ID, "block/"+name(MSEBlocks.HOPEYGLASS_PANE.get())+"_top"), RenderType.TRANSLUCENT.name);
 

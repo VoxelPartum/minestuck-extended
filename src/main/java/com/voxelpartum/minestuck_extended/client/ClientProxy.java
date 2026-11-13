@@ -106,6 +106,7 @@ public class ClientProxy {
         ArmorModels.register(MSEItems.RENARD_HORNS.get(), new HumanoidModel<>(GenericHornModel.createBodyLayer().bakeRoot()));
         ArmorModels.register(MSEItems.STYBOL_HORNS.get(), new HumanoidModel<>(GenericHornModel.createBodyLayer().bakeRoot()));
         ArmorModels.register(MSEItems.VERISI_HORNS.get(), new HumanoidModel<>(AsymHorns.createBodyLayer().bakeRoot()));
+        ArmorModels.register(MSEItems.CASYLA_HORNS.get(), new HumanoidModel<>(GenericHornModel.createBodyLayer().bakeRoot()));
     }
 
     @SubscribeEvent
@@ -174,7 +175,8 @@ public class ClientProxy {
                 MSEItems.PHANES_HORNS,
                 MSEItems.RENARD_HORNS,
                 MSEItems.STYBOL_HORNS,
-                MSEItems.VERISI_HORNS
+                MSEItems.VERISI_HORNS,
+                MSEItems.CASYLA_HORNS
                 //DONT FORGET THE OTHER THINGS.
                 )
         ){

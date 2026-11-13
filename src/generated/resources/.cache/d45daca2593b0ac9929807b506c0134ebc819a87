@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-21T22:20:20.1526334	Item Models: minestuck_extended
+// 1.21.1	2026-11-08T22:18:40.9804151	Item Models: minestuck_extended
 0841b7ce2841b42c4eec31a43c57fee1f1bb0777 assets/minestuck_extended/models/item/acabrick.json
 f2d7e96d2091d7c6bf92c323d2a04e8a71f7791e assets/minestuck_extended/models/item/achlys_horns.json
 32d883e077b544aca4598b610d7c801b20f5bbf6 assets/minestuck_extended/models/item/aradia_horns.json
@@ -20,6 +20,7 @@ a0b69466aa1fe3aaff03d4d6eeb5e02570528858 assets/minestuck_extended/models/item/b
 4fab5c1eded864f8ce89ac4041292c8f30f5bd69 assets/minestuck_extended/models/item/brown_hopeyglass_pane.json
 fdd3eda04027b42db75ed7c1443b9b7c0e897816 assets/minestuck_extended/models/item/cairo_overcoat.json
 6d68fdaacc0ecd99a254c0567d0ae523bfdf4a7d assets/minestuck_extended/models/item/cans_hat.json
+3ac3d811ccac084b8e476741542c19406f39a400 assets/minestuck_extended/models/item/casyla_horns.json
 b7ecbf1acd17204c85514d8584ec3409dcf4252a assets/minestuck_extended/models/item/chess_tile.json
 5066c786fc55ab4f3c636d2b06f5606010cb6970 assets/minestuck_extended/models/item/cinderblock.json
 a1b34b09251007d780f6df4d0a4bafb876b86286 assets/minestuck_extended/models/item/clover_hat.json

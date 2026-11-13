@@ -42,7 +42,7 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.NORMAL_BROWNIE).input(Items.COCOA_BEANS).and().input(ItemTags.LEAVES).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.CHESS_TILE).input(SkaiaBlocks.BLACK_CHESS_DIRT).or().input(SkaiaBlocks.WHITE_CHESS_DIRT).build(consumer);
-        CombinationRecipeBuilder.of(MSEItems.SKAIA_PC).input(MSItems.COMPUTER).or().input(MSItems.CHESSBOARD).build(consumer);
+//        CombinationRecipeBuilder.of(MSEItems.SKAIA_PC).input(MSItems.COMPUTER).or().input(MSItems.CHESSBOARD).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.HOPEYGLASS).input(MSEItems.HOPE_ARMOR_TRIM).or().input(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "glass_blocks"))).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.DEPTHS_HOPEYGLASS).input(MSEItems.HOPEYGLASS).or().input(MSEItems.SHADOW_CRYSTAL).build(consumer);
 
@@ -177,6 +177,8 @@ public class MSECombinationsProvider {
         CombinationRecipeBuilder.of(MSEItems.RENARD_HORNS).input(MSEItems.HEADBAND).or().input(Items.SWEET_BERRIES).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.STYBOL_HORNS).input(MSEItems.HEADBAND).or().input(MSItems.BATTERY).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.VERISI_HORNS).input(MSEItems.HEADBAND).or().input(MSItems.CONDUCTORS_BATON).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.CASYLA_HORNS).input(MSEItems.HEADBAND).or().namedInput(Items.GOLDEN_SWORD).build(consumer);
+        CombinationRecipeBuilder.of(MSEItems.CASYLA_HORNS).input(MSEItems.HEADBAND).or().namedInput(Items.DIAMOND_SWORD).build(consumer);
 
         CombinationRecipeBuilder.of(MSEItems.SPIROGRAPH_ARMOR_TRIM).input(MSItems.SERVER_DISK).and().input(ItemTags.TRIM_TEMPLATES).build(consumer);
         CombinationRecipeBuilder.of(MSEItems.BREATH_ARMOR_TRIM).input(AspectTreeBlocks.BREATH_ASPECT_SAPLING).and().input(ItemTags.TRIM_TEMPLATES).build(consumer);

@@ -162,6 +162,7 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.FAHRAD_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.NEYHIL_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.VERISI_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
+        GristCostRecipeBuilder.of(MSEItems.CASYLA_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.NERIUS_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.STYBOL_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.JENSIS_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
@@ -169,8 +170,8 @@ public final class MSEGristCostsProvider {
         GristCostRecipeBuilder.of(MSEItems.MAGNEA_HORNS.get()).grist(BUILD, 20).grist(IODINE, 20).grist(AMBER, 20).build(recipeSaver);
 
         GristCostRecipeBuilder.of(MSEItems.CHESS_TILE.get()).grist(CHALK, 32).grist(TAR, 32).build(recipeSaver);
-        GristCostRecipeBuilder.of(MSEItems.SKAIA_PC.get()).grist(BUILD, 50).grist(MARBLE, 5).grist(QUARTZ, 6)
-                .grist(GARNET, 8).grist(RUST, 10).grist(GOLD, 3).grist(URANIUM, 23).build(recipeSaver);
+//        GristCostRecipeBuilder.of(MSEItems.SKAIA_PC.get()).grist(BUILD, 50).grist(MARBLE, 5).grist(QUARTZ, 6)
+//                .grist(GARNET, 8).grist(RUST, 10).grist(GOLD, 3).grist(URANIUM, 23).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.HOPEYGLASS.get()).grist(BUILD, 1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.DEPTHS_HOPEYGLASS.get()).grist(BUILD, 1).build(recipeSaver);
         GristCostRecipeBuilder.of(MSEItems.PLUSH_VRISKA.get()).grist(CHALK, 8).grist(COBALT, 8).grist(BUILD,8).build(recipeSaver);

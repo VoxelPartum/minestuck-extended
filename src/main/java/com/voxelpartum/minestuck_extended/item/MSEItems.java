@@ -189,6 +189,7 @@ public class MSEItems {
     public static final DeferredItem<MSArmorItem> FAHRAD_HORNS = REGISTER.register("fahrad_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<MSArmorItem> NEYHIL_HORNS = REGISTER.register("neyhil_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<MSArmorItem> VERISI_HORNS = REGISTER.register("verisi_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<MSArmorItem> CASYLA_HORNS = REGISTER.register("casyla_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<MSArmorItem> NERIUS_HORNS = REGISTER.register("nerius_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<MSArmorItem> STYBOL_HORNS = REGISTER.register("stybol_horns", ()-> new MSArmorItem(MSItemTypes.CLOTH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
@@ -226,7 +227,7 @@ public class MSEItems {
 
     //BlockItems
     public static final DeferredItem<BlockItem> CHESS_TILE = registerBlockItem(MSEBlocks.CHESS_TILE);
-    public static final DeferredItem<BlockItem> SKAIA_PC = registerBlockItem(MSEBlocks.SKAIA_PC);
+//    public static final DeferredItem<BlockItem> SKAIA_PC = registerBlockItem(MSEBlocks.SKAIA_PC);
     public static final DeferredItem<BlockItem> HOPEYGLASS = registerBlockItem(MSEBlocks.HOPEYGLASS);
     public static final DeferredItem<BlockItem> HOPEYGLASS_PANE = registerBlockItem(MSEBlocks.HOPEYGLASS_PANE);
     public static final DeferredItem<BlockItem> HOPEYGLASS_PILLAR = registerBlockItem(MSEBlocks.HOPEYGLASS_PILLAR);

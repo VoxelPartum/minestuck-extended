@@ -11,6 +11,7 @@ import com.voxelpartum.minestuck_extended.item.MSEItems;
 import com.voxelpartum.minestuck_extended.inventory.captchalogue.MSEModi;
 import com.voxelpartum.minestuck_extended.compat.create.CreateCompat;
 import com.voxelpartum.minestuck_extended.util.MSESoundEvents;
+import com.voxelpartum.minestuck_extended.world.land.MSELandTypes;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -49,7 +50,7 @@ public class MinestuckExtended
         MSECreativeTab.REGISTER.register(modEventBus);
         MSEEffects.REGISTER.register(modEventBus);
         MSESoundEvents.REGISTER.register(modEventBus);
-
+        MSELandTypes.TERRAINS.register(modEventBus);
         MSEModi.REGISTER.register(modEventBus);
 
         //I've decided to make the farmer's delight stuff into its own mod :P
@@ -67,11 +68,9 @@ public class MinestuckExtended
 
         @SubscribeEvent
         public static void addComputerBlockEntity(BlockEntityTypeAddBlocksEvent event){
-            event.modify(MSBlockEntityTypes.COMPUTER.get(), MSEBlocks.SKAIA_PC.get());
+//            event.modify(MSBlockEntityTypes.COMPUTER.get(), MSEBlocks.SKAIA_PC.get());
         }
     }
-
-
 
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
